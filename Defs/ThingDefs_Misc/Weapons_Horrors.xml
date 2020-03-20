@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- ============================================================== -->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp">
+		<defName>MeleeWeapon_RendingClaws</defName>
+		<label>rending claws</label>
+		<description>Mutated claws used by the Infested to tear through steel, flesh and bone. Once removed from the Infested, they may be repurposed.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RendingClaws</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	<tradeability>None</tradeability>
+	<destroyOnDrop>True</destroyOnDrop>
+	<menuHidden>True</menuHidden>
+	<weaponTags>
+      <li>Horrors</li>
+    </weaponTags>
+	<costList>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </costList>
+	<stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+	<soundInteract>Pawn_Melee_MechanoidSlash_HitPawn</soundInteract>
+	<statBases>
+		<WorkToMake>4000</WorkToMake>
+		<Mass>0.5</Mass>
+	</statBases>
+	<tools>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>1.66</cooldownTime>
+      </li>
+    </tools>
+	<equippedAngleOffset>-65</equippedAngleOffset>
+	<verbs>
+		<li>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<meleeDamageDef>Cut</meleeDamageDef>
+		</li>
+	</verbs>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_ProwlerSpit</defName>
+		<label>prowler spit</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<speed>45</speed>
+			<explosionRadius>2</explosionRadius >
+			<preExplosionSpawnThingDef>Gas_Fumes</preExplosionSpawnThingDef>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseGun">
+		<defName>Gun_ProwlerSpit</defName>
+		<label>prowler paralysis organ</label>
+		<description>A mutated saliva producing organ that spews globules of paralytic venom.</description>
+		<graphicData>
+			<texPath>DummyWeapon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>18</Mass>
+			<AccuracyTouch>0.79</AccuracyTouch>
+			<AccuracyShort>0.42</AccuracyShort>
+			<AccuracyMedium>0.18</AccuracyMedium>
+			<AccuracyLong>0.06</AccuracyLong>
+			<RangedWeapon_Cooldown>8.4</RangedWeapon_Cooldown>
+		</statBases>
+		<tradeability>None</tradeability>
+		<destroyOnDrop>True</destroyOnDrop>
+		<menuHidden>True</menuHidden>
+		<weaponTags>
+			<li>HorrorProwler</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_ProwlerSpit</defaultProjectile>
+				<forcedMissRadius>1</forcedMissRadius>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<warmupTime>1.25</warmupTime>
+				<range>27</range>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>0</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+</Defs>
