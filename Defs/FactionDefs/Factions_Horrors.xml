@@ -15,7 +15,7 @@
     <canStageAttacks>true</canStageAttacks>
 	<leaderTitle>Mastermind</leaderTitle>
 	<factionIconPath>World/WorldObjects/crevasse1</factionIconPath>
-    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 	<colorSpectrum>
       <li>(0.45, 0.0, 0.45)</li>
       <li>(0.20, 0.02, 0.18)</li>
