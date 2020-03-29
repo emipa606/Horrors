@@ -15,7 +15,7 @@ namespace Horrors
             IntVec3 intVec;
             return base.CanFireNowSub(parms) && HorrorHivesUtility.TotalSpawnedHivesCount(map) < 30 && InfestationCellFinder.TryFindCell(out intVec, map);
         }
-        public new bool TryExecute(IncidentParms parms)
+        protected override bool TryExecuteWorker(IncidentParms parms)
         {
             Map map = (Map)parms.target;
             HorrorHive t = null;
