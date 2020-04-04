@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- VISCERAL -->
+
+  <Visceral.label>疫物</Visceral.label>
+  <Visceral.labelPlural>疫物</Visceral.labelPlural>
+  <Visceral.lifeStages.0.label>疫物</Visceral.lifeStages.0.label>
+  <Visceral.lifeStages.0.labelPlural>疫物</Visceral.lifeStages.0.labelPlural>
+  <Visceral.lifeStages.0.labelMale>雄性疫物</Visceral.lifeStages.0.labelMale>
+  <Visceral.lifeStages.0.labelMalePlural>雄性疫物</Visceral.lifeStages.0.labelMalePlural>
+  <Visceral.lifeStages.0.labelFemale>雌性疫物</Visceral.lifeStages.0.labelFemale>
+  <Visceral.lifeStages.0.labelFemalePlural>雌性疫物</Visceral.lifeStages.0.labelFemalePlural>
+  <Visceral.lifeStages.1.label>V疫物</Visceral.lifeStages.1.label>
+  <Visceral.lifeStages.1.labelPlural>疫物</Visceral.lifeStages.1.labelPlural>
+  <Visceral.lifeStages.1.labelMale>雄性疫物</Visceral.lifeStages.1.labelMale>
+  <Visceral.lifeStages.1.labelMalePlural>雄性疫物</Visceral.lifeStages.1.labelMalePlural>
+  <Visceral.lifeStages.1.labelFemale>雌性疫物</Visceral.lifeStages.1.labelFemale>
+  <Visceral.lifeStages.1.labelFemalePlural>雌性疫物</Visceral.lifeStages.1.labelFemalePlural>
+  <Visceral.lifeStages.2.label>疫物</Visceral.lifeStages.2.label>
+  <Visceral.lifeStages.2.labelPlural>疫物</Visceral.lifeStages.2.labelPlural>
+  <Visceral.lifeStages.2.labelMale>雄性疫物</Visceral.lifeStages.2.labelMale>
+  <Visceral.lifeStages.2.labelMalePlural>雄性疫物</Visceral.lifeStages.2.labelMalePlural>
+  <Visceral.lifeStages.2.labelFemale>雌性疫物</Visceral.lifeStages.2.labelFemale>
+  <Visceral.lifeStages.2.labelFemalePlural>雌性疫物</Visceral.lifeStages.2.labelFemalePlural>
+  <Visceral.labelMale>雄性疫物</Visceral.labelMale>
+  <Visceral.labelMalePlural>雄性疫物</Visceral.labelMalePlural>
+  <Visceral.labelFemale>雌性疫物</Visceral.labelFemale>
+  <Visceral.labelFemalePlural>雌性疫物</Visceral.labelFemalePlural>
+
+
+  <!-- BULWARK -->
+
+  <Bulwark.label>扭曲护卫</Bulwark.label>
+  <Bulwark.labelPlural>扭曲护卫</Bulwark.labelPlural>
+  <Bulwark.lifeStages.0.label>扭曲护卫</Bulwark.lifeStages.0.label>
+  <Bulwark.lifeStages.0.labelPlural>扭曲护卫</Bulwark.lifeStages.0.labelPlural>
+  <Bulwark.lifeStages.0.labelMale>雄性扭曲护卫</Bulwark.lifeStages.0.labelMale>
+  <Bulwark.lifeStages.0.labelMalePlural>雄性扭曲护卫</Bulwark.lifeStages.0.labelMalePlural>
+  <Bulwark.lifeStages.0.labelFemale>雌性扭曲护卫</Bulwark.lifeStages.0.labelFemale>
+  <Bulwark.lifeStages.0.labelFemalePlural>雌性扭曲护卫</Bulwark.lifeStages.0.labelFemalePlural>
+  <Bulwark.lifeStages.1.label>扭曲护卫</Bulwark.lifeStages.1.label>
+  <Bulwark.lifeStages.1.labelPlural>扭曲护卫</Bulwark.lifeStages.1.labelPlural>
+  <Bulwark.lifeStages.1.labelMale>雄性扭曲护卫</Bulwark.lifeStages.1.labelMale>
+  <Bulwark.lifeStages.1.labelMalePlural>雄性扭曲护卫</Bulwark.lifeStages.1.labelMalePlural>
+  <Bulwark.lifeStages.1.labelFemale>雌性扭曲护卫</Bulwark.lifeStages.1.labelFemale>
+  <Bulwark.lifeStages.1.labelFemalePlural>雌性扭曲护卫</Bulwark.lifeStages.1.labelFemalePlural>
+  <Bulwark.lifeStages.2.label>扭曲护卫</Bulwark.lifeStages.2.label>
+  <Bulwark.lifeStages.2.labelPlural>扭曲护卫</Bulwark.lifeStages.2.labelPlural>
+  <Bulwark.lifeStages.2.labelMale>雄性扭曲护卫</Bulwark.lifeStages.2.labelMale>
+  <Bulwark.lifeStages.2.labelMalePlural>雄性扭曲护卫</Bulwark.lifeStages.2.labelMalePlural>
+  <Bulwark.lifeStages.2.labelFemale>雌性扭曲护卫</Bulwark.lifeStages.2.labelFemale>
+  <Bulwark.lifeStages.2.labelFemalePlural>雌性扭曲护卫</Bulwark.lifeStages.2.labelFemalePlural>
+  <Bulwark.labelMale>雄性扭曲护卫</Bulwark.labelMale>
+  <Bulwark.labelMalePlural>雄性扭曲护卫</Bulwark.labelMalePlural>
+  <Bulwark.labelFemale>雌性扭曲护卫</Bulwark.labelFemale>
+  <Bulwark.labelFemalePlural>雌性扭曲护卫</Bulwark.labelFemalePlural>
+
+
+  <!-- TERRORWORM -->
+
+  <Terrorworm.label>恐怖蠕虫</Terrorworm.label>
+  <Terrorworm.labelPlural>恐怖蠕虫</Terrorworm.labelPlural>
+  <Terrorworm.lifeStages.0.label>恐怖蠕虫</Terrorworm.lifeStages.0.label>
+  <Terrorworm.lifeStages.0.labelPlural>恐怖蠕虫</Terrorworm.lifeStages.0.labelPlural>
+  <Terrorworm.lifeStages.0.labelMale>雄性恐怖蠕虫</Terrorworm.lifeStages.0.labelMale>
+  <Terrorworm.lifeStages.0.labelMalePlural>雄性恐怖蠕虫</Terrorworm.lifeStages.0.labelMalePlural>
+  <Terrorworm.lifeStages.0.labelFemale>雌性恐怖蠕虫</Terrorworm.lifeStages.0.labelFemale>
+  <Terrorworm.lifeStages.0.labelFemalePlural>雌性恐怖蠕虫</Terrorworm.lifeStages.0.labelFemalePlural>
+  <Terrorworm.lifeStages.1.label>恐怖蠕虫</Terrorworm.lifeStages.1.label>
+  <Terrorworm.lifeStages.1.labelPlural>恐怖蠕虫</Terrorworm.lifeStages.1.labelPlural>
+  <Terrorworm.lifeStages.1.labelMale>雄性恐怖蠕虫</Terrorworm.lifeStages.1.labelMale>
+  <Terrorworm.lifeStages.1.labelMalePlural>雄性恐怖蠕虫</Terrorworm.lifeStages.1.labelMalePlural>
+  <Terrorworm.lifeStages.1.labelFemale>雌性恐怖蠕虫</Terrorworm.lifeStages.1.labelFemale>
+  <Terrorworm.lifeStages.1.labelFemalePlural>雌性恐怖蠕虫</Terrorworm.lifeStages.1.labelFemalePlural>
+  <Terrorworm.lifeStages.2.label>恐怖蠕虫</Terrorworm.lifeStages.2.label>
+  <Terrorworm.lifeStages.2.labelPlural>恐怖蠕虫</Terrorworm.lifeStages.2.labelPlural>
+  <Terrorworm.lifeStages.2.labelMale>雄性恐怖蠕虫</Terrorworm.lifeStages.2.labelMale>
+  <Terrorworm.lifeStages.2.labelMalePlural>雄性恐怖蠕虫</Terrorworm.lifeStages.2.labelMalePlural>
+  <Terrorworm.lifeStages.2.labelFemale>雌性恐怖蠕虫</Terrorworm.lifeStages.2.labelFemale>
+  <Terrorworm.lifeStages.2.labelFemalePlural>雌性恐怖蠕虫</Terrorworm.lifeStages.2.labelFemalePlural>
+  <Terrorworm.labelMale>雄性恐怖蠕虫</Terrorworm.labelMale>
+  <Terrorworm.labelMalePlural>雄性恐怖蠕虫</Terrorworm.labelMalePlural>
+  <Terrorworm.labelFemale>雌性恐怖蠕虫</Terrorworm.labelFemale>
+  <Terrorworm.labelFemalePlural>雌性恐怖蠕虫</Terrorworm.labelFemalePlural>
+
+
+  <!-- BROOD LORD -->
+
+  <BroodLord.label>饲育者</BroodLord.label>
+  <BroodLord.labelPlural>饲育者</BroodLord.labelPlural>
+  <BroodLord.lifeStages.0.label>饲育者</BroodLord.lifeStages.0.label>
+  <BroodLord.lifeStages.0.labelPlural>饲育者</BroodLord.lifeStages.0.labelPlural>
+  <BroodLord.lifeStages.0.labelMale>雄性饲育者</BroodLord.lifeStages.0.labelMale>
+  <BroodLord.lifeStages.0.labelMalePlural>雄性饲育者</BroodLord.lifeStages.0.labelMalePlural>
+  <BroodLord.lifeStages.0.labelFemale>雌性饲育者</BroodLord.lifeStages.0.labelFemale>
+  <BroodLord.lifeStages.0.labelFemalePlural>雌性饲育者</BroodLord.lifeStages.0.labelFemalePlural>
+  <BroodLord.lifeStages.1.label>饲育者</BroodLord.lifeStages.1.label>
+  <BroodLord.lifeStages.1.labelPlural>饲育者</BroodLord.lifeStages.1.labelPlural>
+  <BroodLord.lifeStages.1.labelMale>雄性饲育者</BroodLord.lifeStages.1.labelMale>
+  <BroodLord.lifeStages.1.labelMalePlural>雄性饲育者</BroodLord.lifeStages.1.labelMalePlural>
+  <BroodLord.lifeStages.1.labelFemale>雌性饲育者</BroodLord.lifeStages.1.labelFemale>
+  <BroodLord.lifeStages.1.labelFemalePlural>雌性饲育者</BroodLord.lifeStages.1.labelFemalePlural>
+  <BroodLord.lifeStages.2.label>饲育者</BroodLord.lifeStages.2.label>
+  <BroodLord.lifeStages.2.labelPlural>饲育者</BroodLord.lifeStages.2.labelPlural>
+  <BroodLord.lifeStages.2.labelMale>雄性饲育者</BroodLord.lifeStages.2.labelMale>
+  <BroodLord.lifeStages.2.labelMalePlural>雄性饲育者</BroodLord.lifeStages.2.labelMalePlural>
+  <BroodLord.lifeStages.2.labelFemale>雌性饲育者</BroodLord.lifeStages.2.labelFemale>
+  <BroodLord.lifeStages.2.labelFemalePlural>雌性饲育者</BroodLord.lifeStages.2.labelFemalePlural>
+  <BroodLord.labelMale>雄性饲育者</BroodLord.labelMale>
+  <BroodLord.labelMalePlural>雄性饲育者</BroodLord.labelMalePlural>
+  <BroodLord.labelFemale>雌性饲育者</BroodLord.labelFemale>
+  <BroodLord.labelFemalePlural>雌性饲育者</BroodLord.labelFemalePlural>
+
+
+  <!-- HARVESTER -->
+
+  <Harvester.label>收割者</Harvester.label>
+  <Harvester.labelPlural>收割者</Harvester.labelPlural>
+  <Harvester.lifeStages.0.label>收割者</Harvester.lifeStages.0.label>
+  <Harvester.lifeStages.0.labelPlural>收割者</Harvester.lifeStages.0.labelPlural>
+  <Harvester.lifeStages.0.labelMale>雄性收割者雌性收割者</Harvester.lifeStages.0.labelMale>
+  <Harvester.lifeStages.0.labelMalePlural>雄性收割者雌性收割者</Harvester.lifeStages.0.labelMalePlural>
+  <Harvester.lifeStages.0.labelFemale>雌性收割者</Harvester.lifeStages.0.labelFemale>
+  <Harvester.lifeStages.0.labelFemalePlural>雌性收割者</Harvester.lifeStages.0.labelFemalePlural>
+  <Harvester.lifeStages.1.label>收割者</Harvester.lifeStages.1.label>
+  <Harvester.lifeStages.1.labelPlural>收割者</Harvester.lifeStages.1.labelPlural>
+  <Harvester.lifeStages.1.labelMale>雄性收割者雌性收割者</Harvester.lifeStages.1.labelMale>
+  <Harvester.lifeStages.1.labelMalePlural>雄性收割者雌性收割者</Harvester.lifeStages.1.labelMalePlural>
+  <Harvester.lifeStages.1.labelFemale>雌性收割者</Harvester.lifeStages.1.labelFemale>
+  <Harvester.lifeStages.1.labelFemalePlural>雌性收割者</Harvester.lifeStages.1.labelFemalePlural>
+  <Harvester.lifeStages.2.label>收割者</Harvester.lifeStages.2.label>
+  <Harvester.lifeStages.2.labelPlural>收割者</Harvester.lifeStages.2.labelPlural>
+  <Harvester.lifeStages.2.labelMale>雄性收割者雌性收割者</Harvester.lifeStages.2.labelMale>
+  <Harvester.lifeStages.2.labelMalePlural>雄性收割者</Harvester.lifeStages.2.labelMalePlural>
+  <Harvester.lifeStages.2.labelFemale>雌性收割者</Harvester.lifeStages.2.labelFemale>
+  <Harvester.lifeStages.2.labelFemalePlural>雌性收割者</Harvester.lifeStages.2.labelFemalePlural>
+  <Harvester.labelMale>雄性收割者雌性收割者</Harvester.labelMale>
+  <Harvester.labelMalePlural>雄性收割者雌性收割者</Harvester.labelMalePlural>
+  <Harvester.labelFemale>雌性收割者</Harvester.labelFemale>
+  <Harvester.labelFemalePlural>雌性收割者</Harvester.labelFemalePlural>
+
+  <Prowler.label>徘徊者</Prowler.label>
+  <Prowler.labelPlural>徘徊者</Prowler.labelPlural>
+  <Prowler.lifeStages.0.label>徘徊者</Prowler.lifeStages.0.label>
+  <Prowler.lifeStages.0.labelPlural>徘徊者</Prowler.lifeStages.0.labelPlural>
+  <Prowler.lifeStages.0.labelMale>雄性徘徊者</Prowler.lifeStages.0.labelMale>
+  <Prowler.lifeStages.0.labelMalePlural>雄性徘徊者</Prowler.lifeStages.0.labelMalePlural>
+  <Prowler.lifeStages.0.labelFemale>雌性徘徊者</Prowler.lifeStages.0.labelFemale>
+  <Prowler.lifeStages.0.labelFemalePlural>雌性徘徊者</Prowler.lifeStages.0.labelFemalePlural>
+  <Prowler.lifeStages.1.label>徘徊者</Prowler.lifeStages.1.label>
+  <Prowler.lifeStages.1.labelPlural>徘徊者</Prowler.lifeStages.1.labelPlural>
+  <Prowler.lifeStages.1.labelMale>雄性徘徊者</Prowler.lifeStages.1.labelMale>
+  <Prowler.lifeStages.1.labelMalePlural>雄性徘徊者</Prowler.lifeStages.1.labelMalePlural>
+  <Prowler.lifeStages.1.labelFemale>雌性徘徊者</Prowler.lifeStages.1.labelFemale>
+  <Prowler.lifeStages.1.labelFemalePlural>雌性徘徊者</Prowler.lifeStages.1.labelFemalePlural>
+  <Prowler.lifeStages.2.label>徘徊者</Prowler.lifeStages.2.label>
+  <Prowler.lifeStages.2.labelPlural>徘徊者</Prowler.lifeStages.2.labelPlural>
+  <Prowler.lifeStages.2.labelMale>雄性徘徊者</Prowler.lifeStages.2.labelMale>
+  <Prowler.lifeStages.2.labelMalePlural>雄性徘徊者</Prowler.lifeStages.2.labelMalePlural>
+  <Prowler.lifeStages.2.labelFemale>雌性徘徊者</Prowler.lifeStages.2.labelFemale>
+  <Prowler.lifeStages.2.labelFemalePlural>雌性徘徊者</Prowler.lifeStages.2.labelFemalePlural>
+  <Prowler.labelMale>雄性徘徊者</Prowler.labelMale>
+  <Prowler.labelMalePlural>雄性徘徊者</Prowler.labelMalePlural>
+  <Prowler.labelFemale>雌性徘徊者</Prowler.labelFemale>
+  <Prowler.labelFemalePlural>雌性徘徊者</Prowler.labelFemalePlural>
+
+
+</LanguageData>

@@ -38,13 +38,6 @@
       </li>
     </tools>
 	<equippedAngleOffset>-65</equippedAngleOffset>
-	<verbs>
-		<li>
-			<verbClass>Verb_MeleeAttackDamage</verbClass>
-			<hasStandardCommand>true</hasStandardCommand>
-			<meleeDamageDef>Cut</meleeDamageDef>
-		</li>
-	</verbs>
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseBullet">

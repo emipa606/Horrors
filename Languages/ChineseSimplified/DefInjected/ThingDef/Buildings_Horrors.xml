@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SinkHole.label>邪恶洞孔</SinkHole.label>
+  <SinkHole.description>巨大的洞穴网络中的一个下陷洞...让你担心那里可能是什么，近距离聆听时你可以听到地下的动静...你可能想用炸药将其炸塌以保证安全.</SinkHole.description>
+
+  <HorrorHive.label>扭曲巢穴</HorrorHive.label>
+  <HorrorHive.description>一个该死的恶心巢穴，鬼知道里面有什么...</HorrorHive.description>
+
+  <HorrorDen.label>扭曲兽穴</HorrorDen.label>
+  <HorrorDen.description>一个大型兽穴，里面装着可怕的东西。</HorrorDen.description>
+
+  <HorrorBurrow.label>黑暗通道</HorrorBurrow.label>
+  <HorrorBurrow.description>没有任何希望和光芒的洞穴...最好不要离它太近.</HorrorBurrow.description>
+
+  <HorrorCrysalisVisceral.label>扭曲茧</HorrorCrysalisVisceral.label>
+  <HorrorCrysalisVisceral.description>一个保护恐怖蠕虫进化为成虫的茧</HorrorCrysalisVisceral.description>
+
+  <HorrorCrysalisProwler.label>扭曲茧</HorrorCrysalisProwler.label>
+  <HorrorCrysalisProwler.description>一个保护恐怖蠕虫进化为成虫的茧</HorrorCrysalisProwler.description>
+
+  <HorrorCrysalisBulwark.label>扭曲茧</HorrorCrysalisBulwark.label>
+  <HorrorCrysalisBulwark.description>一个保护恐怖蠕虫进化为成虫的茧</HorrorCrysalisBulwark.description>
+
+  <HorrorCrysalisSpitter.label>扭曲茧</HorrorCrysalisSpitter.label>
+  <HorrorCrysalisSpitter.description>一个保护恐怖蠕虫进化为成虫的茧</HorrorCrysalisSpitter.description>
+
+  <HorrorFirefoamPod.label>溶液脓疱</HorrorFirefoamPod.label>
+  <HorrorFirefoamPod.description>当被火接触或用手触发时，它会在自身周围的圆形区域中弹出并喷出灭火泡沫。</HorrorFirefoamPod.description>
+  <HorrorFirefoamPod.comps.1.useLabel>让泡沫飞出</HorrorFirefoamPod.comps.1.useLabel>
+
+  <MaggotNest.label>恶虫巢穴</MaggotNest.label>
+  <MaggotNest.description>臭虫和螨虫的巢，恐怖的主要食物来源。</MaggotNest.description>
+
+
+</LanguageData>

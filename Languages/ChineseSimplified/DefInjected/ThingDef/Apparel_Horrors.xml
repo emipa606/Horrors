@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Horror_Pants.label>被污染的裤子</Horror_Pants.label>
+  <Horror_Pants.description>这条裤子看上去只会被扭曲心智的人穿.</Horror_Pants.description>
+
+  <Horror_Undergrowth.label>可怕的绒毛</Horror_Undergrowth.label>
+  <Horror_Undergrowth.description>某种粘液覆盖物，使受害者免受各种因素的侵害</Horror_Undergrowth.description>
+
+  <Horror_Overgrowth.label>扭曲甲壳</Horror_Overgrowth.label>
+  <Horror_Overgrowth.description>人皮与某种物质结合产生的甲状物，是人体内的扭曲和变异，这种甲壳似乎赋予了人类惊人的能力和耐力。</Horror_Overgrowth.description>
+
+  <Horror_Exoskeleton.label>扭曲寄生物</Horror_Exoskeleton.label>
+  <Horror_Exoskeleton.description>一种生物组织融合到不幸受害者的身体中，牢固地嵌入人的脊髓中，使人用外骨骼进食并失去自制力。它控制着人类大脑的思维，让人怀疑受害者是否还能恢复理智.</Horror_Exoskeleton.description>
+
+  <Horror_MastermindHat.label>噬脑蠕虫</Horror_MastermindHat.label>
+  <Horror_MastermindHat.description>利用受害人的智力来协调扭曲的恶心寄生虫，它能够从大脑中提取所有信息。 使一些恐怖物对人类行为具有非凡的洞察力。</Horror_MastermindHat.description>
+
+  <Horror_BrainSlug.label>噬脑蠕虫</Horror_BrainSlug.label>
+  <Horror_BrainSlug.description>利用受害人的智力来协调扭曲的恶心寄生虫，它能够从大脑中提取所有信息。 使一些恐怖物对人类行为具有非凡的洞察力.</Horror_BrainSlug.description>
+
+
+</LanguageData>
