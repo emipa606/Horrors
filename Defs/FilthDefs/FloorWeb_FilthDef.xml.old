@@ -12,6 +12,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <filth>
+      <placementMask>
+        <li>Terrain</li>
+      </placementMask>
       <rainWashes>true</rainWashes>
       <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
       <canFilthAttach>true</canFilthAttach>

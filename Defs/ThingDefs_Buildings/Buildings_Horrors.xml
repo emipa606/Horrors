@@ -119,7 +119,7 @@
         <damagePerTickRare>8</damagePerTickRare>
       </li>
       <li Class="CompProperties_SpawnerFilth">
-        <filthDef>Filth_FloorWebs</filthDef>
+        <filthDef>FloorWebsFilth</filthDef>
         <spawnCountOnSpawn>10</spawnCountOnSpawn>
         <spawnMtbHours>4</spawnMtbHours>
         <spawnRadius>5</spawnRadius>
@@ -184,7 +184,7 @@
         <damagePerTickRare>8</damagePerTickRare>
       </li>
       <li Class="CompProperties_SpawnerFilth">
-        <filthDef>Filth_FloorWebs</filthDef>
+        <filthDef>FloorWebsFilth</filthDef>
         <spawnCountOnSpawn>10</spawnCountOnSpawn>
         <spawnMtbHours>4</spawnMtbHours>
         <spawnRadius>5</spawnRadius>
