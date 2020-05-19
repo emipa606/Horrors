@@ -1,37 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- VISCERAL -->
-
   <Visceral.label>疫物</Visceral.label>
   <Visceral.description>一种被痛苦扭曲出来的异形生物（或至少是未知的）。 大约有一人高，危险得多。 拥有着极其强力的鹰类爪，能撕裂最坚韧的魔菇布。</Visceral.description>
-
-
   <!-- BULWARK -->
-
   <Bulwark.label>扭曲守卫</Bulwark.label>
   <Bulwark.description>一种巨大而又笨重的异形野兽，能轻松撕裂钢铁并咬碎混凝土. 它异常的危险，其最好的应对方式就是强烈的火力和AT立场，如果实在没有法子去应对它，在家园附近埋好地雷也是可行的。</Bulwark.description>
-
-
   <!-- TERRORWORM -->
-
   <Terrorworm.label>恐怖蠕虫</Terrorworm.label>
   <Terrorworm.description>一种外星蠕虫（或至少是未知的）.它的体型足以威胁到人类, 但是它们似乎并没有令人难以置信的速度或凶猛的特性，它们经常伴随着其他扭曲生物，并且似乎在巢穴中起辅助作用.</Terrorworm.description>
-
-
   <!-- BROOD LORD -->
-
   <BroodLord.label>饲育者</BroodLord.label>
   <BroodLord.description>这种怪物是扭曲守卫的升级版本，它们拥有着更加强大的力量和更加笨重的体型。</BroodLord.description>
-
-
   <!-- HARVESTER -->
-
   <Harvester.label>收割者</Harvester.label>
   <Harvester.description>一种残忍的肉食性怪物，它会在夜间出现，并企图吸干碰到的每一个生物... 这种残忍行为的动机只能被称为“天性使然”。</Harvester.description>
-
   <Prowler.label>徘徊者</Prowler.label>
   <Prowler.description>巨大而肌肉发达的怪兽，在领地中极为凶悍。 不过它对自身似乎缺乏保护意识</Prowler.description>
-
-
 </LanguageData>

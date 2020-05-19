@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <RulePackDef Name="NamerAnimalBase" Abstract="True">
     <rulePack>
       <rulesRaw>
@@ -51,19 +50,17 @@
       </rulesRaw>
     </rulePack>
   </RulePackDef>
-
   <RulePackDef ParentName="NamerAnimalBase">
     <defName>NamerAnimalHorrors</defName>
     <rulePack>
       <rulesStrings>
-        <li>name->[exoticname]</li>
-        <li>exoticname->[badassadjective]</li>
-        <li>exoticname->[badassadjective]</li>
-        <li>exoticname->[concept]</li>
-        <li>exoticname->[concept]</li>
-        <li>exoticname->[color]</li>
+        <li>name-&gt;[exoticname]</li>
+        <li>exoticname-&gt;[badassadjective]</li>
+        <li>exoticname-&gt;[badassadjective]</li>
+        <li>exoticname-&gt;[concept]</li>
+        <li>exoticname-&gt;[concept]</li>
+        <li>exoticname-&gt;[color]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
-
 </Defs>

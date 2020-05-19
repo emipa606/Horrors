@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
 	<activities>
 		<li>Manipulation_way1</li>
@@ -12,31 +11,27 @@
 	So if there are body parts responsible for (1)Manipulation_foo, (2)Manipulation_foo, (1)Manipulation_bar, (2)Manipulation_bar
 	then Manipulation efficiency is min(avg((1)Manipulation_foo, (2)Manipulation_foo), avg((1)Manipulation_bar, (2)Manipulation_bar))
 -->
-
 <Defs>
-
   <BodyPartDef>
     <defName>LeftRaptorialLeg</defName>
     <label>left raptorial leg</label>
     <hitPoints>20</hitPoints>
     <frostbiteVulnerability>5</frostbiteVulnerability>
     <skinCovered>false</skinCovered>
-	<tags>
+    <tags>
       <li>ManipulationLimbCore</li>
     </tags>
   </BodyPartDef>
-
   <BodyPartDef>
     <defName>RightRaptorialLeg</defName>
     <label>right raptorial leg</label>
     <hitPoints>20</hitPoints>
     <frostbiteVulnerability>5</frostbiteVulnerability>
     <skinCovered>false</skinCovered>
-	<tags>
+    <tags>
       <li>ManipulationLimbCore</li>
     </tags>
   </BodyPartDef>
-  
   <BodyPartDef>
     <defName>CephaloThorax</defName>
     <label>fused head and torso</label>
@@ -44,18 +39,16 @@
     <frostbiteVulnerability>0</frostbiteVulnerability>
     <skinCovered>false</skinCovered>
   </BodyPartDef>
-  
   <BodyPartDef>
     <defName>SerpentineMidBody</defName>
     <label>serpentine mid body</label>
     <hitPoints>40</hitPoints>
     <frostbiteVulnerability>0</frostbiteVulnerability>
     <skinCovered>false</skinCovered>
-	<tags>
+    <tags>
       <li>MovingLimbCore</li>
     </tags>
   </BodyPartDef>
-  
   <BodyPartDef>
     <defName>Nacelle</defName>
     <label>spitter nacelle</label>
@@ -63,16 +56,14 @@
     <frostbiteVulnerability>0</frostbiteVulnerability>
     <skinCovered>false</skinCovered>
   </BodyPartDef>
-  
   <BodyPartDef>
     <defName>SerpentineHindBody</defName>
     <label>serpentine hind body</label>
     <hitPoints>40</hitPoints>
     <frostbiteVulnerability>0</frostbiteVulnerability>
     <skinCovered>false</skinCovered>
-	<tags>
+    <tags>
       <li>MovingLimbCore</li>
     </tags>
   </BodyPartDef>
-
 </Defs>

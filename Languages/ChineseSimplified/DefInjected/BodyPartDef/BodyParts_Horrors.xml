@@ -1,12 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <LeftRaptorialLeg.label>捕食者的左腿</LeftRaptorialLeg.label>
   <RightRaptorialLeg.label>捕食者的右腿</RightRaptorialLeg.label>
   <CephaloThorax.label>头和身体的混合物</CephaloThorax.label>
   <SerpentineMidBody.label>扭曲的中段躯体</SerpentineMidBody.label>
   <Nacelle.label>喷毒怪的腺囊</Nacelle.label>
   <SerpentineHindBody.label>扭曲的末端躯体</SerpentineHindBody.label>
-
-
 </LanguageData>

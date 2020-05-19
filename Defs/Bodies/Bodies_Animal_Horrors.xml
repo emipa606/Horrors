@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <BodyDef>
     <defName>BodyVisceral</defName>
     <label>quadroped with raptorial legs</label>
@@ -72,11 +71,11 @@
             </li>
           </parts>
         </li>
-		<li>
+        <li>
           <def>LeftRaptorialLeg</def>
           <coverage>0.06</coverage>
           <height>Top</height>
-		  <groups>
+          <groups>
             <li>RaptorialLegs</li>
           </groups>
         </li>
@@ -84,7 +83,7 @@
           <def>RightRaptorialLeg</def>
           <coverage>0.06</coverage>
           <height>Top</height>
-		  <groups>
+          <groups>
             <li>RaptorialLegs</li>
           </groups>
         </li>
@@ -111,7 +110,6 @@
       </parts>
     </corePart>
   </BodyDef>
-  
   <BodyDef>
     <defName>BodyProwler</defName>
     <label>anterobipedal serpent</label>
@@ -130,58 +128,58 @@
           <coverage>0.01</coverage>
           <depth>Inside</depth>
         </li>
-		<li>
-		  <def>Head</def>
-		  <depth>Outside</depth>
-		  <height>Top</height>
-		  <coverage>0.65</coverage>
-		  <parts>
-			<li>
-			  <def>Brain</def>
-			  <coverage>0.2</coverage>
-			  <depth>Inside</depth>
-			</li>
-			<li>
-			  <def>Eye</def>
-			  <coverage>0.15</coverage>
-			</li>
-			<li>
-			  <def>Eye</def>
-			  <coverage>0.15</coverage>
-			</li>
-			<li>
-			  <def>Antenna</def>
-			  <coverage>0.05</coverage>
-			</li>
-			<li>
-			  <def>Antenna</def>
-			  <coverage>0.05</coverage>
-			</li>
-			<li>
-			  <def>InsectNostril</def>
-			  <coverage>0.1</coverage>
-			</li>
-			<li>
-			  <def>InsectMouth</def>
-			  <coverage>0.05</coverage>
-			  <groups>
-				<li>Mouth</li>
-			  </groups>
-			</li>
-			<li>
-			  <def>Nacelle</def>
-			  <coverage>0.05</coverage>
-			  <groups>
-				<li>SpitterNacelle</li>
-			  </groups>
-			</li>
-		  </parts>
-		</li>
-		<li>
+        <li>
+          <def>Head</def>
+          <depth>Outside</depth>
+          <height>Top</height>
+          <coverage>0.65</coverage>
+          <parts>
+            <li>
+              <def>Brain</def>
+              <coverage>0.2</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>Eye</def>
+              <coverage>0.15</coverage>
+            </li>
+            <li>
+              <def>Eye</def>
+              <coverage>0.15</coverage>
+            </li>
+            <li>
+              <def>Antenna</def>
+              <coverage>0.05</coverage>
+            </li>
+            <li>
+              <def>Antenna</def>
+              <coverage>0.05</coverage>
+            </li>
+            <li>
+              <def>InsectNostril</def>
+              <coverage>0.1</coverage>
+            </li>
+            <li>
+              <def>InsectMouth</def>
+              <coverage>0.05</coverage>
+              <groups>
+                <li>Mouth</li>
+              </groups>
+            </li>
+            <li>
+              <def>Nacelle</def>
+              <coverage>0.05</coverage>
+              <groups>
+                <li>SpitterNacelle</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
           <def>LeftRaptorialLeg</def>
           <coverage>0.06</coverage>
           <height>Middle</height>
-		  <groups>
+          <groups>
             <li>RaptorialLegs</li>
           </groups>
         </li>
@@ -189,11 +187,11 @@
           <def>RightRaptorialLeg</def>
           <coverage>0.06</coverage>
           <height>Middle</height>
-		  <groups>
+          <groups>
             <li>RaptorialLegs</li>
           </groups>
         </li>
-		<li>
+        <li>
           <def>SerpentineMidBody</def>
           <coverage>0.1</coverage>
           <height>Middle</height>
@@ -206,7 +204,6 @@
       </parts>
     </corePart>
   </BodyDef>
-
   <BodyDef>
     <defName>BulwarkBody</defName>
     <label>tremendous insectoid</label>
@@ -289,17 +286,17 @@
           <def>InsectLeg</def>
           <coverage>0.06</coverage>
           <height>Bottom</height>
-		  <groups>
-                    <li>Legs</li>
-                  </groups>
+          <groups>
+            <li>Legs</li>
+          </groups>
         </li>
         <li>
           <def>InsectLeg</def>
           <coverage>0.06</coverage>
           <height>Bottom</height>
-		  <groups>
-                    <li>Legs</li>
-                  </groups>
+          <groups>
+            <li>Legs</li>
+          </groups>
         </li>
         <li>
           <def>InsectLeg</def>
@@ -324,5 +321,4 @@
       </parts>
     </corePart>
   </BodyDef>
-  
 </Defs>

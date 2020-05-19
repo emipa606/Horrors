@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Horrors (Continued)</name>
-  	<packageId>Mlie.Horrors</packageId>
-	<author>Mlie</author>
-	<url>https://github.com/emipa606/Horrors</url>
-	<supportedVersions>
-		<li>1.0</li>
-		<li>1.1</li>
-	</supportedVersions>
-	<modDependencies />
-	<loadAfter />
-	<description>Update of Viceroys mod for RimWorld 1.1
+  <packageId>Mlie.Horrors</packageId>
+  <author>Mlie</author>
+  <url>https://github.com/emipa606/Horrors</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <modDependencies />
+  <loadAfter />
+  <description>Update of Viceroys mod for RimWorld 1.1
 https://steamcommunity.com/sharedfiles/filedetails/?id=822995067
 
 [img]https://raw.githubusercontent.com/emipa606/RimWorld-Wrapper/master/Notice.png[/img]
@@ -89,4 +89,3 @@ Furthermore I'd like to say that it is important to get feedback from as many of
 
 Thank everyone for downloading my mod and for giving me a chance to entertain you!</description>
 </ModMetaData>
-

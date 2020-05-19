@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <!-- Generate faction base -->
   <GenStepDef>
     <defName>HorrorsHive</defName>
@@ -10,5 +9,4 @@
       <nearMapCenter>true</nearMapCenter>
     </genStep>
   </GenStepDef>
-  
 </Defs>

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
- <ThingDef Name="BaseFume" Abstract="True">
+  <ThingDef Name="BaseFume" Abstract="True">
     <thingClass>Horrors.Fume</thingClass>
     <label>fume</label>
     <category>Gas</category>
@@ -13,7 +12,6 @@
       <shaderType>Transparent</shaderType>
     </graphicData>
   </ThingDef>
-
   <ThingDef ParentName="BaseFume">
     <defName>Gas_Fumes</defName>
     <label>fumes</label>
@@ -32,5 +30,4 @@
       <rotationSpeed>10</rotationSpeed>
     </gas>
   </ThingDef>
-    
 </Defs>

@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="BasePawn" Name="AnimalThingBaseHorror" Abstract="True">
     <statBases>
       <Flammability>1.0</Flammability>
@@ -20,14 +19,13 @@
       </hediffGiverSets>
     </race>
     <recipes>
-			<li>ExciseCarcinoma</li>
+      <li>ExciseCarcinoma</li>
       <li>RemoveBodyPart</li>
       <li>Euthanize</li>
     </recipes>
   </ThingDef>
-
   <ThingDef Abstract="True" ParentName="AnimalThingBaseHorror" Name="BaseHorror">
-	<statBases>
+    <statBases>
       <ToxicSensitivity>0</ToxicSensitivity>
     </statBases>
     <race>
@@ -37,16 +35,13 @@
       <foodType>CarnivoreAnimal, AnimalProduct</foodType>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0.11</manhunterOnTameFailChance>
-	  <intelligence>Animal</intelligence>
-	  <hasGenders>false</hasGenders>
-	  <herdAnimal>true</herdAnimal>
-	  <predator>true</predator>
+      <intelligence>Animal</intelligence>
+      <hasGenders>false</hasGenders>
+      <herdAnimal>true</herdAnimal>
+      <predator>true</predator>
     </race>
   </ThingDef>
-  
-  
   <!-- ====================================================== VISCERAL -->
-
   <ThingDef ParentName="BaseHorror">
     <defName>Visceral</defName>
     <label>visceral</label>
@@ -67,7 +62,7 @@
         <meleeDamageDef>Cut</meleeDamageDef>
         <linkedBodyPartsGroup>RaptorialLegs</linkedBodyPartsGroup>
       </li>
-	  <li>
+      <li>
         <verbClass>Verb_MeleeAttackDamage</verbClass>
         <defaultCooldownTime>1.9</defaultCooldownTime>
         <meleeDamageBaseAmount>6</meleeDamageBaseAmount>
@@ -77,8 +72,8 @@
     </verbs>
     <race>
       <body>BodyVisceral</body>
-	  <thinkTreeMain>HiveMind</thinkTreeMain>
-	  <nameOnTameChance>1</nameOnTameChance>
+      <thinkTreeMain>HiveMind</thinkTreeMain>
+      <nameOnTameChance>1</nameOnTameChance>
       <trainability>Advanced</trainability>
       <baseHungerRate>0.35</baseHungerRate>
       <baseBodySize>1.2</baseBodySize>
@@ -113,10 +108,9 @@
       <li>Insectoid</li>
     </tradeTags>
   </ThingDef>
-
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Visceral</defName>
-	<defaultFactionType>Horrors</defaultFactionType>
+    <defaultFactionType>Horrors</defaultFactionType>
     <label>Visceral</label>
     <race>Visceral</race>
     <combatPower>150</combatPower>
@@ -158,9 +152,7 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <!-- ====================================================== BULWARK -->
-
   <ThingDef ParentName="BaseHorror">
     <defName>Bulwark</defName>
     <label>bulwark</label>
@@ -174,14 +166,14 @@
       <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
     </statBases>
     <verbs>
-	  <li>
+      <li>
         <verbClass>Verb_MeleeAttackDamage</verbClass>
         <defaultCooldownTime>1.9</defaultCooldownTime>
         <meleeDamageBaseAmount>33</meleeDamageBaseAmount>
         <meleeDamageDef>Crush</meleeDamageDef>
         <linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
       </li>
-	  <li>
+      <li>
         <verbClass>Verb_MeleeAttackDamage</verbClass>
         <defaultCooldownTime>1.9</defaultCooldownTime>
         <meleeDamageBaseAmount>23</meleeDamageBaseAmount>
@@ -191,8 +183,8 @@
     </verbs>
     <race>
       <body>BulwarkBody</body>
-	  <thinkTreeMain>HiveMind</thinkTreeMain>
-	  <nameOnTameChance>1</nameOnTameChance>
+      <thinkTreeMain>HiveMind</thinkTreeMain>
+      <nameOnTameChance>1</nameOnTameChance>
       <trainability>Advanced</trainability>
       <baseHungerRate>0.35</baseHungerRate>
       <baseBodySize>6.2</baseBodySize>
@@ -227,10 +219,9 @@
       <li>Insectoid</li>
     </tradeTags>
   </ThingDef>
-
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Bulwark</defName>
-	<defaultFactionType>Horrors</defaultFactionType>
+    <defaultFactionType>Horrors</defaultFactionType>
     <label>Bulwark</label>
     <race>Bulwark</race>
     <combatPower>400</combatPower>
@@ -272,10 +263,7 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
-  
-    <!-- ====================================================== TERRORWORM -->
-
+  <!-- ====================================================== TERRORWORM -->
   <ThingDef ParentName="BaseHorror">
     <defName>Terrorworm</defName>
     <label>terrorworm</label>
@@ -299,8 +287,8 @@
     </verbs>
     <race>
       <body>Snake</body>
-	  <thinkTreeMain>HiveMind</thinkTreeMain>
-	  <nameOnTameChance>1</nameOnTameChance>
+      <thinkTreeMain>HiveMind</thinkTreeMain>
+      <nameOnTameChance>1</nameOnTameChance>
       <trainability>Advanced</trainability>
       <baseHungerRate>0.35</baseHungerRate>
       <baseBodySize>0.6</baseBodySize>
@@ -335,10 +323,9 @@
       <li>Insectoid</li>
     </tradeTags>
   </ThingDef>
-
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Terrorworm</defName>
-	<defaultFactionType>Horrors</defaultFactionType>
+    <defaultFactionType>Horrors</defaultFactionType>
     <label>Terrorworm</label>
     <race>Terrorworm</race>
     <combatPower>50</combatPower>
@@ -380,10 +367,7 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-  
-  
   <!-- ====================================================== BROOD LORD -->
-
   <ThingDef ParentName="BaseHorror">
     <defName>BroodLord</defName>
     <label>brood lord</label>
@@ -397,14 +381,14 @@
       <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
     </statBases>
     <verbs>
-	  <li>
+      <li>
         <verbClass>Verb_MeleeAttackDamage</verbClass>
         <defaultCooldownTime>1.9</defaultCooldownTime>
         <meleeDamageBaseAmount>33</meleeDamageBaseAmount>
         <meleeDamageDef>Crush</meleeDamageDef>
         <linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
       </li>
-	  <li>
+      <li>
         <verbClass>Verb_MeleeAttackDamage</verbClass>
         <defaultCooldownTime>1.9</defaultCooldownTime>
         <meleeDamageBaseAmount>23</meleeDamageBaseAmount>
@@ -414,9 +398,9 @@
     </verbs>
     <race>
       <body>BulwarkBody</body>
-	  <thinkTreeMain>HiveMind</thinkTreeMain>
-	  <nameCategory>HumanStandard</nameCategory>
-	  <nameOnTameChance>1</nameOnTameChance>
+      <thinkTreeMain>HiveMind</thinkTreeMain>
+      <nameCategory>HumanStandard</nameCategory>
+      <nameOnTameChance>1</nameOnTameChance>
       <trainability>Advanced</trainability>
       <baseHungerRate>0.35</baseHungerRate>
       <baseBodySize>13.2</baseBodySize>
@@ -451,10 +435,9 @@
       <li>Insectoid</li>
     </tradeTags>
   </ThingDef>
-
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>BroodLord</defName>
-	<defaultFactionType>Horrors</defaultFactionType>
+    <defaultFactionType>Horrors</defaultFactionType>
     <label>BroodLord</label>
     <race>BroodLord</race>
     <combatPower>2000</combatPower>
@@ -499,9 +482,7 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
   <!-- ====================================================== HARVESTER -->
-
   <ThingDef ParentName="BaseHorror">
     <defName>Harvester</defName>
     <label>harvester</label>
@@ -515,14 +496,14 @@
       <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
     </statBases>
     <verbs>
-	  <li>
+      <li>
         <verbClass>Verb_MeleeAttackDamage</verbClass>
         <defaultCooldownTime>1.9</defaultCooldownTime>
         <meleeDamageBaseAmount>33</meleeDamageBaseAmount>
         <meleeDamageDef>Crush</meleeDamageDef>
         <linkedBodyPartsGroup>Legs</linkedBodyPartsGroup>
       </li>
-	  <li>
+      <li>
         <verbClass>Verb_MeleeAttackDamage</verbClass>
         <defaultCooldownTime>1.9</defaultCooldownTime>
         <meleeDamageBaseAmount>23</meleeDamageBaseAmount>
@@ -532,8 +513,8 @@
     </verbs>
     <race>
       <body>BulwarkBody</body>
-	  <thinkTreeMain>HiveMind</thinkTreeMain>
-	  <nameOnTameChance>1</nameOnTameChance>
+      <thinkTreeMain>HiveMind</thinkTreeMain>
+      <nameOnTameChance>1</nameOnTameChance>
       <trainability>Advanced</trainability>
       <baseHungerRate>0.35</baseHungerRate>
       <baseBodySize>13.2</baseBodySize>
@@ -568,10 +549,9 @@
       <li>Insectoid</li>
     </tradeTags>
   </ThingDef>
-
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Harvester</defName>
-	<defaultFactionType>Horrors</defaultFactionType>
+    <defaultFactionType>Horrors</defaultFactionType>
     <label>harvester</label>
     <race>Harvester</race>
     <combatPower>1000</combatPower>
@@ -613,11 +593,9 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-  
-
   <PawnKindDef ParentName="AnimalKindBase">
     <defName>Prowler</defName>
-	<defaultFactionType>Horrors</defaultFactionType>
+    <defaultFactionType>Horrors</defaultFactionType>
     <label>Prowler</label>
     <race>Prowler</race>
     <combatPower>160</combatPower>
@@ -657,16 +635,15 @@
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
-	<weaponMoney>
-			<min>5000</min>
-			<max>5000</max>
-	</weaponMoney>
-	<weaponTags>
-		<li>HorrorProwler</li>
-	</weaponTags>
+    <weaponMoney>
+      <min>5000</min>
+      <max>5000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>HorrorProwler</li>
+    </weaponTags>
   </PawnKindDef>
-  
-   <ThingDef ParentName="BaseHorror">
+  <ThingDef ParentName="BaseHorror">
     <defName>Prowler</defName>
     <label>prowler</label>
     <description>A huge and muscular monstrosity that is fiercely territorial and very aggressive. Seems to lack any greater sense of self preservation</description>
@@ -686,33 +663,33 @@
         <meleeDamageDef>Cut</meleeDamageDef>
         <linkedBodyPartsGroup>RaptorialLegs</linkedBodyPartsGroup>
       </li>
-	  <li>
+      <li>
         <verbClass>Verb_MeleeAttackDamage</verbClass>
         <defaultCooldownTime>1.9</defaultCooldownTime>
         <meleeDamageBaseAmount>6</meleeDamageBaseAmount>
         <meleeDamageDef>Bite</meleeDamageDef>
         <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
       </li>
-	  <li>
+      <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_ProwlerSpit</defaultProjectile>
-				<forcedMissRadius>2</forcedMissRadius>
+        <defaultProjectile>Bullet_ProwlerSpit</defaultProjectile>
+        <forcedMissRadius>2</forcedMissRadius>
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
-				<warmupTime>1.25</warmupTime>
-				<range>27</range>
-				<burstShotCount>3</burstShotCount>
-				<soundCast>InfernoCannon_Fire</soundCast>
-				<soundCastTail>GunTail_Light</soundCastTail>
-				<muzzleFlashScale>0</muzzleFlashScale>
+        <warmupTime>1.25</warmupTime>
+        <range>27</range>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>0</muzzleFlashScale>
         <linkedBodyPartsGroup>SpitterNacelle</linkedBodyPartsGroup>
       </li>
     </verbs>
     <race>
       <body>BodyProwler</body>
-	  <intelligence>ToolUser</intelligence>
-	  <thinkTreeMain>HiveMind</thinkTreeMain>
-	  <nameOnTameChance>1</nameOnTameChance>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>HiveMind</thinkTreeMain>
+      <nameOnTameChance>1</nameOnTameChance>
       <trainability>Advanced</trainability>
       <baseHungerRate>0.35</baseHungerRate>
       <baseBodySize>0.6</baseBodySize>
@@ -747,5 +724,4 @@
       <li>Insectoid</li>
     </tradeTags>
   </ThingDef>
-  
 </Defs>

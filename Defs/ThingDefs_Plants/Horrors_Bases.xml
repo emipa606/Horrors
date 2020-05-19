@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef Name="HorrorBase" Abstract="True">
     <category>Plant</category>
     <thingClass>Plant</thingClass>
@@ -11,7 +10,7 @@
     </statBases>
     <tickerType>Long</tickerType>
     <selectable>False</selectable>
-	<blockLight>True</blockLight>
+    <blockLight>True</blockLight>
     <neverMultiSelect>True</neverMultiSelect>
     <drawerType>MapMeshOnly</drawerType>
     <pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
@@ -23,8 +22,8 @@
       <preferability>NeverForNutrition</preferability>
     </ingestible>
     <plant>
-			<fertilityMin>0.5</fertilityMin>
-			<fertilitySensitivity>1.0</fertilitySensitivity>
+      <fertilityMin>0.5</fertilityMin>
+      <fertilitySensitivity>1.0</fertilitySensitivity>
       <soundHarvesting>Harvest_Standard</soundHarvesting>
       <soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
       <harvestWork>190</harvestWork>
@@ -36,5 +35,4 @@
       </visualSizeRange>
     </plant>
   </ThingDef>
-
 </Defs>

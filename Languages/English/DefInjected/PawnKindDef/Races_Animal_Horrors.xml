@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- VISCERAL -->
+
+  <Visceral.label>Visceral</Visceral.label>
+  <Visceral.labelPlural>Viscerals</Visceral.labelPlural>
+  <Visceral.lifeStages.0.label>Visceral</Visceral.lifeStages.0.label>
+  <Visceral.lifeStages.0.labelPlural>Visceral</Visceral.lifeStages.0.labelPlural>
+  <Visceral.lifeStages.0.labelMale>male Visceral</Visceral.lifeStages.0.labelMale>
+  <Visceral.lifeStages.0.labelMalePlural>male Viscerals</Visceral.lifeStages.0.labelMalePlural>
+  <Visceral.lifeStages.0.labelFemale>female Visceral</Visceral.lifeStages.0.labelFemale>
+  <Visceral.lifeStages.0.labelFemalePlural>female Viscerals</Visceral.lifeStages.0.labelFemalePlural>
+  <Visceral.lifeStages.1.label>Visceral</Visceral.lifeStages.1.label>
+  <Visceral.lifeStages.1.labelPlural>Visceral</Visceral.lifeStages.1.labelPlural>
+  <Visceral.lifeStages.1.labelMale>male Visceral</Visceral.lifeStages.1.labelMale>
+  <Visceral.lifeStages.1.labelMalePlural>male Viscerals</Visceral.lifeStages.1.labelMalePlural>
+  <Visceral.lifeStages.1.labelFemale>female Visceral</Visceral.lifeStages.1.labelFemale>
+  <Visceral.lifeStages.1.labelFemalePlural>female Viscerals</Visceral.lifeStages.1.labelFemalePlural>
+  <Visceral.lifeStages.2.label>Visceral</Visceral.lifeStages.2.label>
+  <Visceral.lifeStages.2.labelPlural>Visceral</Visceral.lifeStages.2.labelPlural>
+  <Visceral.lifeStages.2.labelMale>male Visceral</Visceral.lifeStages.2.labelMale>
+  <Visceral.lifeStages.2.labelMalePlural>male Viscerals</Visceral.lifeStages.2.labelMalePlural>
+  <Visceral.lifeStages.2.labelFemale>female Visceral</Visceral.lifeStages.2.labelFemale>
+  <Visceral.lifeStages.2.labelFemalePlural>female Viscerals</Visceral.lifeStages.2.labelFemalePlural>
+  <Visceral.labelMale>male Visceral</Visceral.labelMale>
+  <Visceral.labelMalePlural>male Viscerals</Visceral.labelMalePlural>
+  <Visceral.labelFemale>female Visceral</Visceral.labelFemale>
+  <Visceral.labelFemalePlural>female Viscerals</Visceral.labelFemalePlural>
+
+
+  <!-- BULWARK -->
+
+  <Bulwark.label>Bulwark</Bulwark.label>
+  <Bulwark.labelPlural>Bulwarks</Bulwark.labelPlural>
+  <Bulwark.lifeStages.0.label>Bulwark</Bulwark.lifeStages.0.label>
+  <Bulwark.lifeStages.0.labelPlural>Bulwark</Bulwark.lifeStages.0.labelPlural>
+  <Bulwark.lifeStages.0.labelMale>male Bulwark</Bulwark.lifeStages.0.labelMale>
+  <Bulwark.lifeStages.0.labelMalePlural>male Bulwarks</Bulwark.lifeStages.0.labelMalePlural>
+  <Bulwark.lifeStages.0.labelFemale>female Bulwark</Bulwark.lifeStages.0.labelFemale>
+  <Bulwark.lifeStages.0.labelFemalePlural>female Bulwarks</Bulwark.lifeStages.0.labelFemalePlural>
+  <Bulwark.lifeStages.1.label>Bulwark</Bulwark.lifeStages.1.label>
+  <Bulwark.lifeStages.1.labelPlural>Bulwark</Bulwark.lifeStages.1.labelPlural>
+  <Bulwark.lifeStages.1.labelMale>male Bulwark</Bulwark.lifeStages.1.labelMale>
+  <Bulwark.lifeStages.1.labelMalePlural>male Bulwarks</Bulwark.lifeStages.1.labelMalePlural>
+  <Bulwark.lifeStages.1.labelFemale>female Bulwark</Bulwark.lifeStages.1.labelFemale>
+  <Bulwark.lifeStages.1.labelFemalePlural>female Bulwarks</Bulwark.lifeStages.1.labelFemalePlural>
+  <Bulwark.lifeStages.2.label>Bulwark</Bulwark.lifeStages.2.label>
+  <Bulwark.lifeStages.2.labelPlural>Bulwark</Bulwark.lifeStages.2.labelPlural>
+  <Bulwark.lifeStages.2.labelMale>male Bulwark</Bulwark.lifeStages.2.labelMale>
+  <Bulwark.lifeStages.2.labelMalePlural>male Bulwarks</Bulwark.lifeStages.2.labelMalePlural>
+  <Bulwark.lifeStages.2.labelFemale>female Bulwark</Bulwark.lifeStages.2.labelFemale>
+  <Bulwark.lifeStages.2.labelFemalePlural>female Bulwarks</Bulwark.lifeStages.2.labelFemalePlural>
+  <Bulwark.labelMale>male Bulwark</Bulwark.labelMale>
+  <Bulwark.labelMalePlural>male Bulwarks</Bulwark.labelMalePlural>
+  <Bulwark.labelFemale>female Bulwark</Bulwark.labelFemale>
+  <Bulwark.labelFemalePlural>female Bulwarks</Bulwark.labelFemalePlural>
+
+
+  <!-- TERRORWORM -->
+
+  <Terrorworm.label>Terrorworm</Terrorworm.label>
+  <Terrorworm.labelPlural>Terrorworms</Terrorworm.labelPlural>
+  <Terrorworm.lifeStages.0.label>Terrorworm</Terrorworm.lifeStages.0.label>
+  <Terrorworm.lifeStages.0.labelPlural>Terrorworm</Terrorworm.lifeStages.0.labelPlural>
+  <Terrorworm.lifeStages.0.labelMale>male Terrorworm</Terrorworm.lifeStages.0.labelMale>
+  <Terrorworm.lifeStages.0.labelMalePlural>male Terrorworms</Terrorworm.lifeStages.0.labelMalePlural>
+  <Terrorworm.lifeStages.0.labelFemale>female Terrorworm</Terrorworm.lifeStages.0.labelFemale>
+  <Terrorworm.lifeStages.0.labelFemalePlural>female Terrorworms</Terrorworm.lifeStages.0.labelFemalePlural>
+  <Terrorworm.lifeStages.1.label>Terrorworm</Terrorworm.lifeStages.1.label>
+  <Terrorworm.lifeStages.1.labelPlural>Terrorworm</Terrorworm.lifeStages.1.labelPlural>
+  <Terrorworm.lifeStages.1.labelMale>male Terrorworm</Terrorworm.lifeStages.1.labelMale>
+  <Terrorworm.lifeStages.1.labelMalePlural>male Terrorworms</Terrorworm.lifeStages.1.labelMalePlural>
+  <Terrorworm.lifeStages.1.labelFemale>female Terrorworm</Terrorworm.lifeStages.1.labelFemale>
+  <Terrorworm.lifeStages.1.labelFemalePlural>female Terrorworms</Terrorworm.lifeStages.1.labelFemalePlural>
+  <Terrorworm.lifeStages.2.label>Terrorworm</Terrorworm.lifeStages.2.label>
+  <Terrorworm.lifeStages.2.labelPlural>Terrorworm</Terrorworm.lifeStages.2.labelPlural>
+  <Terrorworm.lifeStages.2.labelMale>male Terrorworm</Terrorworm.lifeStages.2.labelMale>
+  <Terrorworm.lifeStages.2.labelMalePlural>male Terrorworms</Terrorworm.lifeStages.2.labelMalePlural>
+  <Terrorworm.lifeStages.2.labelFemale>female Terrorworm</Terrorworm.lifeStages.2.labelFemale>
+  <Terrorworm.lifeStages.2.labelFemalePlural>female Terrorworms</Terrorworm.lifeStages.2.labelFemalePlural>
+  <Terrorworm.labelMale>male Terrorworm</Terrorworm.labelMale>
+  <Terrorworm.labelMalePlural>male Terrorworms</Terrorworm.labelMalePlural>
+  <Terrorworm.labelFemale>female Terrorworm</Terrorworm.labelFemale>
+  <Terrorworm.labelFemalePlural>female Terrorworms</Terrorworm.labelFemalePlural>
+
+
+  <!-- BROOD LORD -->
+
+  <BroodLord.label>BroodLord</BroodLord.label>
+  <BroodLord.labelPlural>BroodLords</BroodLord.labelPlural>
+  <BroodLord.lifeStages.0.label>BroodLord</BroodLord.lifeStages.0.label>
+  <BroodLord.lifeStages.0.labelPlural>BroodLord</BroodLord.lifeStages.0.labelPlural>
+  <BroodLord.lifeStages.0.labelMale>male BroodLord</BroodLord.lifeStages.0.labelMale>
+  <BroodLord.lifeStages.0.labelMalePlural>male BroodLords</BroodLord.lifeStages.0.labelMalePlural>
+  <BroodLord.lifeStages.0.labelFemale>female BroodLord</BroodLord.lifeStages.0.labelFemale>
+  <BroodLord.lifeStages.0.labelFemalePlural>female BroodLords</BroodLord.lifeStages.0.labelFemalePlural>
+  <BroodLord.lifeStages.1.label>BroodLord</BroodLord.lifeStages.1.label>
+  <BroodLord.lifeStages.1.labelPlural>BroodLord</BroodLord.lifeStages.1.labelPlural>
+  <BroodLord.lifeStages.1.labelMale>male BroodLord</BroodLord.lifeStages.1.labelMale>
+  <BroodLord.lifeStages.1.labelMalePlural>male BroodLords</BroodLord.lifeStages.1.labelMalePlural>
+  <BroodLord.lifeStages.1.labelFemale>female BroodLord</BroodLord.lifeStages.1.labelFemale>
+  <BroodLord.lifeStages.1.labelFemalePlural>female BroodLords</BroodLord.lifeStages.1.labelFemalePlural>
+  <BroodLord.lifeStages.2.label>BroodLord</BroodLord.lifeStages.2.label>
+  <BroodLord.lifeStages.2.labelPlural>BroodLord</BroodLord.lifeStages.2.labelPlural>
+  <BroodLord.lifeStages.2.labelMale>male BroodLord</BroodLord.lifeStages.2.labelMale>
+  <BroodLord.lifeStages.2.labelMalePlural>male BroodLords</BroodLord.lifeStages.2.labelMalePlural>
+  <BroodLord.lifeStages.2.labelFemale>female BroodLord</BroodLord.lifeStages.2.labelFemale>
+  <BroodLord.lifeStages.2.labelFemalePlural>female BroodLords</BroodLord.lifeStages.2.labelFemalePlural>
+  <BroodLord.labelMale>male BroodLord</BroodLord.labelMale>
+  <BroodLord.labelMalePlural>male BroodLords</BroodLord.labelMalePlural>
+  <BroodLord.labelFemale>female BroodLord</BroodLord.labelFemale>
+  <BroodLord.labelFemalePlural>female BroodLords</BroodLord.labelFemalePlural>
+
+
+  <!-- HARVESTER -->
+
+  <Harvester.label>harvester</Harvester.label>
+  <Harvester.labelPlural>harvesters</Harvester.labelPlural>
+  <Harvester.lifeStages.0.label>harvester</Harvester.lifeStages.0.label>
+  <Harvester.lifeStages.0.labelPlural>harvester</Harvester.lifeStages.0.labelPlural>
+  <Harvester.lifeStages.0.labelMale>male harvester</Harvester.lifeStages.0.labelMale>
+  <Harvester.lifeStages.0.labelMalePlural>male harvesters</Harvester.lifeStages.0.labelMalePlural>
+  <Harvester.lifeStages.0.labelFemale>female harvester</Harvester.lifeStages.0.labelFemale>
+  <Harvester.lifeStages.0.labelFemalePlural>female harvesters</Harvester.lifeStages.0.labelFemalePlural>
+  <Harvester.lifeStages.1.label>harvester</Harvester.lifeStages.1.label>
+  <Harvester.lifeStages.1.labelPlural>harvester</Harvester.lifeStages.1.labelPlural>
+  <Harvester.lifeStages.1.labelMale>male harvester</Harvester.lifeStages.1.labelMale>
+  <Harvester.lifeStages.1.labelMalePlural>male harvesters</Harvester.lifeStages.1.labelMalePlural>
+  <Harvester.lifeStages.1.labelFemale>female harvester</Harvester.lifeStages.1.labelFemale>
+  <Harvester.lifeStages.1.labelFemalePlural>female harvesters</Harvester.lifeStages.1.labelFemalePlural>
+  <Harvester.lifeStages.2.label>harvester</Harvester.lifeStages.2.label>
+  <Harvester.lifeStages.2.labelPlural>harvester</Harvester.lifeStages.2.labelPlural>
+  <Harvester.lifeStages.2.labelMale>male harvester</Harvester.lifeStages.2.labelMale>
+  <Harvester.lifeStages.2.labelMalePlural>male harvesters</Harvester.lifeStages.2.labelMalePlural>
+  <Harvester.lifeStages.2.labelFemale>female harvester</Harvester.lifeStages.2.labelFemale>
+  <Harvester.lifeStages.2.labelFemalePlural>female harvesters</Harvester.lifeStages.2.labelFemalePlural>
+  <Harvester.labelMale>male harvester</Harvester.labelMale>
+  <Harvester.labelMalePlural>male harvesters</Harvester.labelMalePlural>
+  <Harvester.labelFemale>female harvester</Harvester.labelFemale>
+  <Harvester.labelFemalePlural>female harvesters</Harvester.labelFemalePlural>
+
+  <Prowler.label>Prowler</Prowler.label>
+  <Prowler.labelPlural>Prowlers</Prowler.labelPlural>
+  <Prowler.lifeStages.0.label>Prowler</Prowler.lifeStages.0.label>
+  <Prowler.lifeStages.0.labelPlural>Prowler</Prowler.lifeStages.0.labelPlural>
+  <Prowler.lifeStages.0.labelMale>male Prowler</Prowler.lifeStages.0.labelMale>
+  <Prowler.lifeStages.0.labelMalePlural>male Prowlers</Prowler.lifeStages.0.labelMalePlural>
+  <Prowler.lifeStages.0.labelFemale>female Prowler</Prowler.lifeStages.0.labelFemale>
+  <Prowler.lifeStages.0.labelFemalePlural>female Prowlers</Prowler.lifeStages.0.labelFemalePlural>
+  <Prowler.lifeStages.1.label>Prowler</Prowler.lifeStages.1.label>
+  <Prowler.lifeStages.1.labelPlural>Prowler</Prowler.lifeStages.1.labelPlural>
+  <Prowler.lifeStages.1.labelMale>male Prowler</Prowler.lifeStages.1.labelMale>
+  <Prowler.lifeStages.1.labelMalePlural>male Prowlers</Prowler.lifeStages.1.labelMalePlural>
+  <Prowler.lifeStages.1.labelFemale>female Prowler</Prowler.lifeStages.1.labelFemale>
+  <Prowler.lifeStages.1.labelFemalePlural>female Prowlers</Prowler.lifeStages.1.labelFemalePlural>
+  <Prowler.lifeStages.2.label>Prowler</Prowler.lifeStages.2.label>
+  <Prowler.lifeStages.2.labelPlural>Prowler</Prowler.lifeStages.2.labelPlural>
+  <Prowler.lifeStages.2.labelMale>male Prowler</Prowler.lifeStages.2.labelMale>
+  <Prowler.lifeStages.2.labelMalePlural>male Prowlers</Prowler.lifeStages.2.labelMalePlural>
+  <Prowler.lifeStages.2.labelFemale>female Prowler</Prowler.lifeStages.2.labelFemale>
+  <Prowler.lifeStages.2.labelFemalePlural>female Prowlers</Prowler.lifeStages.2.labelFemalePlural>
+  <Prowler.labelMale>male Prowler</Prowler.labelMale>
+  <Prowler.labelMalePlural>male Prowlers</Prowler.labelMalePlural>
+  <Prowler.labelFemale>female Prowler</Prowler.labelFemale>
+  <Prowler.labelFemalePlural>female Prowlers</Prowler.labelFemalePlural>
+
+
+</LanguageData>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <LeftRaptorialLeg.label>left raptorial leg</LeftRaptorialLeg.label>
+  <RightRaptorialLeg.label>right raptorial leg</RightRaptorialLeg.label>
+  <CephaloThorax.label>fused head and torso</CephaloThorax.label>
+  <SerpentineMidBody.label>serpentine mid body</SerpentineMidBody.label>
+  <Nacelle.label>spitter nacelle</Nacelle.label>
+  <SerpentineHindBody.label>serpentine hind body</SerpentineHindBody.label>
+
+
+</LanguageData>

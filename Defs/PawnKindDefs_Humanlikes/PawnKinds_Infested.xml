@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <PawnKindDef Name="InfestedBase" Abstract="True">
     <race>Human</race>
     <defaultFactionType>Horrors</defaultFactionType>
@@ -9,12 +8,11 @@
     <invNutrition>2.55</invNutrition>
     <invFoodDef>Pemmican</invFoodDef>
   </PawnKindDef>
-
-	<PawnKindDef ParentName="InfestedBase">
-		<defName>HorrorsOverlord</defName>
-		<label>mastermind</label>
+  <PawnKindDef ParentName="InfestedBase">
+    <defName>HorrorsOverlord</defName>
+    <label>mastermind</label>
     <combatPower>70</combatPower>
-		<baseRecruitDifficulty>1</baseRecruitDifficulty>
+    <baseRecruitDifficulty>1</baseRecruitDifficulty>
     <itemQuality>Superior</itemQuality>
     <minGenerationAge>30</minGenerationAge>
     <gearHealthRange>
@@ -29,22 +27,19 @@
       <li>Horrors_Mastermind</li>
     </apparelTags>
     <weaponMoney>
-			<min>800</min>
-			<max>1000</max>
-	</weaponMoney>
-	
-	<factionLeader>true</factionLeader>
-	
-	<weaponTags>
-			<li>Horrors</li>
-	</weaponTags>
-	</PawnKindDef>
-	
-	<PawnKindDef ParentName="InfestedBase">
-		<defName>HorrorsInfestedHuman</defName>
-		<label>infested human</label>
+      <min>800</min>
+      <max>1000</max>
+    </weaponMoney>
+    <factionLeader>true</factionLeader>
+    <weaponTags>
+      <li>Horrors</li>
+    </weaponTags>
+  </PawnKindDef>
+  <PawnKindDef ParentName="InfestedBase">
+    <defName>HorrorsInfestedHuman</defName>
+    <label>infested human</label>
     <combatPower>70</combatPower>
-		<baseRecruitDifficulty>1</baseRecruitDifficulty>
+    <baseRecruitDifficulty>1</baseRecruitDifficulty>
     <itemQuality>Superior</itemQuality>
     <minGenerationAge>14</minGenerationAge>
     <gearHealthRange>
@@ -59,24 +54,23 @@
       <li>Horrors</li>
     </apparelTags>
     <weaponMoney>
-			<min>800</min>
-			<max>1000</max>
-		</weaponMoney>
-		<weaponTags>
-			<li>Horrors</li>
-		</weaponTags>
-		<inventoryOptions>
-			<skipChance>0.4</skipChance>
-			<subOptionsChooseOne>
-				<li>
-					<thingDef>MedicineIndustrial</thingDef>
-					<countRange>
-						<min>1</min>
-						<max>4</max>
-					</countRange>
-				</li>
-			</subOptionsChooseOne>
-		</inventoryOptions>
-	</PawnKindDef>
-
+      <min>800</min>
+      <max>1000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Horrors</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.4</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>4</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
 </Defs>

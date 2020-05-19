@@ -1,64 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <SoundDef>
-    <defName>FissureSFX</defName>  
-    <sustain>True</sustain>  
+    <defName>FissureSFX</defName>
+    <sustain>True</sustain>
     <context>MapOnly</context>
-    <eventNames />  
-    <priorityMode>PrioritizeNearest</priorityMode>  
+    <eventNames />
+    <priorityMode>PrioritizeNearest</priorityMode>
     <subSounds>
       <li>
-        <muteWhenPaused>True</muteWhenPaused>      
+        <muteWhenPaused>True</muteWhenPaused>
         <grains>
           <li Class="AudioGrain_Clip">
             <clipPath>FissureSFX</clipPath>
           </li>
-        </grains>      
+        </grains>
         <volumeRange>
-          <min>15</min>        
+          <min>15</min>
           <max>15</max>
-        </volumeRange>      
+        </volumeRange>
         <pitchRange>
-          <min>1</min>        
+          <min>1</min>
           <max>1.015</max>
-        </pitchRange>      
+        </pitchRange>
         <distRange>
-          <min>0</min>        
+          <min>0</min>
           <max>30</max>
         </distRange>
       </li>
     </subSounds>
   </SoundDef>
-  
   <SoundDef>
-    <defName>ChatteringSFX</defName>  
-    <sustain>True</sustain>  
+    <defName>ChatteringSFX</defName>
+    <sustain>True</sustain>
     <context>MapOnly</context>
-    <eventNames />  
-    <priorityMode>PrioritizeNearest</priorityMode>  
+    <eventNames />
+    <priorityMode>PrioritizeNearest</priorityMode>
     <subSounds>
       <li>
-        <muteWhenPaused>True</muteWhenPaused>      
+        <muteWhenPaused>True</muteWhenPaused>
         <grains>
           <li Class="AudioGrain_Clip">
             <clipPath>ChatteringSFX</clipPath>
           </li>
-        </grains>      
+        </grains>
         <volumeRange>
-          <min>15</min>        
+          <min>15</min>
           <max>15</max>
-        </volumeRange>      
+        </volumeRange>
         <pitchRange>
-          <min>1</min>        
+          <min>1</min>
           <max>1.015</max>
-        </pitchRange>      
+        </pitchRange>
         <distRange>
-          <min>0</min>        
+          <min>0</min>
           <max>30</max>
         </distRange>
       </li>
     </subSounds>
   </SoundDef>
-
 </Defs>

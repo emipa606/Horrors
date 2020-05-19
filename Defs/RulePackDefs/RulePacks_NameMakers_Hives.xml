@@ -1,18 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <!-- HORRORS -->
-
   <RulePackDef>
     <defName>NamerFactionHorrors</defName>
     <rulePack>
       <rulesStrings>
-        <li>name->The [badasscolor] Brood</li>
-        <li>name->The [badasscolor] Swarm</li>
-		<li>name->The [badasscolor] Plague</li>
-        <li>name->The [badassadjective] Brood</li>
-        <li>name->The [badassadjective] Swarm</li>
-		<li>name->The [badassadjective] Plague</li>
+        <li>name-&gt;The [badasscolor] Brood</li>
+        <li>name-&gt;The [badasscolor] Swarm</li>
+        <li>name-&gt;The [badasscolor] Plague</li>
+        <li>name-&gt;The [badassadjective] Brood</li>
+        <li>name-&gt;The [badassadjective] Swarm</li>
+        <li>name-&gt;The [badassadjective] Plague</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -42,22 +40,21 @@
       </rulesRaw>
     </rulePack>
   </RulePackDef>
-
   <RulePackDef>
     <defName>NamerFactionBaseHorrors</defName>
     <rulePack>
       <rulesStrings>
-        <li>name->The Infested [geography] of [badassconcept]</li>
-		<li>name->The [badasscolor] [geography]</li>
-		<li>name->The [badasscolor] Hive</li>
-		<li>name->The [badasscolor] Infestation</li>
-		<li>name->The [badasscolor] Lair</li>
-		<li>name->The [badasscolor] [badassconcept]</li>
-		<li>name->The Hive of [badassconcept]</li>
-		<li>name->The [geography] Lair</li>
-		<li>name->The [geography] Hive</li>
-		<li>name->The [geography] Infestation</li>
-        <li>geography->[terrainfeature]</li>
+        <li>name-&gt;The Infested [geography] of [badassconcept]</li>
+        <li>name-&gt;The [badasscolor] [geography]</li>
+        <li>name-&gt;The [badasscolor] Hive</li>
+        <li>name-&gt;The [badasscolor] Infestation</li>
+        <li>name-&gt;The [badasscolor] Lair</li>
+        <li>name-&gt;The [badasscolor] [badassconcept]</li>
+        <li>name-&gt;The Hive of [badassconcept]</li>
+        <li>name-&gt;The [geography] Lair</li>
+        <li>name-&gt;The [geography] Hive</li>
+        <li>name-&gt;The [geography] Infestation</li>
+        <li>geography-&gt;[terrainfeature]</li>
       </rulesStrings>
       <rulesRaw>
         <li Class="Rule_File">
@@ -87,5 +84,4 @@
       </rulesRaw>
     </rulePack>
   </RulePackDef>
-
 </Defs>

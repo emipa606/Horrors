@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="BuildingBase">
     <defName>SinkHole</defName>
     <label>sinkhole</label>
@@ -12,19 +11,19 @@
       <damageData>
         <rect>(0.3,0,5.4,6)</rect>
       </damageData>
-	  	<shadowData>
+      <shadowData>
         <volume>(0, 0, 0)</volume>
-     </shadowData>
+      </shadowData>
     </graphicData>
-	<building>
-	<soundAmbient>FissureSFX</soundAmbient>
-	</building>
+    <building>
+      <soundAmbient>FissureSFX</soundAmbient>
+    </building>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <blockWind>false</blockWind>
     <castEdgeShadows>false</castEdgeShadows>
-		<scatterableOnMapGen>false</scatterableOnMapGen>
-		<fillPercent>0</fillPercent>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <fillPercent>0</fillPercent>
     <blockLight>false</blockLight>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
@@ -39,9 +38,9 @@
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Misc</designationCategory>
     <staticSunShadowHeight>0.0</staticSunShadowHeight>
-    <researchPrerequisites></researchPrerequisites>
+    <researchPrerequisites>
+    </researchPrerequisites>
   </ThingDef>
-  
   <ThingDef ParentName="BuildingNaturalBase">
     <defName>HorrorHive</defName>
     <label>horror hive</label>
@@ -50,13 +49,13 @@
     <graphicData>
       <texPath>Things/Building/Hive/HorrorNest</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>Transparent</shaderType>
-	  <drawSize>(4,4)</drawSize>
+      <shaderType>Transparent</shaderType>
+      <drawSize>(4,4)</drawSize>
     </graphicData>
-	<building>
-	<soundAmbient>ChatteringSFX</soundAmbient>
-	</building>
-	<size>(2,2)</size>
+    <building>
+      <soundAmbient>ChatteringSFX</soundAmbient>
+    </building>
+    <size>(2,2)</size>
     <altitudeLayer>Building</altitudeLayer>
     <rotatable>false</rotatable>
     <fillPercent>0.60</fillPercent>
@@ -70,8 +69,8 @@
     <passability>PassThroughOnly</passability>
     <comps>
       <li Class="Horrors.CompProperties_SpawnerHorrorHives" />
-	  <li Class="Horrors.CompProperties_SpawnerHorrorDen" />
-	  <li Class="CompProperties_Spawner">
+      <li Class="Horrors.CompProperties_SpawnerHorrorDen" />
+      <li Class="CompProperties_Spawner">
         <thingToSpawn>MaggotNest</thingToSpawn>
         <spawnCount>1</spawnCount>
         <spawnIntervalRange>
@@ -98,7 +97,7 @@
         </spawnIntervalRange>
         <spawnMaxAdjacent>2</spawnMaxAdjacent>
       </li>
-	  <li Class="CompProperties_Spawner">
+      <li Class="CompProperties_Spawner">
         <thingToSpawn>HorrorCrysalisProwler</thingToSpawn>
         <spawnCount>1</spawnCount>
         <spawnIntervalRange>
@@ -126,7 +125,6 @@
       </li>
     </comps>
   </ThingDef>
-  
   <ThingDef ParentName="BuildingNaturalBase">
     <defName>HorrorDen</defName>
     <label>horror den</label>
@@ -135,13 +133,13 @@
     <graphicData>
       <texPath>Things/Building/Hive/Den</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>Transparent</shaderType>
-	  <drawSize>(3,3)</drawSize>
+      <shaderType>Transparent</shaderType>
+      <drawSize>(3,3)</drawSize>
     </graphicData>
-	<building>
-	<soundAmbient>ChatteringSFX</soundAmbient>
-	</building>
-	<size>(2,2)</size>
+    <building>
+      <soundAmbient>ChatteringSFX</soundAmbient>
+    </building>
+    <size>(2,2)</size>
     <altitudeLayer>Building</altitudeLayer>
     <rotatable>false</rotatable>
     <fillPercent>0.60</fillPercent>
@@ -163,7 +161,7 @@
         </spawnIntervalRange>
         <spawnMaxAdjacent>2</spawnMaxAdjacent>
       </li>
-	  <li Class="CompProperties_Spawner">
+      <li Class="CompProperties_Spawner">
         <thingToSpawn>HorrorCrysalisBulwark</thingToSpawn>
         <spawnCount>1</spawnCount>
         <spawnIntervalRange>
@@ -191,11 +189,10 @@
       </li>
     </comps>
   </ThingDef>
-  
-    <ThingDef ParentName="BuildingNaturalBase">
+  <ThingDef ParentName="BuildingNaturalBase">
     <defName>HorrorBurrow</defName>
     <label>burrow</label>
-	<thingClass>Horrors.Building_Burrow</thingClass>
+    <thingClass>Horrors.Building_Burrow</thingClass>
     <description>A burrow containing... Hopefully nothing... Best not get too close to it.</description>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
     <passability>PassThroughOnly</passability>
@@ -213,7 +210,7 @@
     <graphicData>
       <texPath>Things/Building/Hive/Burrow</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>(2,2)</drawSize>
+      <drawSize>(2,2)</drawSize>
       <shadowData>
         <volume>(0.3, 0.6, 0.3)</volume>
         <offset>(0,0,-0.1)</offset>
@@ -223,15 +220,14 @@
       </damageData>
     </graphicData>
   </ThingDef>
-  
   <ThingDef ParentName="BuildingNaturalBase">
     <defName>HorrorCrysalisVisceral</defName>
     <label>horror crysalis</label>
-	<thingClass>Building</thingClass>
+    <thingClass>Building</thingClass>
     <description>A cacoon that protects a molting Terrorworm</description>
     <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
-	<thingCategories>
+    <thingCategories>
       <li>BuildingsFurniture</li>
     </thingCategories>
     <passability>PassThroughOnly</passability>
@@ -247,7 +243,7 @@
       <Flammability>1.0</Flammability>
     </statBases>
     <comps>
-		<li Class="Horrors.CompProperties_HorrorHatcher">
+      <li Class="Horrors.CompProperties_HorrorHatcher">
         <hatcherDaystoHatch>0.5</hatcherDaystoHatch>
         <hatcherPawn>Visceral</hatcherPawn>
       </li>
@@ -255,7 +251,7 @@
     <graphicData>
       <texPath>Things/Building/Hive/Crysalis</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>(2,2)</drawSize>
+      <drawSize>(2,2)</drawSize>
       <shadowData>
         <volume>(0.3, 0.6, 0.3)</volume>
         <offset>(0,0,-0.1)</offset>
@@ -265,14 +261,13 @@
       </damageData>
     </graphicData>
   </ThingDef>
-  
   <ThingDef ParentName="BuildingNaturalBase">
     <defName>HorrorCrysalisProwler</defName>
     <label>horror crysalis</label>
-	<thingClass>Building</thingClass>
+    <thingClass>Building</thingClass>
     <description>A cacoon that protects a molting Terrorworm</description>
     <minifiedDef>MinifiedThing</minifiedDef>
-	<thingCategories>
+    <thingCategories>
       <li>BuildingsFurniture</li>
     </thingCategories>
     <altitudeLayer>Building</altitudeLayer>
@@ -289,7 +284,7 @@
       <Flammability>1.0</Flammability>
     </statBases>
     <comps>
-		<li Class="Horrors.CompProperties_HorrorHatcher">
+      <li Class="Horrors.CompProperties_HorrorHatcher">
         <hatcherDaystoHatch>3</hatcherDaystoHatch>
         <hatcherPawn>Prowler</hatcherPawn>
       </li>
@@ -297,7 +292,7 @@
     <graphicData>
       <texPath>Things/Building/Hive/Crysalis</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>(2,2)</drawSize>
+      <drawSize>(2,2)</drawSize>
       <shadowData>
         <volume>(0.3, 0.6, 0.3)</volume>
         <offset>(0,0,-0.1)</offset>
@@ -307,14 +302,13 @@
       </damageData>
     </graphicData>
   </ThingDef>
-  
   <ThingDef ParentName="BuildingNaturalBase">
     <defName>HorrorCrysalisBulwark</defName>
     <label>horror crysalis</label>
     <description>A cacoon that protects a molting Terrorworm</description>
     <thingClass>Building</thingClass>
     <minifiedDef>MinifiedThing</minifiedDef>
-	<thingCategories>
+    <thingCategories>
       <li>BuildingsFurniture</li>
     </thingCategories>
     <altitudeLayer>Building</altitudeLayer>
@@ -339,7 +333,7 @@
     <graphicData>
       <texPath>Things/Building/Hive/Crysalis</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>(2,2)</drawSize>
+      <drawSize>(2,2)</drawSize>
       <shadowData>
         <volume>(0.3, 0.6, 0.3)</volume>
         <offset>(0,0,-0.1)</offset>
@@ -349,14 +343,13 @@
       </damageData>
     </graphicData>
   </ThingDef>
-  
   <ThingDef ParentName="BuildingNaturalBase">
     <defName>HorrorCrysalisSpitter</defName>
     <label>horror crysalis</label>
     <description>A cacoon that protects a molting Terrorworm</description>
     <thingClass>Building</thingClass>
     <minifiedDef>MinifiedThing</minifiedDef>
-	<thingCategories>
+    <thingCategories>
       <li>BuildingsFurniture</li>
     </thingCategories>
     <altitudeLayer>Building</altitudeLayer>
@@ -385,7 +378,7 @@
     <graphicData>
       <texPath>Things/Building/Hive/Crysalis</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>(2,2)</drawSize>
+      <drawSize>(2,2)</drawSize>
       <shadowData>
         <volume>(0.3, 0.6, 0.3)</volume>
         <offset>(0,0,-0.1)</offset>
@@ -395,8 +388,6 @@
       </damageData>
     </graphicData>
   </ThingDef>
-
-  
   <ThingDef ParentName="BuildingBase">
     <defName>HorrorFirefoamPod</defName>
     <label>glowing pustule</label>
@@ -404,7 +395,7 @@
     <graphicData>
       <texPath>Things/Building/Hive/HorrorFirefoamPod</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>(1.6)</drawSize>
+      <drawSize>(1.6)</drawSize>
       <shadowData>
         <volume>(0.25, 0.5, 0.25)</volume>
         <offset>(0,0,-0.1)</offset>
@@ -418,9 +409,9 @@
         <explosiveRadius>9.9</explosiveRadius>
         <explosiveDamageType>Extinguish</explosiveDamageType>
         <startWickHitPointsPercent>-1</startWickHitPointsPercent>
-		<startWickOnDamageTaken>
-			<li>Flame</li>
-		</startWickOnDamageTaken>
+        <startWickOnDamageTaken>
+          <li>Flame</li>
+        </startWickOnDamageTaken>
         <postExplosionSpawnThingDef>FilthFireFoam</postExplosionSpawnThingDef>
         <postExplosionSpawnChance>1</postExplosionSpawnChance>
         <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
@@ -431,7 +422,7 @@
         <useJob>TriggerFirefoamPopper</useJob>
         <useLabel>Trigger firefoam popper</useLabel>
       </li>
-	  <li Class="CompProperties_Glower">
+      <li Class="CompProperties_Glower">
         <glowRadius>3</glowRadius>
         <glowColor>(87,113,113,0)</glowColor>
       </li>
@@ -440,8 +431,8 @@
       </li>
     </comps>
     <tickerType>Normal</tickerType>
-    <altitudeLayer>Building</altitudeLayer>    
-	<minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsFurniture</li>
     </thingCategories>
@@ -458,7 +449,6 @@
     <pathCost>25</pathCost>
     <rotatable>false</rotatable>
   </ThingDef>
-  
   <ThingDef ParentName="BuildingBase">
     <defName>MaggotNest</defName>
     <label>mite nest</label>
@@ -466,10 +456,12 @@
     <graphicData>
       <texPath>Things/Building/Hive/MiteNest</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>Transparent</shaderType>
+      <shaderType>Transparent</shaderType>
       <drawSize>(1.4, 1.4)</drawSize>
     </graphicData>
-    <researchPrerequisites><li>Cryptosleep</li></researchPrerequisites>
+    <researchPrerequisites>
+      <li>Cryptosleep</li>
+    </researchPrerequisites>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
@@ -482,8 +474,8 @@
       <MaxHitPoints>250</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
-	<comps>
-	  <li Class="CompProperties_Spawner">
+    <comps>
+      <li Class="CompProperties_Spawner">
         <thingToSpawn>InsectJelly</thingToSpawn>
         <spawnCount>20</spawnCount>
         <spawnIntervalRange>
@@ -497,11 +489,10 @@
     <tickerType>Normal</tickerType>
     <description>A bugmidden and mite nest, primary food source for Horrors.</description>
     <size>(1,1)</size>
-		<building>
-			<ai_chillDestination>true</ai_chillDestination>
-		</building>
+    <building>
+      <ai_chillDestination>true</ai_chillDestination>
+    </building>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <staticSunShadowHeight>0.4</staticSunShadowHeight>
   </ThingDef>
-  
 </Defs>

@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- VISCERAL -->
-
   <Visceral.label>疫物</Visceral.label>
   <Visceral.labelPlural>疫物</Visceral.labelPlural>
   <Visceral.lifeStages.0.label>疫物</Visceral.lifeStages.0.label>
@@ -27,10 +25,7 @@
   <Visceral.labelMalePlural>雄性疫物</Visceral.labelMalePlural>
   <Visceral.labelFemale>雌性疫物</Visceral.labelFemale>
   <Visceral.labelFemalePlural>雌性疫物</Visceral.labelFemalePlural>
-
-
   <!-- BULWARK -->
-
   <Bulwark.label>扭曲护卫</Bulwark.label>
   <Bulwark.labelPlural>扭曲护卫</Bulwark.labelPlural>
   <Bulwark.lifeStages.0.label>扭曲护卫</Bulwark.lifeStages.0.label>
@@ -55,10 +50,7 @@
   <Bulwark.labelMalePlural>雄性扭曲护卫</Bulwark.labelMalePlural>
   <Bulwark.labelFemale>雌性扭曲护卫</Bulwark.labelFemale>
   <Bulwark.labelFemalePlural>雌性扭曲护卫</Bulwark.labelFemalePlural>
-
-
   <!-- TERRORWORM -->
-
   <Terrorworm.label>恐怖蠕虫</Terrorworm.label>
   <Terrorworm.labelPlural>恐怖蠕虫</Terrorworm.labelPlural>
   <Terrorworm.lifeStages.0.label>恐怖蠕虫</Terrorworm.lifeStages.0.label>
@@ -83,10 +75,7 @@
   <Terrorworm.labelMalePlural>雄性恐怖蠕虫</Terrorworm.labelMalePlural>
   <Terrorworm.labelFemale>雌性恐怖蠕虫</Terrorworm.labelFemale>
   <Terrorworm.labelFemalePlural>雌性恐怖蠕虫</Terrorworm.labelFemalePlural>
-
-
   <!-- BROOD LORD -->
-
   <BroodLord.label>饲育者</BroodLord.label>
   <BroodLord.labelPlural>饲育者</BroodLord.labelPlural>
   <BroodLord.lifeStages.0.label>饲育者</BroodLord.lifeStages.0.label>
@@ -111,10 +100,7 @@
   <BroodLord.labelMalePlural>雄性饲育者</BroodLord.labelMalePlural>
   <BroodLord.labelFemale>雌性饲育者</BroodLord.labelFemale>
   <BroodLord.labelFemalePlural>雌性饲育者</BroodLord.labelFemalePlural>
-
-
   <!-- HARVESTER -->
-
   <Harvester.label>收割者</Harvester.label>
   <Harvester.labelPlural>收割者</Harvester.labelPlural>
   <Harvester.lifeStages.0.label>收割者</Harvester.lifeStages.0.label>
@@ -139,7 +125,6 @@
   <Harvester.labelMalePlural>雄性收割者雌性收割者</Harvester.labelMalePlural>
   <Harvester.labelFemale>雌性收割者</Harvester.labelFemale>
   <Harvester.labelFemalePlural>雌性收割者</Harvester.labelFemalePlural>
-
   <Prowler.label>徘徊者</Prowler.label>
   <Prowler.labelPlural>徘徊者</Prowler.labelPlural>
   <Prowler.lifeStages.0.label>徘徊者</Prowler.lifeStages.0.label>
@@ -164,6 +149,4 @@
   <Prowler.labelMalePlural>雄性徘徊者</Prowler.labelMalePlural>
   <Prowler.labelFemale>雌性徘徊者</Prowler.labelFemale>
   <Prowler.labelFemalePlural>雌性徘徊者</Prowler.labelFemalePlural>
-
-
 </LanguageData>

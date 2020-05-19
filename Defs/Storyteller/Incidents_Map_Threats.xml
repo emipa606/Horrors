@@ -1,8 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-	<!-- ============================== Big threats ==============================-->
-
+  <!-- ============================== Big threats ==============================-->
   <IncidentDef>
     <defName>HorrorInfestation</defName>
     <label>horror infestation</label>
@@ -19,6 +17,4 @@
     <pointsScaleable>true</pointsScaleable>
     <minThreatPoints>400</minThreatPoints>
   </IncidentDef>
-
-
 </Defs>

@@ -33,12 +33,17 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.0.1\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -62,6 +67,7 @@
     <Compile Include="CompSpawnerHorrorHives.cs" />
     <Compile Include="CompProperties_SpawnerHorrorHives.cs" />
     <Compile Include="Fume.cs" />
+    <Compile Include="Harmony.cs" />
     <Compile Include="HorrorDen.cs" />
     <Compile Include="HorrorHiveUtility.cs" />
     <Compile Include="JobGiver_Burrow.cs" />
@@ -75,6 +81,9 @@
     <Compile Include="HorrorsHive.cs" />
     <Compile Include="ImprovedNoise.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
