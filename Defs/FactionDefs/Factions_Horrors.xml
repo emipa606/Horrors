@@ -21,6 +21,7 @@
       <li>(0.0, 0.06, 0.18)</li>
     </colorSpectrum>
     <canUseAvoidGrid>true</canUseAvoidGrid>
+    <autoFlee>false</autoFlee>
     <techLevel>Neolithic</techLevel>
     <caravanTraderKinds>
       <li>Caravan_Outlander_BulkGoods</li>
