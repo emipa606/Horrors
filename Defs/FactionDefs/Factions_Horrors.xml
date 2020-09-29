@@ -10,7 +10,7 @@
     <maxCountAtGameStart>3</maxCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
     <canSiege>false</canSiege>
-    <canStageAttacks>true</canStageAttacks>
+    <canStageAttacks>false</canStageAttacks>
     <leaderTitle>Mastermind</leaderTitle>
     <permanentEnemy>true</permanentEnemy>
     <factionIconPath>World/WorldObjects/crevasse1</factionIconPath>
