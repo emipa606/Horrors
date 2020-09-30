@@ -110,6 +110,15 @@
         <heatPerSecond>7</heatPerSecond>
         <heatPushMaxTemperature>38</heatPushMaxTemperature>
       </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>HorrorCrysalisHarvester</thingToSpawn>
+        <spawnCount>1</spawnCount>
+        <spawnIntervalRange>
+          <min>70000</min>
+          <max>100000</max>
+        </spawnIntervalRange>
+        <spawnMaxAdjacent>1</spawnMaxAdjacent>
+      </li>
       <li Class="CompProperties_TemperatureDamaged">
         <safeTemperatureRange>
           <min>-20</min>
@@ -222,9 +231,9 @@
   </ThingDef>
   <ThingDef ParentName="BuildingNaturalBase">
     <defName>HorrorCrysalisVisceral</defName>
-    <label>horror crysalis</label>
+    <label>horror visceral crysalis</label>
     <thingClass>Building</thingClass>
-    <description>A cacoon that protects a molting Terrorworm</description>
+    <description>A cacoon that protects a molting Visceral</description>
     <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
     <thingCategories>
@@ -263,9 +272,9 @@
   </ThingDef>
   <ThingDef ParentName="BuildingNaturalBase">
     <defName>HorrorCrysalisProwler</defName>
-    <label>horror crysalis</label>
+    <label>horror prowler crysalis</label>
     <thingClass>Building</thingClass>
-    <description>A cacoon that protects a molting Terrorworm</description>
+    <description>A cacoon that protects a molting Prowler</description>
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsFurniture</li>
@@ -304,8 +313,8 @@
   </ThingDef>
   <ThingDef ParentName="BuildingNaturalBase">
     <defName>HorrorCrysalisBulwark</defName>
-    <label>horror crysalis</label>
-    <description>A cacoon that protects a molting Terrorworm</description>
+    <label>horror bulwark crysalis</label>
+    <description>A cacoon that protects a molting Bulwark</description>
     <thingClass>Building</thingClass>
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
@@ -344,9 +353,9 @@
     </graphicData>
   </ThingDef>
   <ThingDef ParentName="BuildingNaturalBase">
-    <defName>HorrorCrysalisSpitter</defName>
-    <label>horror crysalis</label>
-    <description>A cacoon that protects a molting Terrorworm</description>
+    <defName>HorrorCrysalisHarvester</defName>
+    <label>horror harvester crysalis</label>
+    <description>A cacoon that protects a molting Harvester</description>
     <thingClass>Building</thingClass>
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
@@ -372,7 +381,7 @@
       </li>
       <li Class="Horrors.CompProperties_HorrorHatcher">
         <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
-        <hatcherPawn>Chicken</hatcherPawn>
+        <hatcherPawn>Harvester</hatcherPawn>
       </li>
     </comps>
     <graphicData>

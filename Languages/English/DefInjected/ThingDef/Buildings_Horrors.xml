@@ -13,17 +13,17 @@
   <HorrorBurrow.label>burrow</HorrorBurrow.label>
   <HorrorBurrow.description>A burrow containing... Hopefully nothing... Best not get too close to it.</HorrorBurrow.description>
 
-  <HorrorCrysalisVisceral.label>horror crysalis</HorrorCrysalisVisceral.label>
-  <HorrorCrysalisVisceral.description>A cacoon that protects a molting Terrorworm</HorrorCrysalisVisceral.description>
+  <HorrorCrysalisVisceral.label>horror visceral crysalis</HorrorCrysalisVisceral.label>
+  <HorrorCrysalisVisceral.description>A cacoon that protects a molting Visceral</HorrorCrysalisVisceral.description>
 
-  <HorrorCrysalisProwler.label>horror crysalis</HorrorCrysalisProwler.label>
-  <HorrorCrysalisProwler.description>A cacoon that protects a molting Terrorworm</HorrorCrysalisProwler.description>
+  <HorrorCrysalisProwler.label>horror prowler crysalis</HorrorCrysalisProwler.label>
+  <HorrorCrysalisProwler.description>A cacoon that protects a molting Prowler</HorrorCrysalisProwler.description>
 
-  <HorrorCrysalisBulwark.label>horror crysalis</HorrorCrysalisBulwark.label>
-  <HorrorCrysalisBulwark.description>A cacoon that protects a molting Terrorworm</HorrorCrysalisBulwark.description>
+  <HorrorCrysalisBulwark.label>horror bulwark crysalis</HorrorCrysalisBulwark.label>
+  <HorrorCrysalisBulwark.description>A cacoon that protects a molting Bulwark</HorrorCrysalisBulwark.description>
 
-  <HorrorCrysalisSpitter.label>horror crysalis</HorrorCrysalisSpitter.label>
-  <HorrorCrysalisSpitter.description>A cacoon that protects a molting Terrorworm</HorrorCrysalisSpitter.description>
+  <HorrorCrysalisHarvester.label>horror harvester crysalis</HorrorCrysalisHarvester.label>
+  <HorrorCrysalisHarvester.description>A cacoon that protects a molting Harvester</HorrorCrysalisHarvester.description>
 
   <HorrorFirefoamPod.label>glowing pustule</HorrorFirefoamPod.label>
   <HorrorFirefoamPod.description>When touched by fire or triggered by hand, this pops and sprays a fire-extinguishing foam in a circular field around itself.</HorrorFirefoamPod.description>

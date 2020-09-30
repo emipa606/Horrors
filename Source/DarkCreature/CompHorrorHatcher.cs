@@ -61,7 +61,8 @@ namespace Horrors
 
         private Lord CreateNewLord()
         {
-            return LordMaker.MakeNewLord(Find.FactionManager.FirstFactionOfDef(FactionDef.Named("Horrors")), new LordJob_DefendPoint(this.parent.Position), this.parent.Map, null);
+            var faction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("Horrors"));
+            return LordMaker.MakeNewLord(faction, new LordJob_DefendPoint(this.parent.Position, 5f), this.parent.Map, null);
         }
     }
 }
