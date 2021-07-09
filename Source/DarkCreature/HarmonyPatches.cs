@@ -1,12 +1,10 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using RimWorld.Planet;
 using Verse;
 
 namespace Horrors
 {
-
-    class HarmonyPatches
+    internal class HarmonyPatches
     {
         [StaticConstructorOnStartup]
         internal static class HarmonyStart
@@ -18,23 +16,24 @@ namespace Horrors
         }
 
         [HarmonyPatch(typeof(FactionGenerator), "GenerateFactionsIntoWorld")]
-        class Patch
+        private class Patch
         {
-            static void Postfix()
+            private static void Postfix()
             {
                 var settlements = Find.WorldObjects.SettlementBases;
-                foreach (Settlement settlement in settlements)
+                foreach (var settlement in settlements)
                 {
-                    Log.Message(settlement.Faction.def.defName + " owns tile " + settlement.Tile + " with biome " + Find.WorldGrid[settlement.Tile].biome.defName);
+                    Log.Message(settlement.Faction.def.defName + " owns tile " + settlement.Tile + " with biome " +
+                                Find.WorldGrid[settlement.Tile].biome.defName);
                     if (settlement.Faction.def.defName != "Horrors")
                     {
                         continue;
                     }
+
                     var settlementTile = Find.WorldGrid[settlement.Tile];
                     settlementTile.biome = BiomeDef.Named("HorrorWastes");
                 }
             }
         }
-
     }
 }

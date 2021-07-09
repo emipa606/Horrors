@@ -1,7 +1,5 @@
-﻿using System;
-using Verse;
+﻿using Verse;
 using Verse.AI;
-using RimWorld;
 
 namespace Horrors
 {
@@ -9,16 +7,14 @@ namespace Horrors
     {
         protected override bool Satisfied(Pawn pawn)
         {
-            String defName = pawn.def.defName;
+            var defName = pawn.def.defName;
 
             if (defName == "Prowler" && !pawn.mindState.anyCloseHostilesRecently)
             {
                 return true;
             }
-            else
-            {
-                return false;
-            }
+
+            return false;
         }
     }
 }

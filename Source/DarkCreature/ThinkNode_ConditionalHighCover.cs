@@ -1,7 +1,5 @@
-﻿using System;
-using Verse;
+﻿using Verse;
 using Verse.AI;
-using RimWorld;
 
 namespace Horrors
 {
@@ -11,8 +9,8 @@ namespace Horrors
 
         protected override bool Satisfied(Pawn pawn)
         {
-            float coverValue = CoverUtility.TotalSurroundingCoverScore(pawn.Position, pawn.Map);
-            return coverValue >= this.min;
+            var coverValue = CoverUtility.TotalSurroundingCoverScore(pawn.Position, pawn.Map);
+            return coverValue >= min;
         }
     }
 }

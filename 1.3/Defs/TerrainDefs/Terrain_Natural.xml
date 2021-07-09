@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>FloorWebs</defName>
+    <label>floor webs</label>
+    <texturePath>Terrain/Surfaces/FloorWebs</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>325</renderPrecedence>
+    <pathCost>23</pathCost>
+    <statBases>
+      <Beauty>-8</Beauty>
+      <Cleanliness>-8</Cleanliness>
+    </statBases>
+    <generatedFilth>Filth_Dirt</generatedFilth>
+    <fertility>0</fertility>
+    <takeFootprints>True</takeFootprints>
+    <avoidWander>true</avoidWander>
+    <driesTo>Soil</driesTo>
+  </TerrainDef>
+</Defs>

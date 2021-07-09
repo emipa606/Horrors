@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Name="InfestedBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>Horrors</defaultFactionType>
+    <baseRecruitDifficulty>1</baseRecruitDifficulty>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <invNutrition>2.55</invNutrition>
+    <invFoodDef>Pemmican</invFoodDef>
+  </PawnKindDef>
+  <PawnKindDef ParentName="InfestedBase">
+    <defName>HorrorsOverlord</defName>
+    <label>mastermind</label>
+    <combatPower>70</combatPower>
+    <baseRecruitDifficulty>1</baseRecruitDifficulty>
+    <itemQuality>Superior</itemQuality>
+    <minGenerationAge>30</minGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>3.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>600</min>
+      <max>1600</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Horrors_Mastermind</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>800</min>
+      <max>1000</max>
+    </weaponMoney>
+    <factionLeader>true</factionLeader>
+    <weaponTags>
+      <li>Horrors</li>
+    </weaponTags>
+    <initialWillRange>10~20</initialWillRange>
+    <initialResistanceRange>50~70</initialResistanceRange>
+  </PawnKindDef>
+  <PawnKindDef ParentName="InfestedBase">
+    <defName>HorrorsInfestedHuman</defName>
+    <label>infested human</label>
+    <combatPower>70</combatPower>
+    <baseRecruitDifficulty>1</baseRecruitDifficulty>
+    <itemQuality>Superior</itemQuality>
+    <minGenerationAge>14</minGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>3.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>600</min>
+      <max>1600</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Horrors</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>800</min>
+      <max>1000</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>Horrors</li>
+    </weaponTags>
+    <inventoryOptions>
+      <skipChance>0.4</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>
+            <min>1</min>
+            <max>4</max>
+          </countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>5~7</initialResistanceRange>
+  </PawnKindDef>
+</Defs>

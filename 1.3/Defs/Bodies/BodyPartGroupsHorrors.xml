@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BodyPartGroupDef>
+    <defName>RaptorialLegs</defName>
+    <label>raptorial legs</label>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>SpitterNacelle</defName>
+    <label>spitter nacelle</label>
+  </BodyPartGroupDef>
+</Defs>

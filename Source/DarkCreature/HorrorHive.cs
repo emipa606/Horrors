@@ -1,259 +1,127 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Collections.Generic;
 using System.Linq;
+using RimWorld;
 using Verse;
 using Verse.AI.Group;
-using RimWorld;
 
 namespace Horrors
 {
-	public class HorrorHive : ThingWithComps
-	{
-		private const int InitialPawnSpawnDelay = 420;
-		private const int PawnSpawnRadius = 4;
-		private const float MaxSpawnedPawnsPoints = 800f;
-		private const int InitialPawnsPoints = 200;
-		public bool active = true;
-		public int nextPawnSpawnTick = -1;
-		private List<Pawn> spawnedPawns = new List<Pawn>();
-		private int ticksToSpawnInitialPawns = -1;
-		private static readonly FloatRange PawnSpawnIntervalDays = new FloatRange(0.85f, 1.1f);
-		public static readonly string MemoAttackedByEnemy = "HiveAttacked";
-		public static readonly string MemoDestroyed = "HiveDestroyed";
-		public static readonly string MemoBurnedBadly = "HiveBurnedBadly";
-		private Lord Lord
-		{
-			get
-			{
-				Predicate<Pawn> hasDefendHiveLord = delegate(Pawn x)
-				{
-					Lord lord = x.GetLord();
-					return lord != null && lord.LordJob is LordJob_DefendAndExpandHive;
-				};
-				Pawn foundPawn = this.spawnedPawns.Find(hasDefendHiveLord);
-				if (base.Spawned)
-				{
-					if (foundPawn == null)
-					{
-						RegionTraverser.BreadthFirstTraverse(this.GetRegion(RegionType.Set_Passable), (Region from, Region to) => true, delegate(Region r)
-						{
-							List<Thing> list = r.ListerThings.ThingsOfDef(ThingDef.Named("HorrorHive"));
-							for (int i = 0; i < list.Count; i++)
-							{
-								if (list[i] != this)
-								{
-									if (list[i].Faction == this.Faction)
-									{
-										foundPawn = ((HorrorHive)list[i]).spawnedPawns.Find(hasDefendHiveLord);
-										if (foundPawn != null)
-										{
-											return true;
-										}
-									}
-								}
-							}
-							return false;
-						}, 20, RegionType.Set_Passable);
-					}
-					if (foundPawn != null)
-					{
-						return foundPawn.GetLord();
-					}
-				}
-				return null;
-			}
-		}
-		private float SpawnedPawnsPoints
-		{
-			get
-			{
-				this.FilterOutUnspawnedPawns();
-				float num = 0f;
-				for (int i = 0; i < this.spawnedPawns.Count; i++)
-				{
-					num += this.spawnedPawns[i].kindDef.combatPower;
-				}
-				return num;
-			}
-		}
-		public override void SpawnSetup(Map map, bool respawningAfterLoad)
-		{
-			base.SpawnSetup(map, respawningAfterLoad);
-			if (base.Faction == null)
-			{
-				this.SetFaction(Find.FactionManager.FirstFactionOfDef(FactionDef.Named("Horrors")));
-			}
-			if (!respawningAfterLoad)
-			{
-				this.ticksToSpawnInitialPawns = 420;
-			}
-		}
-		private void SpawnInitialPawnsNow()
-		{
-			this.ticksToSpawnInitialPawns = -1;
-			while (this.SpawnedPawnsPoints < 200f)
-			{
-				Pawn pawn;
-				if (!this.TrySpawnPawn(out pawn))
-				{
-					return;
-				}
-			}
-			this.CalculateNextPawnSpawnTick();
-		}
-		public override void TickRare()
-		{
-			base.TickRare();
-			if (base.Spawned)
-			{
-				this.FilterOutUnspawnedPawns();
-				if (!this.active && !base.Position.Fogged(base.Map))
-				{
-					this.Activate();
-				}
-				if (this.active)
-				{
-					if (this.ticksToSpawnInitialPawns > 0)
-					{
-						this.ticksToSpawnInitialPawns -= 250;
-						if (this.ticksToSpawnInitialPawns <= 0)
-						{
-							this.SpawnInitialPawnsNow();
-						}
-					}
-					if (Find.TickManager.TicksGame >= this.nextPawnSpawnTick)
-					{
-						if (this.SpawnedPawnsPoints < 500f)
-						{
-							Pawn pawn;
-							bool flag = this.TrySpawnPawn(out pawn);
-							if (flag && pawn.caller != null)
-							{
-								pawn.caller.DoCall();
-							}
-						}
-						this.CalculateNextPawnSpawnTick();
-					}
-				}
-			}
-		}
-		public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
-		{
-			Map map = base.Map;
-			base.DeSpawn();
-			List<Lord> lords = map.lordManager.lords;
-			for (int i = 0; i < lords.Count; i++)
-			{
-				lords[i].ReceiveMemo(HorrorHive.MemoDestroyed);
-			}
-		}
-		public override void PostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
-		{
-			if (dinfo.Def.ExternalViolenceFor(this) && dinfo.Instigator != null && dinfo.Instigator.Faction != null)
-			{
-				if (this.ticksToSpawnInitialPawns > 0)
-				{
-					this.SpawnInitialPawnsNow();
-				}
-				Lord lord = this.Lord;
-				if (lord != null)
-				{
-					lord.ReceiveMemo(HorrorHive.MemoAttackedByEnemy);
-				}
-			}
-			if (dinfo.Def == DamageDefOf.Flame && (float)this.HitPoints < (float)base.MaxHitPoints * 0.3f)
-			{
-				Lord lord2 = this.Lord;
-				if (lord2 != null)
-				{
-					lord2.ReceiveMemo(HorrorHive.MemoBurnedBadly);
-				}
-			}
-			base.PostApplyDamage(dinfo, totalDamageDealt);
-		}
-		public override void ExposeData()
-		{
-			base.ExposeData();
-			Scribe_Values.Look<bool>(ref this.active, "active", false, false);
-			Scribe_Values.Look<int>(ref this.nextPawnSpawnTick, "nextPawnSpawnTick", 0, false);
-			Scribe_Collections.Look<Pawn>(ref this.spawnedPawns, "spawnedPawns", LookMode.Reference, new object[0]);
-			Scribe_Values.Look<int>(ref this.ticksToSpawnInitialPawns, "ticksToSpawnInitialPawns", 0, false);
-			if (Scribe.mode == LoadSaveMode.PostLoadInit)
-			{
-				this.spawnedPawns.RemoveAll((Pawn x) => x == null);
-			}
-		}
-		private void Activate()
-		{
-			this.active = true;
-			this.nextPawnSpawnTick = Find.TickManager.TicksGame + Rand.Range(200, 400);
-			CompSpawnerHorrorHives comp = base.GetComp<CompSpawnerHorrorHives>();
-			if (comp != null)
-			{
-				comp.CalculateNextHiveSpawnTick();
-			}
-		}
-		private void CalculateNextPawnSpawnTick()
-		{
-			float num = GenMath.LerpDouble(0f, 5f, 1f, 0.5f, (float)this.spawnedPawns.Count);
-			this.nextPawnSpawnTick = Find.TickManager.TicksGame + (int)(HorrorHive.PawnSpawnIntervalDays.RandomInRange * 60000f / (num * Find.Storyteller.difficulty.enemyReproductionRateFactor));
-		}
-		private void FilterOutUnspawnedPawns()
-		{
-			for (int i = this.spawnedPawns.Count - 1; i >= 0; i--)
-			{
-				if (!this.spawnedPawns[i].Spawned)
-				{
-					this.spawnedPawns.RemoveAt(i);
-				}
-			}
-		}
-		private bool TrySpawnPawn(out Pawn pawn)
-		{
-			List<PawnKindDef> list = new List<PawnKindDef>();
-            list.Add(PawnKindDef.Named("Terrorworm"));
-            list.Add(PawnKindDef.Named("Visceral"));
-			float curPoints = this.SpawnedPawnsPoints;
-			IEnumerable<PawnKindDef> source = 
-				from x in list
-				where curPoints + x.combatPower <= 500f
-				select x;
-			PawnKindDef kindDef;
-			if (!source.TryRandomElement(out kindDef))
-			{
-				pawn = null;
-				return false;
-			}
-			pawn = PawnGenerator.GeneratePawn(kindDef, this.Faction);
-            PawnUtility.TrySpawnHatchedOrBornPawn(pawn, this);
-			//GenSpawn.Spawn(pawn, CellFinder.RandomClosewalkCellNear(base.Position, base.Map, 4, null), base.Map);
-			this.spawnedPawns.Add(pawn);
-			Lord lord = this.Lord;
-			if (lord == null)
-			{
-				lord = this.CreateNewLord();
-			}
-			lord.AddPawn(pawn);
-			return true;
-		}
-		public override bool PreventPlayerSellingThingsNearby(out string reason)
-		{
-			if (this.spawnedPawns.Count > 0)
-			{
-				if (this.spawnedPawns.Any((Pawn p) => !p.Downed))
-				{
-					reason = this.def.label;
-					return true;
-				}
-			}
-			reason = null;
-			return false;
-		}
-		private Lord CreateNewLord()
-		{
-			return LordMaker.MakeNewLord(base.Faction, new LordJob_DefendAndExpandHive(), base.Map, null);
-		}
+    public class HorrorHive : ThingWithComps
+    {
+        private const int InitialPawnSpawnDelay = 420;
+
+        private const int InitialPawnsPoints = 200;
+
+        private const float MaxSpawnedPawnsPoints = 800f;
+
+        private const int PawnSpawnRadius = 4;
+
+        private static readonly string MemoAttackedByEnemy = "HiveAttacked";
+
+        private static readonly string MemoBurnedBadly = "HiveBurnedBadly";
+
+        private static readonly string MemoDestroyed = "HiveDestroyed";
+
+        private static readonly FloatRange PawnSpawnIntervalDays = new FloatRange(0.85f, 1.1f);
+
+        public bool active = true;
+
+        public int nextPawnSpawnTick = -1;
+
+        private List<Pawn> spawnedPawns = new List<Pawn>();
+
+        private int ticksToSpawnInitialPawns = -1;
+
+        private Lord Lord
+        {
+            get
+            {
+                bool HasDefendHiveLord(Pawn x)
+                {
+                    var lord = x.GetLord();
+                    return lord?.LordJob is LordJob_DefendAndExpandHive;
+                }
+
+                var foundPawn = spawnedPawns.Find(HasDefendHiveLord);
+                if (!Spawned)
+                {
+                    return null;
+                }
+
+                if (foundPawn == null)
+                {
+                    RegionTraverser.BreadthFirstTraverse(
+                        this.GetRegion(),
+                        (_, _) => true,
+                        delegate(Region r)
+                        {
+                            var list = r.ListerThings.ThingsOfDef(ThingDef.Named("HorrorHive"));
+                            foreach (var thing in list)
+                            {
+                                if (thing == this)
+                                {
+                                    continue;
+                                }
+
+                                if (thing.Faction != Faction)
+                                {
+                                    continue;
+                                }
+
+                                foundPawn = ((HorrorHive) thing).spawnedPawns.Find(HasDefendHiveLord);
+                                if (foundPawn != null)
+                                {
+                                    return true;
+                                }
+                            }
+
+                            return false;
+                        },
+                        20);
+                }
+
+                return foundPawn?.GetLord();
+            }
+        }
+
+        private float SpawnedPawnsPoints
+        {
+            get
+            {
+                FilterOutUnspawnedPawns();
+                var num = 0f;
+                foreach (var pawn in spawnedPawns)
+                {
+                    num += pawn.kindDef.combatPower;
+                }
+
+                return num;
+            }
+        }
+
+        public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
+        {
+            var map = Map;
+            base.DeSpawn(mode);
+            var lords = map.lordManager.lords;
+            foreach (var lord in lords)
+            {
+                lord.ReceiveMemo(MemoDestroyed);
+            }
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref active, "active");
+            Scribe_Values.Look(ref nextPawnSpawnTick, "nextPawnSpawnTick");
+            Scribe_Collections.Look(ref spawnedPawns, "spawnedPawns", LookMode.Reference);
+            Scribe_Values.Look(ref ticksToSpawnInitialPawns, "ticksToSpawnInitialPawns");
+            if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            {
+                spawnedPawns.RemoveAll(x => x == null);
+            }
+        }
 
         public override IEnumerable<Gizmo> GetGizmos()
         {
@@ -262,5 +130,172 @@ namespace Horrors
                 yield return g;
             }
         }
-	}
+
+        public override void PostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
+        {
+            if (dinfo.Def.ExternalViolenceFor(this) && dinfo.Instigator?.Faction != null)
+            {
+                if (ticksToSpawnInitialPawns > 0)
+                {
+                    SpawnInitialPawnsNow();
+                }
+
+                var lord = Lord;
+                lord?.ReceiveMemo(MemoAttackedByEnemy);
+            }
+
+            if (dinfo.Def == DamageDefOf.Flame && HitPoints < MaxHitPoints * 0.3f)
+            {
+                var lord2 = Lord;
+                lord2?.ReceiveMemo(MemoBurnedBadly);
+            }
+
+            base.PostApplyDamage(dinfo, totalDamageDealt);
+        }
+
+        public override bool PreventPlayerSellingThingsNearby(out string reason)
+        {
+            if (spawnedPawns.Count > 0)
+            {
+                if (spawnedPawns.Any(p => !p.Downed))
+                {
+                    reason = def.label;
+                    return true;
+                }
+            }
+
+            reason = null;
+            return false;
+        }
+
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
+        {
+            base.SpawnSetup(map, respawningAfterLoad);
+            if (Faction == null)
+            {
+                SetFaction(Find.FactionManager.FirstFactionOfDef(FactionDef.Named("Horrors")));
+            }
+
+            if (!respawningAfterLoad)
+            {
+                ticksToSpawnInitialPawns = 420;
+            }
+        }
+
+        public override void TickRare()
+        {
+            base.TickRare();
+            if (!Spawned)
+            {
+                return;
+            }
+
+            FilterOutUnspawnedPawns();
+            if (!active && !Position.Fogged(Map))
+            {
+                Activate();
+            }
+
+            if (!active)
+            {
+                return;
+            }
+
+            if (ticksToSpawnInitialPawns > 0)
+            {
+                ticksToSpawnInitialPawns -= 250;
+                if (ticksToSpawnInitialPawns <= 0)
+                {
+                    SpawnInitialPawnsNow();
+                }
+            }
+
+            if (Find.TickManager.TicksGame < nextPawnSpawnTick)
+            {
+                return;
+            }
+
+            if (SpawnedPawnsPoints < 500f)
+            {
+                if (TrySpawnPawn(out var pawn))
+                {
+                    pawn.caller?.DoCall();
+                }
+            }
+
+            CalculateNextPawnSpawnTick();
+        }
+
+        private void Activate()
+        {
+            active = true;
+            nextPawnSpawnTick = Find.TickManager.TicksGame + Rand.Range(200, 400);
+            var comp = GetComp<CompSpawnerHorrorHives>();
+            comp?.CalculateNextHiveSpawnTick();
+        }
+
+        private void CalculateNextPawnSpawnTick()
+        {
+            var num = GenMath.LerpDouble(0f, 5f, 1f, 0.5f, spawnedPawns.Count);
+            nextPawnSpawnTick = Find.TickManager.TicksGame + (int) (PawnSpawnIntervalDays.RandomInRange * 60000f /
+                                                                    (num * Find.Storyteller.difficulty
+                                                                        .enemyReproductionRateFactor));
+        }
+
+        private Lord CreateNewLord()
+        {
+            return LordMaker.MakeNewLord(Faction, new LordJob_DefendAndExpandHive(), Map);
+        }
+
+        private void FilterOutUnspawnedPawns()
+        {
+            for (var i = spawnedPawns.Count - 1; i >= 0; i--)
+            {
+                if (!spawnedPawns[i].Spawned)
+                {
+                    spawnedPawns.RemoveAt(i);
+                }
+            }
+        }
+
+        private void SpawnInitialPawnsNow()
+        {
+            ticksToSpawnInitialPawns = -1;
+            while (SpawnedPawnsPoints < 200f)
+            {
+                if (!TrySpawnPawn(out _))
+                {
+                    return;
+                }
+            }
+
+            CalculateNextPawnSpawnTick();
+        }
+
+        private bool TrySpawnPawn(out Pawn pawn)
+        {
+            var list = new List<PawnKindDef> {PawnKindDef.Named("Terrorworm"), PawnKindDef.Named("Visceral")};
+            var curPoints = SpawnedPawnsPoints;
+            var source = from x in list where curPoints + x.combatPower <= 500f select x;
+            if (!source.TryRandomElement(out var kindDef))
+            {
+                pawn = null;
+                return false;
+            }
+
+            pawn = PawnGenerator.GeneratePawn(kindDef, Faction);
+            PawnUtility.TrySpawnHatchedOrBornPawn(pawn, this);
+
+            // GenSpawn.Spawn(pawn, CellFinder.RandomClosewalkCellNear(base.Position, base.Map, 4, null), base.Map);
+            spawnedPawns.Add(pawn);
+            var lord = Lord;
+            if (lord == null)
+            {
+                lord = CreateNewLord();
+            }
+
+            lord.AddPawn(pawn);
+            return true;
+        }
+    }
 }

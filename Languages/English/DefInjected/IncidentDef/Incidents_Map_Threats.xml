@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- Big threats -->
-
   <HorrorInfestation.label>horror infestation</HorrorInfestation.label>
   <HorrorInfestation.letterText>A bug hive has emerged!\n\nIt will slowly spawn bugs as well as produce additional hives. If you don't want it to infest the whole area, muster your forces and destroy it. But beware - the bugs will defend their hive.</HorrorInfestation.letterText>
   <HorrorInfestation.letterLabel>Horror Infestation</HorrorInfestation.letterLabel>
-
-
 </LanguageData>

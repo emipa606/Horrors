@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- VISCERAL -->
-
   <Visceral.label>Visceral</Visceral.label>
   <Visceral.labelPlural>Viscerals</Visceral.labelPlural>
   <Visceral.lifeStages.0.label>Visceral</Visceral.lifeStages.0.label>
@@ -27,10 +25,7 @@
   <Visceral.labelMalePlural>male Viscerals</Visceral.labelMalePlural>
   <Visceral.labelFemale>female Visceral</Visceral.labelFemale>
   <Visceral.labelFemalePlural>female Viscerals</Visceral.labelFemalePlural>
-
-
   <!-- BULWARK -->
-
   <Bulwark.label>Bulwark</Bulwark.label>
   <Bulwark.labelPlural>Bulwarks</Bulwark.labelPlural>
   <Bulwark.lifeStages.0.label>Bulwark</Bulwark.lifeStages.0.label>
@@ -55,10 +50,7 @@
   <Bulwark.labelMalePlural>male Bulwarks</Bulwark.labelMalePlural>
   <Bulwark.labelFemale>female Bulwark</Bulwark.labelFemale>
   <Bulwark.labelFemalePlural>female Bulwarks</Bulwark.labelFemalePlural>
-
-
   <!-- TERRORWORM -->
-
   <Terrorworm.label>Terrorworm</Terrorworm.label>
   <Terrorworm.labelPlural>Terrorworms</Terrorworm.labelPlural>
   <Terrorworm.lifeStages.0.label>Terrorworm</Terrorworm.lifeStages.0.label>
@@ -83,10 +75,7 @@
   <Terrorworm.labelMalePlural>male Terrorworms</Terrorworm.labelMalePlural>
   <Terrorworm.labelFemale>female Terrorworm</Terrorworm.labelFemale>
   <Terrorworm.labelFemalePlural>female Terrorworms</Terrorworm.labelFemalePlural>
-
-
   <!-- BROOD LORD -->
-
   <BroodLord.label>BroodLord</BroodLord.label>
   <BroodLord.labelPlural>BroodLords</BroodLord.labelPlural>
   <BroodLord.lifeStages.0.label>BroodLord</BroodLord.lifeStages.0.label>
@@ -111,10 +100,7 @@
   <BroodLord.labelMalePlural>male BroodLords</BroodLord.labelMalePlural>
   <BroodLord.labelFemale>female BroodLord</BroodLord.labelFemale>
   <BroodLord.labelFemalePlural>female BroodLords</BroodLord.labelFemalePlural>
-
-
   <!-- HARVESTER -->
-
   <Harvester.label>harvester</Harvester.label>
   <Harvester.labelPlural>harvesters</Harvester.labelPlural>
   <Harvester.lifeStages.0.label>harvester</Harvester.lifeStages.0.label>
@@ -139,7 +125,6 @@
   <Harvester.labelMalePlural>male harvesters</Harvester.labelMalePlural>
   <Harvester.labelFemale>female harvester</Harvester.labelFemale>
   <Harvester.labelFemalePlural>female harvesters</Harvester.labelFemalePlural>
-
   <Prowler.label>Prowler</Prowler.label>
   <Prowler.labelPlural>Prowlers</Prowler.labelPlural>
   <Prowler.lifeStages.0.label>Prowler</Prowler.lifeStages.0.label>
@@ -164,6 +149,4 @@
   <Prowler.labelMalePlural>male Prowlers</Prowler.labelMalePlural>
   <Prowler.labelFemale>female Prowler</Prowler.labelFemale>
   <Prowler.labelFemalePlural>female Prowlers</Prowler.labelFemalePlural>
-
-
 </LanguageData>

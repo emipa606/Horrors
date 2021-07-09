@@ -1,26 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <!-- HORRORS -->
-
-  <NamerFactionHorrors.rulePack.rulesStrings.0>name->The [badasscolor] Brood</NamerFactionHorrors.rulePack.rulesStrings.0>
-  <NamerFactionHorrors.rulePack.rulesStrings.1>name->The [badasscolor] Swarm</NamerFactionHorrors.rulePack.rulesStrings.1>
-  <NamerFactionHorrors.rulePack.rulesStrings.2>name->The [badasscolor] Plague</NamerFactionHorrors.rulePack.rulesStrings.2>
-  <NamerFactionHorrors.rulePack.rulesStrings.3>name->The [badassadjective] Brood</NamerFactionHorrors.rulePack.rulesStrings.3>
-  <NamerFactionHorrors.rulePack.rulesStrings.4>name->The [badassadjective] Swarm</NamerFactionHorrors.rulePack.rulesStrings.4>
-  <NamerFactionHorrors.rulePack.rulesStrings.5>name->The [badassadjective] Plague</NamerFactionHorrors.rulePack.rulesStrings.5>
-
-  <NamerFactionBaseHorrors.rulePack.rulesStrings.0>name->The Infested [geography] of [badassconcept]</NamerFactionBaseHorrors.rulePack.rulesStrings.0>
-  <NamerFactionBaseHorrors.rulePack.rulesStrings.1>name->The [badasscolor] [geography]</NamerFactionBaseHorrors.rulePack.rulesStrings.1>
-  <NamerFactionBaseHorrors.rulePack.rulesStrings.2>name->The [badasscolor] Hive</NamerFactionBaseHorrors.rulePack.rulesStrings.2>
-  <NamerFactionBaseHorrors.rulePack.rulesStrings.3>name->The [badasscolor] Infestation</NamerFactionBaseHorrors.rulePack.rulesStrings.3>
-  <NamerFactionBaseHorrors.rulePack.rulesStrings.4>name->The [badasscolor] Lair</NamerFactionBaseHorrors.rulePack.rulesStrings.4>
-  <NamerFactionBaseHorrors.rulePack.rulesStrings.5>name->The [badasscolor] [badassconcept]</NamerFactionBaseHorrors.rulePack.rulesStrings.5>
-  <NamerFactionBaseHorrors.rulePack.rulesStrings.6>name->The Hive of [badassconcept]</NamerFactionBaseHorrors.rulePack.rulesStrings.6>
-  <NamerFactionBaseHorrors.rulePack.rulesStrings.7>name->The [geography] Lair</NamerFactionBaseHorrors.rulePack.rulesStrings.7>
-  <NamerFactionBaseHorrors.rulePack.rulesStrings.8>name->The [geography] Hive</NamerFactionBaseHorrors.rulePack.rulesStrings.8>
-  <NamerFactionBaseHorrors.rulePack.rulesStrings.9>name->The [geography] Infestation</NamerFactionBaseHorrors.rulePack.rulesStrings.9>
-  <NamerFactionBaseHorrors.rulePack.rulesStrings.10>geography->[terrainfeature]</NamerFactionBaseHorrors.rulePack.rulesStrings.10>
-
-
+  <NamerFactionHorrors.rulePack.rulesStrings.0>name-&gt;The [badasscolor] Brood</NamerFactionHorrors.rulePack.rulesStrings.0>
+  <NamerFactionHorrors.rulePack.rulesStrings.1>name-&gt;The [badasscolor] Swarm</NamerFactionHorrors.rulePack.rulesStrings.1>
+  <NamerFactionHorrors.rulePack.rulesStrings.2>name-&gt;The [badasscolor] Plague</NamerFactionHorrors.rulePack.rulesStrings.2>
+  <NamerFactionHorrors.rulePack.rulesStrings.3>name-&gt;The [badassadjective] Brood</NamerFactionHorrors.rulePack.rulesStrings.3>
+  <NamerFactionHorrors.rulePack.rulesStrings.4>name-&gt;The [badassadjective] Swarm</NamerFactionHorrors.rulePack.rulesStrings.4>
+  <NamerFactionHorrors.rulePack.rulesStrings.5>name-&gt;The [badassadjective] Plague</NamerFactionHorrors.rulePack.rulesStrings.5>
+  <NamerFactionBaseHorrors.rulePack.rulesStrings.0>name-&gt;The Infested [geography] of [badassconcept]</NamerFactionBaseHorrors.rulePack.rulesStrings.0>
+  <NamerFactionBaseHorrors.rulePack.rulesStrings.1>name-&gt;The [badasscolor] [geography]</NamerFactionBaseHorrors.rulePack.rulesStrings.1>
+  <NamerFactionBaseHorrors.rulePack.rulesStrings.2>name-&gt;The [badasscolor] Hive</NamerFactionBaseHorrors.rulePack.rulesStrings.2>
+  <NamerFactionBaseHorrors.rulePack.rulesStrings.3>name-&gt;The [badasscolor] Infestation</NamerFactionBaseHorrors.rulePack.rulesStrings.3>
+  <NamerFactionBaseHorrors.rulePack.rulesStrings.4>name-&gt;The [badasscolor] Lair</NamerFactionBaseHorrors.rulePack.rulesStrings.4>
+  <NamerFactionBaseHorrors.rulePack.rulesStrings.5>name-&gt;The [badasscolor] [badassconcept]</NamerFactionBaseHorrors.rulePack.rulesStrings.5>
+  <NamerFactionBaseHorrors.rulePack.rulesStrings.6>name-&gt;The Hive of [badassconcept]</NamerFactionBaseHorrors.rulePack.rulesStrings.6>
+  <NamerFactionBaseHorrors.rulePack.rulesStrings.7>name-&gt;The [geography] Lair</NamerFactionBaseHorrors.rulePack.rulesStrings.7>
+  <NamerFactionBaseHorrors.rulePack.rulesStrings.8>name-&gt;The [geography] Hive</NamerFactionBaseHorrors.rulePack.rulesStrings.8>
+  <NamerFactionBaseHorrors.rulePack.rulesStrings.9>name-&gt;The [geography] Infestation</NamerFactionBaseHorrors.rulePack.rulesStrings.9>
+  <NamerFactionBaseHorrors.rulePack.rulesStrings.10>geography-&gt;[terrainfeature]</NamerFactionBaseHorrors.rulePack.rulesStrings.10>
 </LanguageData>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--===========================  Webs (some harvestable) ==============================-->
+  <ThingDef ParentName="HorrorBase">
+    <defName>HorrorWeb</defName>
+    <label>horrorweb</label>
+    <blockLight>true</blockLight>
+    <thingClass>DeadPlant</thingClass>
+    <description>Large and disconcerting webs, though they do not seem sticky, they exhude a strange smell and do take some effort to pass through.</description>
+    <statBases>
+      <MaxHitPoints>2</MaxHitPoints>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Webs/HorrorWeb3</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0, 0, 0)</volume>
+      </shadowData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <selectable>false</selectable>
+    <fillPercent>0.0</fillPercent>
+    <pathCost>50</pathCost>
+    <plant>
+      <fertilitySensitivity>0</fertilitySensitivity>
+      <harvestTag>Standard</harvestTag>
+      <harvestedThingDef>Cloth</harvestedThingDef>
+      <harvestYield>5</harvestYield>
+      <harvestWork>8</harvestWork>
+      <fertilityMin>0</fertilityMin>
+      <dieIfLeafless>false</dieIfLeafless>
+      <neverBlightable>true</neverBlightable>
+      <growDays>30</growDays>
+      <growMinGlow>0</growMinGlow>
+      <visualSizeRange>
+        <min>1.8</min>
+        <max>2.2</max>
+      </visualSizeRange>
+      <topWindExposure>0.05</topWindExposure>
+      <wildClusterRadius>4</wildClusterRadius>
+      <wildClusterWeight>10</wildClusterWeight>
+      <wildOrder>1</wildOrder>
+    </plant>
+  </ThingDef>
+</Defs>

@@ -1,8 +1,5 @@
-﻿using RimWorld.Planet;
-using System;
-using UnityEngine;
+﻿using RimWorld;
 using Verse;
-using RimWorld;
 using Verse.AI.Group;
 
 namespace Horrors
@@ -11,58 +8,60 @@ namespace Horrors
     {
         private float gestateProgress;
         public Faction hatcheeFaction;
-        public CompProperties_HorrorHatcher Props
+
+        public CompProperties_HorrorHatcher Props => (CompProperties_HorrorHatcher) props;
+
+        public override string CompInspectStringExtra()
         {
-            get
+            return "EggProgress".Translate() + ": " + gestateProgress.ToStringPercent() + "\n" + "Gestating: " +
+                   Props.hatcherPawn.defName;
+        }
+
+        public override void CompTick()
+        {
+            var num = 1f / (Props.hatcherDaystoHatch * 60000f);
+            gestateProgress += num;
+            if (gestateProgress > 1f)
             {
-                return (CompProperties_HorrorHatcher)this.props;
+                Hatch();
             }
         }
+
+        public override void CompTickRare()
+        {
+            var num = 1f / (Props.hatcherDaystoHatch * 300f);
+            gestateProgress += num;
+            if (gestateProgress > 1f)
+            {
+                Hatch();
+            }
+        }
+
+        public void Hatch()
+        {
+            var request = new PawnGenerationRequest(Props.hatcherPawn, hatcheeFaction, PawnGenerationContext.NonPlayer,
+                -1, false, true, false, false, true, false, 1f, false, true, true, false);
+            var hatchling = PawnGenerator.GeneratePawn(request);
+            hatchling.SetFactionDirect(Find.FactionManager.FirstFactionOfDef(FactionDef.Named("Horrors")));
+            PawnUtility.TrySpawnHatchedOrBornPawn(hatchling, parent);
+            PawnInventoryGenerator.GenerateInventoryFor(hatchling, request);
+            PawnWeaponGenerator.TryGenerateWeaponFor(hatchling, request);
+            var lord = CreateNewLord();
+            lord.AddPawn(hatchling);
+            parent.Destroy();
+        }
+
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look<float>(ref this.gestateProgress, "gestateProgress", 0f, false);
-            Scribe_References.Look<Faction>(ref this.hatcheeFaction, "hatcheeFaction", false);
-        }
-        public override void CompTickRare()
-        {
-            float num = 1f / (this.Props.hatcherDaystoHatch * 300f);
-            this.gestateProgress += num;
-            if (this.gestateProgress > 1f)
-            {
-                this.Hatch();
-            }
-        }
-        public override void CompTick()
-        {
-            float num = 1f / (this.Props.hatcherDaystoHatch * 60000f);
-            this.gestateProgress += num;
-            if (this.gestateProgress > 1f)
-            {
-                this.Hatch();
-            }
-        }
-        public void Hatch()
-        {
-            PawnGenerationRequest request = new PawnGenerationRequest(this.Props.hatcherPawn, this.hatcheeFaction, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, false, false, false, false, false, 0, null, 1, null, null, null, null, null);
-            Pawn hatchling = PawnGenerator.GeneratePawn(request);
-            hatchling.SetFactionDirect(Find.FactionManager.FirstFactionOfDef(FactionDef.Named("Horrors")));
-            PawnUtility.TrySpawnHatchedOrBornPawn(hatchling, this.parent);
-            PawnInventoryGenerator.GenerateInventoryFor(hatchling, request);
-            PawnWeaponGenerator.TryGenerateWeaponFor(hatchling, request);
-            Lord lord = CreateNewLord();
-            lord.AddPawn(hatchling);
-            this.parent.Destroy(DestroyMode.Vanish);
-        }
-        public override string CompInspectStringExtra()
-        {
-            return "EggProgress".Translate() + ": " + this.gestateProgress.ToStringPercent() + "\n" + "Gestating: " + this.Props.hatcherPawn.defName;
+            Scribe_Values.Look(ref gestateProgress, "gestateProgress");
+            Scribe_References.Look(ref hatcheeFaction, "hatcheeFaction");
         }
 
         private Lord CreateNewLord()
         {
             var faction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("Horrors"));
-            return LordMaker.MakeNewLord(faction, new LordJob_DefendPoint(this.parent.Position, 5f), this.parent.Map, null);
+            return LordMaker.MakeNewLord(faction, new LordJob_DefendPoint(parent.Position, 5f), parent.Map);
         }
     }
 }
