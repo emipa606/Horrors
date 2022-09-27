@@ -1,6 +1,6 @@
 # Horrors
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Viceroys mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=822995067
@@ -10,19 +10,10 @@ Mod-breakdown video: DementedZombie
 
 Not compatible with Rimsenal - Federation Faction Pack
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/Horrors]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 Adds a swarm of Unknown Horrors to the Rimworlds, they have hives of their own that will need to be assaulted and eradicated to ensure your safety. They infest and attack your colony, carving out a large hive and building it up over several tiers. With an overarching AI controlling the behaviour of the hive as they too try and survive. Making use of their every wit.
@@ -58,7 +49,7 @@ They come in many fearsome forms and are a danger to even the most prepared of c
     - Seemingly harmless nullpointer exception on first encounter with Horrors.
     - Human Horrors (This is because a faction MUST have a human leader, I am working to bypass this)
     - Thieving Horrors, sometimes Horrors will steal things for monetary value, this is hardcoded into the thinktree based on pawn intelligence, and will be supersceded by my own thinktree (which I am working on)
-    - Faction bases for Horrors at this time are very rudimentary, I haven&apos;t had time to switch it over to the A17 goodies for the faction base yet. But I will!
+    - Faction bases for Horrors at this time are very rudimentary, I haven't had time to switch it over to the A17 goodies for the faction base yet. But I will!
 
 
 
@@ -107,12 +98,12 @@ Please Note: I am working on solving the above-mentioned nullpointer exception. 
 
 
 
-Furthermore I&apos;d like to say that it is important to get feedback from as many of you as possible, I am only one man and it is hard to find the time to thoroughly test something like this. So I did it in expeditious terms and may have missed some issues that did not meet the eye.
+Furthermore I'd like to say that it is important to get feedback from as many of you as possible, I am only one man and it is hard to find the time to thoroughly test something like this. So I did it in expeditious terms and may have missed some issues that did not meet the eye.
 
 Thank everyone for downloading my mod and for giving me a chance to entertain you!
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
@@ -122,6 +113,7 @@ Thank everyone for downloading my mod and for giving me a chance to entertain yo
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 

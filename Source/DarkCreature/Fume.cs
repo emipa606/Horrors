@@ -2,75 +2,71 @@
 using UnityEngine;
 using Verse;
 
-namespace Horrors
+namespace Horrors;
+
+public class Fume : Thing
 {
-    public class Fume : Thing
+    private int counter;
+    public int destroyTick;
+
+    public float graphicRotation;
+
+    public float graphicRotationSpeed;
+
+    private float num = 0.05f;
+
+    public override void ExposeData()
     {
-        private int counter;
-        public int destroyTick;
+        base.ExposeData();
+        Scribe_Values.Look(ref destroyTick, "destroyTick");
+    }
 
-        public float graphicRotation;
-
-        public float graphicRotationSpeed;
-
-        private float num = 0.05f;
-
-        public override void ExposeData()
+    public override void SpawnSetup(Map map, bool respawningAfterLoad)
+    {
+        while (true)
         {
-            base.ExposeData();
-            Scribe_Values.Look(ref destroyTick, "destroyTick");
+            Thing gas = Position.GetGas(map);
+            if (gas == null)
+            {
+                break;
+            }
+
+            gas.Destroy();
         }
 
-        public override void SpawnSetup(Map map, bool respawningAfterLoad)
-        {
-            while (true)
-            {
-                Thing gas = Position.GetGas(map);
-                if (gas == null)
-                {
-                    break;
-                }
+        counter = 0;
+        base.SpawnSetup(map, respawningAfterLoad);
+        destroyTick = Find.TickManager.TicksGame + def.gas.expireSeconds.RandomInRange.SecondsToTicks();
+        graphicRotationSpeed = Rand.Range(-def.gas.rotationSpeed, def.gas.rotationSpeed) / 60f;
+    }
 
-                gas.Destroy();
+    public override void Tick()
+    {
+        counter += 1;
+
+        if (counter > 100)
+        {
+            var pawn = Position.GetFirstPawn(Map);
+
+            if (pawn is { Faction: { } })
+            {
+                if (pawn.Faction.def.defName != "Horrors")
+                {
+                    num *= pawn.GetStatValue(StatDefOf.ToxicSensitivity);
+                    var num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(pawn.thingIDNumber ^ 74374237));
+                    num *= num2;
+                    HealthUtility.AdjustSeverity(pawn, HediffDefOf.ToxicBuildup, num);
+                }
             }
 
             counter = 0;
-            base.SpawnSetup(map, respawningAfterLoad);
-            destroyTick = Find.TickManager.TicksGame + def.gas.expireSeconds.RandomInRange.SecondsToTicks();
-            graphicRotationSpeed = Rand.Range(-def.gas.rotationSpeed, def.gas.rotationSpeed) / 60f;
         }
 
-        public override void Tick()
+        if (destroyTick <= Find.TickManager.TicksGame)
         {
-            counter += 1;
-
-            if (counter > 100)
-            {
-                var pawn = Position.GetFirstPawn(Map);
-
-                if (pawn != null)
-                {
-                    if (pawn.Faction != null)
-                    {
-                        if (pawn.Faction.def.defName != "Horrors")
-                        {
-                            num *= pawn.GetStatValue(StatDefOf.ToxicSensitivity);
-                            var num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(pawn.thingIDNumber ^ 74374237));
-                            num *= num2;
-                            HealthUtility.AdjustSeverity(pawn, HediffDefOf.ToxicBuildup, num);
-                        }
-                    }
-                }
-
-                counter = 0;
-            }
-
-            if (destroyTick <= Find.TickManager.TicksGame)
-            {
-                Destroy();
-            }
-
-            graphicRotation += graphicRotationSpeed;
+            Destroy();
         }
+
+        graphicRotation += graphicRotationSpeed;
     }
 }

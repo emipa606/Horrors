@@ -3,14 +3,13 @@
  * Based on Ken Perlin's Improved Noise.
  */
 
-namespace Horrors
+namespace Horrors;
+
+public class NoiseLayer
 {
-    public class NoiseLayer
-    {
-        public double amp;
+    public double amp;
 
-        public double freq;
+    public double freq;
 
-        public int[] perm;
-    }
+    public int[] perm;
 }
