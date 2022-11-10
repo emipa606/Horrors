@@ -9,11 +9,6 @@ public class ThinkNode_ConditionalCanBurrow : ThinkNode_Conditional
     {
         var defName = pawn.def.defName;
 
-        if (defName == "Prowler" && !pawn.mindState.anyCloseHostilesRecently)
-        {
-            return true;
-        }
-
-        return false;
+        return defName == "Prowler" && !pawn.mindState.anyCloseHostilesRecently;
     }
 }

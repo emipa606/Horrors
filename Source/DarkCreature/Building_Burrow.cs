@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 using RimWorld;
 using Verse;
 using Verse.AI;
@@ -14,11 +15,11 @@ public class Building_Burrow : Building_CryptosleepCasket
         innerContainer = new ThingOwner<Thing>(this, false);
     }
 
-    public override bool ClaimableBy(Faction fac)
+    public override bool ClaimableBy(Faction fac, StringBuilder reason = null)
     {
         if (!innerContainer.Any)
         {
-            return base.ClaimableBy(fac);
+            return base.ClaimableBy(fac, reason);
         }
 
         foreach (var thing in innerContainer)
@@ -153,16 +154,12 @@ public class Building_Burrow : Building_CryptosleepCasket
 
     private bool IsValidTarget(Thing t)
     {
-        // ReSharper disable once InvertIf
-        if (t is Pawn pawn)
+        if (t is not Pawn pawn)
         {
-            if (pawn.RaceProps.Animal || pawn.Faction == Faction)
-            {
-                return false;
-            }
+            return true;
         }
 
-        return true;
+        return !pawn.RaceProps.Animal && pawn.Faction != Faction;
     }
 
     private bool TryFindNewTarget()

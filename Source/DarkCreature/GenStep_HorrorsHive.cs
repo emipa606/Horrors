@@ -19,13 +19,10 @@ public class GenStep_HorrorsHive : GenStep_Scatterer
 
     protected override void ScatterAt(IntVec3 c, Map map, GenStepParams parms, int stackCount = 1)
     {
-        Log.Message("Horrors: Initiating Hive Spawn");
         var noiseArray = new double[map.Size.x, map.Size.z];
 
         var caveNoise = GeneratePerlinNoiseForCaves(map);
-        Log.Message("Horrors: Noise Generated Successfully");
 
-        Log.Message("Horrors: Stepping through noise grid");
         for (var i = 0; i < map.Size.x; i++)
         {
             for (var n = 0; n < map.Size.z; n++)
@@ -34,7 +31,6 @@ public class GenStep_HorrorsHive : GenStep_Scatterer
             }
         }
 
-        Log.Message("Horrors: Digging out tunnels");
         for (var i = 0; i < map.Size.x; i++)
         {
             for (var n = 0; n < map.Size.z; n++)
@@ -60,12 +56,9 @@ public class GenStep_HorrorsHive : GenStep_Scatterer
                 {
                     map.fogGrid.Unfog(loc);
                 }
-
-                // map.terrainGrid.SetTerrain(loc, TerrainDef.Named("FloorWebs"));
             }
         }
 
-        Log.Message("Horrors: Generating Hive Rect");
         var rect = new CellRect(0, 0, 0, 0);
         Faction faction;
         if (map.info.parent?.Faction == null || map.info.parent.Faction == Faction.OfPlayer)
@@ -85,7 +78,6 @@ public class GenStep_HorrorsHive : GenStep_Scatterer
         resolveParams.faction = faction;
         BaseGen.globalSettings.map = map;
 
-        Log.Message("Horrors: Validating Spawns");
 
         bool Validator(IntVec3 p)
         {
@@ -95,23 +87,18 @@ public class GenStep_HorrorsHive : GenStep_Scatterer
         // Pawns
         var queenPawn = PawnGenerator.GeneratePawn(PawnKindDef.Named("Pirate"), faction);
 
-        Log.Message("Horrors: Spawning Sinkhole");
         CellFinder.TryFindRandomCellNear(map.Center, map, 20, Validator, out var cellReturned);
         GenSpawn.Spawn(ThingDef.Named("SinkHole"), map.Center, map);
 
-        Log.Message("Horrors: Spawning Sinkhole");
         CellFinder.TryFindRandomCellNear(map.Center, map, 20, Validator, out cellReturned);
         GenSpawn.Spawn(ThingDef.Named("SinkHole"), cellReturned, map);
 
-        Log.Message("Horrors: Spawning Sinkhole");
         CellFinder.TryFindRandomCellNear(map.Center, map, 20, Validator, out cellReturned);
         GenSpawn.Spawn(ThingDef.Named("SinkHole"), cellReturned, map);
 
-        Log.Message("Horrors: Spawning Sinkhole");
         CellFinder.TryFindRandomCellNear(map.Center, map, 20, Validator, out cellReturned);
         GenSpawn.Spawn(ThingDef.Named("SinkHole"), cellReturned, map);
 
-        Log.Message("Horrors: Spawning Sinkhole");
         CellFinder.TryFindRandomCellNear(map.Center, map, 20, Validator, out cellReturned);
 
         var queen = GenSpawn.Spawn(queenPawn, cellReturned, map);
@@ -126,8 +113,6 @@ public class GenStep_HorrorsHive : GenStep_Scatterer
     {
         var noiseToOutput = new TurboNoise();
         noiseToOutput.addLayer(map.GetHashCode(), 2.0, 0.1);
-
-        Log.Message("Horrors: Generating Hive Perlin Noise");
 
         return noiseToOutput;
     }

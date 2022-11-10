@@ -138,17 +138,14 @@ public class CompSpawnerHorrorDen : ThingComp
         for (var i = 0; i < 3; i++)
         {
             var minDist = Props.HiveSpawnPreferredMinDist;
-            if (i == 1)
+            switch (i)
             {
-                minDist = 0f;
-            }
-            else
-            {
-                if (i == 2)
-                {
+                case 1:
+                    minDist = 0f;
+                    break;
+                case 2:
                     newHive = null;
                     return false;
-                }
             }
 
             if (CellFinder.TryFindRandomReachableCellNear(parent.Position, parent.Map, Props.HiveSpawnRadius,

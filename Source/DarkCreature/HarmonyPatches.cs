@@ -23,8 +23,6 @@ internal class HarmonyPatches
             var settlements = Find.WorldObjects.SettlementBases;
             foreach (var settlement in settlements)
             {
-                Log.Message(
-                    $"{settlement.Faction.def.defName} owns tile {settlement.Tile} with biome {Find.WorldGrid[settlement.Tile].biome.defName}");
                 if (settlement.Faction.def.defName != "Horrors")
                 {
                     continue;

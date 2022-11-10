@@ -52,7 +52,7 @@ public class Fume : Thing
             {
                 if (pawn.Faction.def.defName != "Horrors")
                 {
-                    num *= pawn.GetStatValue(StatDefOf.ToxicSensitivity);
+                    num /= Mathf.Max(pawn.GetStatValue(StatDefOf.ToxicResistance), 0.001f);
                     var num2 = Mathf.Lerp(0.85f, 1.15f, Rand.ValueSeeded(pawn.thingIDNumber ^ 74374237));
                     num *= num2;
                     HealthUtility.AdjustSeverity(pawn, HediffDefOf.ToxicBuildup, num);

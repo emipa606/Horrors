@@ -13,29 +13,20 @@ public class JobGiver_WebArea : JobGiver_Wander
 
     protected override IntVec3 GetWanderRoot(Pawn pawn)
     {
-        if (!(pawn.mindState.duty.focus.Thing is HorrorHive { Spawned: true } hive))
-        {
-            return pawn.Position;
-        }
-
-        return hive.Position;
+        return pawn.mindState.duty.focus.Thing is not HorrorHive { Spawned: true } hive ? pawn.Position : hive.Position;
     }
 
     protected override Job TryGiveJob(Pawn pawn)
     {
-        // Log.Message("Attempting to create horror web.");
         if (pawn.Position.GetPlant(pawn.Map) != null)
         {
-            // Log.Message("There is something here.");
             if (pawn.Position.GetPlant(pawn.Map).def.defName == "HorrorWeb")
             {
-                // Log.Message("Already webbed.");
                 return null;
             }
         }
         else
         {
-            // Log.Message("There is no web or plant here.");
             GenSpawn.Spawn(ThingDef.Named("HorrorWeb"), pawn.Position, pawn.Map);
             return null;
         }

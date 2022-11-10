@@ -20,14 +20,11 @@ public class JobGiver_Burrow : JobGiver_Wander
     protected override Job TryGiveJob(Pawn pawn)
     {
         var b = pawn.Position.GetFirstBuilding(pawn.Map);
-        Log.Message("Attempting to burrow.");
         if (b != null)
         {
-            Log.Message("There is a thing here.");
             return null;
         }
 
-        Log.Message("There is nothing here, burrowing.");
         var e = GenSpawn.Spawn(ThingDef.Named("HorrorBurrow"), pawn.Position, pawn.Map);
 
         return new Job(JobDefOf.EnterCryptosleepCasket, (Building_CryptosleepCasket)e);

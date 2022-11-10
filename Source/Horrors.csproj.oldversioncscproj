@@ -1,82 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{819C916B-4C12-4A66-85FA-5CA81861445E}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Horrors</RootNamespace>
-    <AssemblyName>Horrors</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\..\Assemblies</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>..\..\1.4\Assemblies</OutputPath>
+    <TargetFramework>net48</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <DebugType>None</DebugType>
     <LangVersion>latest</LangVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\..\Assemblies</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
-    <LangVersion>latest</LangVersion>
+    <FileVersion>1.4.1</FileVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Lib.Harmony">
-      <Version>*</Version>
-      <ExcludeAssets>runtime</ExcludeAssets>
-    </PackageReference>
     <PackageReference Include="Krafs.Rimworld.Ref">
       <Version>*</Version>
       <ExcludeAssets>runtime</ExcludeAssets>
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Lib.Harmony">
+      <Version>*</Version>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="BiomeWorker_HorrorWastes.cs" />
-    <Compile Include="CompProperties_HorrorHatcher.cs" />
-    <Compile Include="CompHorrorHatcher.cs" />
-    <Compile Include="Building_Burrow.cs" />
-    <Compile Include="CompProperties_SpawnerHorrorDen.cs" />
-    <Compile Include="CompSpawnerHorrorDen.cs" />
-    <Compile Include="CompSpawnerHorrorHives.cs" />
-    <Compile Include="CompProperties_SpawnerHorrorHives.cs" />
-    <Compile Include="Fume.cs" />
-    <Compile Include="HarmonyPatches.cs" />
-    <Compile Include="HorrorDen.cs" />
-    <Compile Include="HorrorHivesUtility.cs" />
-    <Compile Include="JobGiver_Burrow.cs" />
-    <Compile Include="ThinkNode_ConditionalCanBurrow.cs" />
-    <Compile Include="ThinkNode_ConditionalHighCover.cs" />
-    <Compile Include="JobGiver_WebArea.cs" />
-    <Compile Include="IncidentWorker_HorrorInfestation.cs" />
-    <Compile Include="HorrorHive.cs" />
-    <Compile Include="RaidStrategyWorker_Harvest.cs" />
-    <Compile Include="GenStep_HorrorsHive.cs" />
-    <Compile Include="HorrorsHive.cs" />
-    <Compile Include="NoiseLayer.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TurboNoise.cs" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

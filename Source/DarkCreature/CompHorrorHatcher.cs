@@ -40,7 +40,7 @@ public class CompHorrorHatcher : ThingComp
     public void Hatch()
     {
         var request = new PawnGenerationRequest(Props.hatcherPawn, hatcheeFaction, PawnGenerationContext.NonPlayer,
-            -1, false, true, false, false, true, false, 1f, false, true, true, false);
+            -1, false, true, false, false, true, 1f, false, true, true, false);
         var hatchling = PawnGenerator.GeneratePawn(request);
         hatchling.SetFactionDirect(Find.FactionManager.FirstFactionOfDef(FactionDef.Named("Horrors")));
         PawnUtility.TrySpawnHatchedOrBornPawn(hatchling, parent);

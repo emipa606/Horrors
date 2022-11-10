@@ -286,7 +286,6 @@ public class HorrorHive : ThingWithComps
         pawn = PawnGenerator.GeneratePawn(kindDef, Faction);
         PawnUtility.TrySpawnHatchedOrBornPawn(pawn, this);
 
-        // GenSpawn.Spawn(pawn, CellFinder.RandomClosewalkCellNear(base.Position, base.Map, 4, null), base.Map);
         spawnedPawns.Add(pawn);
         var lord = Lord;
         if (lord == null)
