@@ -8,7 +8,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=822995067
 Chinese translation: Kevin JCK
 Mod-breakdown video: DementedZombie
 
-Not compatible with Rimsenal - Federation Faction Pack
+Not compatible with https://steamcommunity.com/sharedfiles/filedetails/?id=736172213]Rimsenal - Federation Faction Pack as it also has a defName called Harvester
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
@@ -117,3 +117,4 @@ Thank everyone for downloading my mod and for giving me a chance to entertain yo
 
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2036315072]Last updated 2023-02-22

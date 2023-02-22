@@ -21,6 +21,9 @@
   <loadAfter>
     <li>brrainz.harmony</li>
   </loadAfter>
+  <incompatibleWith>
+    <li>rimsenal.federation</li>
+  </incompatibleWith>
   <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of Viceroys mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=822995067
@@ -28,7 +31,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=822995067
 Chinese translation: Kevin JCK
 Mod-breakdown video: DementedZombie
 
-Not compatible with Rimsenal - Federation Faction Pack
+Not compatible with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=736172213]Rimsenal - Federation Faction Pack[/url] as it also has a defName called Harvester
 
 [img]https://i.imgur.com/pufA0kM.png[/img]
 
@@ -130,5 +133,6 @@ Thank everyone for downloading my mod and for giving me a chance to entertain yo
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
 
-</description>
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2036315072]Last updated 2023-02-22[/url]</description>
 </ModMetaData>
