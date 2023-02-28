@@ -8,7 +8,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=822995067
 Chinese translation: Kevin JCK
 Mod-breakdown video: DementedZombie
 
-Not compatible with https://steamcommunity.com/sharedfiles/filedetails/?id=736172213]Rimsenal - Federation Faction Pack as it also has a defName called Harvester
+[strike]Not compatible with https://steamcommunity.com/sharedfiles/filedetails/?id=736172213]Rimsenal - Federation Faction Pack as it also has a defName called Harvester[/strike] Seems that mod changed its defname for its harvesters in 1.3 so should no longer be an issue.
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
@@ -115,6 +115,4 @@ Thank everyone for downloading my mod and for giving me a chance to entertain yo
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-
-
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2036315072]Last updated 2023-02-22
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2036315072]Last updated 2023-02-28
