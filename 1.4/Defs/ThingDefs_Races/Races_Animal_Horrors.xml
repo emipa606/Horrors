@@ -25,7 +25,8 @@
   </ThingDef>
   <ThingDef Abstract="True" ParentName="AnimalThingBaseHorror" Name="BaseHorror">
     <statBases>
-      <ToxicResistance>0</ToxicResistance>
+      <ToxicResistance>1</ToxicResistance>
+      <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
     </statBases>
     <race>
       <fleshType>Insectoid</fleshType>
@@ -39,6 +40,11 @@
       <herdAnimal>true</herdAnimal>
       <predator>true</predator>
     </race>
+    <ingredient>
+      <mergeCompatibilityTags>
+        <li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+      </mergeCompatibilityTags>
+    </ingredient>
   </ThingDef>
   <!-- ====================================================== VISCERAL -->
   <ThingDef ParentName="BaseHorror">

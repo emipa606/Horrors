@@ -115,4 +115,4 @@ Thank everyone for downloading my mod and for giving me a chance to entertain yo
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2036315072]Last updated 2023-02-28
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2036315072]Last updated 2023-08-30

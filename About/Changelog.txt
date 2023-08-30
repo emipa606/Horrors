@@ -1,5 +1,8 @@
 # Changelog for Horrors
 
+1.4.4 - Fixed the thinktree a bit
+
+
 1.4.3 - Removed the incompatibility tag with Rimsenal - Federation Faction Pack since they changed their conflicting defname in 1.3
 
 
