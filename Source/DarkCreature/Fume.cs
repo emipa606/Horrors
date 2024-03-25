@@ -48,7 +48,7 @@ public class Fume : Thing
         {
             var pawn = Position.GetFirstPawn(Map);
 
-            if (pawn is { Faction: { } })
+            if (pawn is { Faction: not null })
             {
                 if (pawn.Faction.def.defName != "Horrors")
                 {

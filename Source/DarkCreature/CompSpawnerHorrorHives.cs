@@ -148,7 +148,8 @@ public class CompSpawnerHorrorHives : ThingComp
                     return false;
             }
 
-            if (CellFinder.TryFindRandomReachableCellNear(parent.Position, parent.Map, Props.HiveSpawnRadius,
+            if (CellFinder.TryFindRandomReachableCellNearPosition(parent.Position, parent.Position, parent.Map,
+                    Props.HiveSpawnRadius,
                     TraverseParms.For(TraverseMode.NoPassClosedDoors),
                     c => CanSpawnHiveAt(c, minDist, ignoreRoofedRequirement), null, out invalid))
             {

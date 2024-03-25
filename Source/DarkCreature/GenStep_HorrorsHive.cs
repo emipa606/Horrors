@@ -79,11 +79,6 @@ public class GenStep_HorrorsHive : GenStep_Scatterer
         BaseGen.globalSettings.map = map;
 
 
-        bool Validator(IntVec3 p)
-        {
-            return DropCellFinder.IsGoodDropSpot(p, map, true, true);
-        }
-
         // Pawns
         var queenPawn = PawnGenerator.GeneratePawn(PawnKindDef.Named("Pirate"), faction);
 
@@ -107,6 +102,12 @@ public class GenStep_HorrorsHive : GenStep_Scatterer
 
         GenSpawn.Spawn(pawnToSpawn, cellReturned, map);
         pawnToSpawn.training.Train(TrainableDefOf.Obedience, (Pawn)queen);
+        return;
+
+        bool Validator(IntVec3 p)
+        {
+            return DropCellFinder.IsGoodDropSpot(p, map, true, true);
+        }
     }
 
     private TurboNoise GeneratePerlinNoiseForCaves(Map map)

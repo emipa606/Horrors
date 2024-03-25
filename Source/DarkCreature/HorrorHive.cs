@@ -28,7 +28,7 @@ public class HorrorHive : ThingWithComps
 
     public int nextPawnSpawnTick = -1;
 
-    private List<Pawn> spawnedPawns = new List<Pawn>();
+    private List<Pawn> spawnedPawns = [];
 
     private int ticksToSpawnInitialPawns = -1;
 
@@ -36,12 +36,6 @@ public class HorrorHive : ThingWithComps
     {
         get
         {
-            bool HasDefendHiveLord(Pawn x)
-            {
-                var lord = x.GetLord();
-                return lord?.LordJob is LordJob_DefendAndExpandHive;
-            }
-
             var foundPawn = spawnedPawns.Find(HasDefendHiveLord);
             if (!Spawned)
             {
@@ -81,6 +75,12 @@ public class HorrorHive : ThingWithComps
             }
 
             return foundPawn?.GetLord();
+
+            bool HasDefendHiveLord(Pawn x)
+            {
+                var lord = x.GetLord();
+                return lord?.LordJob is LordJob_DefendAndExpandHive;
+            }
         }
     }
 
