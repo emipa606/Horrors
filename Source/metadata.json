@@ -2,5 +2,11 @@
   "Continued": true,
   "CanAdd": "1",
   "CanRemove": "2",
-  "PreviewVersion": "1.5"
+  "PreviewVersion": "1.5",
+  "Patches": false,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 51959,
+  "LinesOfXML": 109808,
+  "CodeBaseSize": 82
 }
