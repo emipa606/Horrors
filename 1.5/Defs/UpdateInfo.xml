@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TabulaRasa.UpdateDef Abstract="true" Name="Horrors_UpdateInfoBase">
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2036315072</linkUrl>
+		<banner>UpdateInfo/Horrors</banner>
+	</TabulaRasa.UpdateDef>
+	<TabulaRasa.UpdateDef ParentName="Horrors_UpdateInfoBase" MayRequire="neronix17.toolbox">
+		<defName>Horrors_1_5_0</defName>
+		<date>2025/7/26</date>
+		<content>This mod has been re-released for the new version of the game. This version will remain but will not be updated further.</content>
+	</TabulaRasa.UpdateDef>
+</Defs>
+
