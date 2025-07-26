@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: brainslug -->
+  <Horror_BrainSlug.label>brainslug</Horror_BrainSlug.label>
+  <!-- EN: A disgusting parasite that uses the victim's mental faculties to coordinate the Horrors, it is capable of extracting all information from the brain. Allowing some Horrors remarkable insight into human behaviour. -->
+  <Horror_BrainSlug.description>A disgusting parasite that uses the victim's mental faculties to coordinate the Horrors, it is capable of extracting all information from the brain. Allowing some Horrors remarkable insight into human behaviour.</Horror_BrainSlug.description>
+  <!-- EN: horrible overgrowth -->
+  <Horror_Exoskeleton.label>horrible overgrowth</Horror_Exoskeleton.label>
+  <!-- EN: A living organism fused into the body of its hapless victim, it is firmly embedded into the spinal cord of the human, rendering the person effectively paralyzed as the Exoskeleton feeds and takes control of all mental faculties. Seizing control of the information stored within the person's brain. One can only wonder if there is still the mind of a person trapped inside... -->
+  <Horror_Exoskeleton.description>A living organism fused into the body of its hapless victim, it is firmly embedded into the spinal cord of the human, rendering the person effectively paralyzed as the Exoskeleton feeds and takes control of all mental faculties. Seizing control of the information stored within the person's brain. One can only wonder if there is still the mind of a person trapped inside...</Horror_Exoskeleton.description>
+  <!-- EN: brainslug -->
+  <Horror_MastermindHat.label>brainslug</Horror_MastermindHat.label>
+  <!-- EN: A disgusting parasite that uses the victim's mental faculties to coordinate the Horrors, it is capable of extracting all information from the brain. Allowing some Horrors remarkable insight into human behaviour. -->
+  <Horror_MastermindHat.description>A disgusting parasite that uses the victim's mental faculties to coordinate the Horrors, it is capable of extracting all information from the brain. Allowing some Horrors remarkable insight into human behaviour.</Horror_MastermindHat.description>
+  <!-- EN: horrible overgrowth -->
+  <Horror_Overgrowth.label>horrible overgrowth</Horror_Overgrowth.label>
+  <!-- EN: A hideous fusion of human and monster, twisting and mutating the human within, this carapace seems to give the human amazing abilities and endurance. -->
+  <Horror_Overgrowth.description>A hideous fusion of human and monster, twisting and mutating the human within, this carapace seems to give the human amazing abilities and endurance.</Horror_Overgrowth.description>
+  <!-- EN: infested pants -->
+  <Horror_Pants.label>infested pants</Horror_Pants.label>
+  <!-- EN: The pants this person must have been wearing at the time they fell victim to the horrors. -->
+  <Horror_Pants.description>The pants this person must have been wearing at the time they fell victim to the horrors.</Horror_Pants.description>
+  <!-- EN: horrible undergrowth -->
+  <Horror_Undergrowth.label>horrible undergrowth</Horror_Undergrowth.label>
+  <!-- EN: Some kind of mucus covering that insulates the victim against the elements. -->
+  <Horror_Undergrowth.description>Some kind of mucus covering that insulates the victim against the elements.</Horror_Undergrowth.description>
+</LanguageData>

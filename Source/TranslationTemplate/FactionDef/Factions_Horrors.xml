@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Horrors -->
+  <Horrors.label>Horrors</Horrors.label>
+  <!-- EN: Dangerous skulking Horrors, persistant in their attacks on the colonies. -->
+  <Horrors.description>Dangerous skulking Horrors, persistant in their attacks on the colonies.</Horrors.description>
+  <!-- EN: Mastermind -->
+  <Horrors.leaderTitle>Mastermind</Horrors.leaderTitle>
+  <!-- EN: {0} from {1} are attacking your {2}. -->
+  <Horrors.messageDefendersAttacking>{0} from {1} are attacking your {2}.</Horrors.messageDefendersAttacking>
+  <!-- EN: member -->
+  <Horrors.pawnSingular>member</Horrors.pawnSingular>
+  <!-- EN: horrors -->
+  <Horrors.pawnsPlural>horrors</Horrors.pawnsPlural>
+</LanguageData>

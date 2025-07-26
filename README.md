@@ -1,20 +1,21 @@
-# Horrors
+# [Horrors (Continued)]()
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Viceroys mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=822995067
 
+**The release of RimWorld 1.6 added improved support for [Asset Bundles](https://github.com/emipa606/AssetBuilder/blob/main/README.md)**.
+To avoid doubling the size of the mod, it was re-released using only Asset Bundles, you can find the previous version of this mod [here](https://steamcommunity.com/sharedfiles/filedetails/?id=2036315072).
+
 Chinese translation: Kevin JCK
 Mod-breakdown video: DementedZombie
 
-[strike]Not compatible with https://steamcommunity.com/sharedfiles/filedetails/?id=736172213]Rimsenal - Federation Faction Pack as it also has a defName called Harvester[/strike] Seems that mod changed its defname for its harvesters in 1.3 so should no longer be an issue.
+~~Not compatible with [Rimsenal - Federation Faction Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=736172213) as it also has a defName called Harvester~~ Seems that mod changed its defname for its harvesters in 1.3 so should no longer be an issue.
 
 ![Image](https://i.imgur.com/pufA0kM.png)
-
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
-
 
 Adds a swarm of Unknown Horrors to the Rimworlds, they have hives of their own that will need to be assaulted and eradicated to ensure your safety. They infest and attack your colony, carving out a large hive and building it up over several tiers. With an overarching AI controlling the behaviour of the hive as they too try and survive. Making use of their every wit.
 
@@ -109,13 +110,10 @@ Thank everyone for downloading my mod and for giving me a chance to entertain yo
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
+-  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
+-  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
-
-
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2036315072]![Image](https://img.shields.io/github/v/release/emipa606/Horrors?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: ash -->
+  <FilthAsh.label>ash</FilthAsh.label>
+  <!-- EN: bugblood -->
+  <FilthBloodHorror.label>bugblood</FilthBloodHorror.label>
+  <!-- EN: firefoam -->
+  <FilthFireFoam.label>firefoam</FilthFireFoam.label>
+  <!-- EN: horrorwebs -->
+  <FloorWebsFilth.label>horrorwebs</FloorWebsFilth.label>
+</LanguageData>

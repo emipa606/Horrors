@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Text;
 using RimWorld;
 using Verse;
 using Verse.AI;
@@ -15,11 +14,11 @@ public class Building_Burrow : Building_CryptosleepCasket
         innerContainer = new ThingOwner<Thing>(this, false);
     }
 
-    public override bool ClaimableBy(Faction fac, StringBuilder reason = null)
+    public override AcceptanceReport ClaimableBy(Faction fac)
     {
         if (!innerContainer.Any)
         {
-            return base.ClaimableBy(fac, reason);
+            return base.ClaimableBy(fac);
         }
 
         foreach (var thing in innerContainer)
@@ -98,7 +97,6 @@ public class Building_Burrow : Building_CryptosleepCasket
     public override void TickRare()
     {
         base.TickRare();
-        innerContainer.ThingOwnerTickRare();
 
         if (TryFindNewTarget())
         {

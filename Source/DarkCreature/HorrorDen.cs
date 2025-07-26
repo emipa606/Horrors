@@ -22,7 +22,7 @@ public class HorrorDen : ThingWithComps
 
     private static readonly string MemoDestroyed = "HiveDestroyed";
 
-    private static readonly FloatRange PawnSpawnIntervalDays = new FloatRange(0.85f, 1.1f);
+    private static readonly FloatRange PawnSpawnIntervalDays = new(0.85f, 1.1f);
 
     public bool active = true;
 

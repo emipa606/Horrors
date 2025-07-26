@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: prowler spit -->
+  <Bullet_ProwlerSpit.label>prowler spit</Bullet_ProwlerSpit.label>
+  <!-- EN: prowler paralysis organ -->
+  <Gun_ProwlerSpit.label>prowler paralysis organ</Gun_ProwlerSpit.label>
+  <!-- EN: A mutated saliva producing organ that spews globules of paralytic venom. -->
+  <Gun_ProwlerSpit.description>A mutated saliva producing organ that spews globules of paralytic venom.</Gun_ProwlerSpit.description>
+  <!-- EN: prowler paralysis organ -->
+  <Gun_ProwlerSpit.verbs.Verb_Shoot.label>prowler paralysis organ</Gun_ProwlerSpit.verbs.Verb_Shoot.label>
+  <!-- EN: rending claws -->
+  <MeleeWeapon_RendingClaws.label>rending claws</MeleeWeapon_RendingClaws.label>
+  <!-- EN: Mutated claws used by the Infested to tear through steel, flesh and bone. Once removed from the Infested, they may be repurposed. -->
+  <MeleeWeapon_RendingClaws.description>Mutated claws used by the Infested to tear through steel, flesh and bone. Once removed from the Infested, they may be repurposed.</MeleeWeapon_RendingClaws.description>
+  <!-- EN: edge -->
+  <MeleeWeapon_RendingClaws.tools.edge.label>edge</MeleeWeapon_RendingClaws.tools.edge.label>
+</LanguageData>

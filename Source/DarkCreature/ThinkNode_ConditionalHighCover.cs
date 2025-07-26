@@ -5,7 +5,7 @@ namespace Horrors;
 
 public class ThinkNode_ConditionalHighCover : ThinkNode_Conditional
 {
-    public readonly float min = 0.4f;
+    private readonly float min = 0.4f;
 
     protected override bool Satisfied(Pawn pawn)
     {

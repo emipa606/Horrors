@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN:
+    <li>name->The Infested [geography] of [badassconcept]</li>
+    <li>name->The [badasscolor] [geography]</li>
+    <li>name->The [badasscolor] Hive</li>
+    <li>name->The [badasscolor] Infestation</li>
+    <li>name->The [badasscolor] Lair</li>
+    <li>name->The [badasscolor] [badassconcept]</li>
+    <li>name->The Hive of [badassconcept]</li>
+    <li>name->The [geography] Lair</li>
+    <li>name->The [geography] Hive</li>
+    <li>name->The [geography] Infestation</li>
+    <li>geography->[terrainfeature]</li>
+  -->
+  <NamerFactionBaseHorrors.rulePack.rulesStrings>
+    <li>name->The Infested [geography] of [badassconcept]</li>
+    <li>name->The [badasscolor] [geography]</li>
+    <li>name->The [badasscolor] Hive</li>
+    <li>name->The [badasscolor] Infestation</li>
+    <li>name->The [badasscolor] Lair</li>
+    <li>name->The [badasscolor] [badassconcept]</li>
+    <li>name->The Hive of [badassconcept]</li>
+    <li>name->The [geography] Lair</li>
+    <li>name->The [geography] Hive</li>
+    <li>name->The [geography] Infestation</li>
+    <li>geography->[terrainfeature]</li>
+  </NamerFactionBaseHorrors.rulePack.rulesStrings>
+  <!-- EN:
+    <li>name->The [badasscolor] Brood</li>
+    <li>name->The [badasscolor] Swarm</li>
+    <li>name->The [badasscolor] Plague</li>
+    <li>name->The [badassadjective] Brood</li>
+    <li>name->The [badassadjective] Swarm</li>
+    <li>name->The [badassadjective] Plague</li>
+  -->
+  <NamerFactionHorrors.rulePack.rulesStrings>
+    <li>name->The [badasscolor] Brood</li>
+    <li>name->The [badasscolor] Swarm</li>
+    <li>name->The [badasscolor] Plague</li>
+    <li>name->The [badassadjective] Brood</li>
+    <li>name->The [badassadjective] Swarm</li>
+    <li>name->The [badassadjective] Plague</li>
+  </NamerFactionHorrors.rulePack.rulesStrings>
+</LanguageData>

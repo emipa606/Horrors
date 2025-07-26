@@ -7,7 +7,7 @@ namespace Horrors;
 
 public class GenStep_HorrorsHive : GenStep_Scatterer
 {
-    private static readonly IntRange FactionBaseSizeRange = new IntRange(22, 23);
+    private static readonly IntRange FactionBaseSizeRange = new(22, 23);
 
     public override int SeedPart => 414596103;
 

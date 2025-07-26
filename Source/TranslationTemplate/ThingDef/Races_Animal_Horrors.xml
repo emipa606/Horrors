@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: brood lord -->
+  <BroodLord.label>brood lord</BroodLord.label>
+  <!-- EN: A massive and lumbering alien beast capable of rending steel and biting through concrete. It is EXTREMELY dangerous and is best dealt with using explosives and AT weapons, or better-yet landmines. -->
+  <BroodLord.description>A massive and lumbering alien beast capable of rending steel and biting through concrete. It is EXTREMELY dangerous and is best dealt with using explosives and AT weapons, or better-yet landmines.</BroodLord.description>
+  <!-- EN: insect meat -->
+  <BroodLord.race.meatLabel>insect meat</BroodLord.race.meatLabel>
+  <!-- EN: bulwark -->
+  <Bulwark.label>bulwark</Bulwark.label>
+  <!-- EN: A massive and lumbering alien beast capable of rending steel and biting through concrete. It is EXTREMELY dangerous and is best dealt with using explosives and AT weapons, or better-yet landmines. -->
+  <Bulwark.description>A massive and lumbering alien beast capable of rending steel and biting through concrete. It is EXTREMELY dangerous and is best dealt with using explosives and AT weapons, or better-yet landmines.</Bulwark.description>
+  <!-- EN: insect meat -->
+  <Bulwark.race.meatLabel>insect meat</Bulwark.race.meatLabel>
+  <!-- EN: harvester -->
+  <Harvester.label>harvester</Harvester.label>
+  <!-- EN: A large carnivorous monster that attacks at night and attempts to drag off a living victim... One can only wonder what the motives of such a creature might be. -->
+  <Harvester.description>A large carnivorous monster that attacks at night and attempts to drag off a living victim... One can only wonder what the motives of such a creature might be.</Harvester.description>
+  <!-- EN: insect meat -->
+  <Harvester.race.meatLabel>insect meat</Harvester.race.meatLabel>
+  <!-- EN: prowler -->
+  <Prowler.label>prowler</Prowler.label>
+  <!-- EN: A huge and muscular monstrosity that is fiercely territorial and very aggressive. Seems to lack any greater sense of self preservation -->
+  <Prowler.description>A huge and muscular monstrosity that is fiercely territorial and very aggressive. Seems to lack any greater sense of self preservation</Prowler.description>
+  <!-- EN: insect meat -->
+  <Prowler.race.meatLabel>insect meat</Prowler.race.meatLabel>
+  <!-- EN: terrorworm -->
+  <Terrorworm.label>terrorworm</Terrorworm.label>
+  <!-- EN: An alien (or at least unknown) worm. It is large enough to pose a threat to a human, however they do not seem incredibly fast or ferocious They are often accompanied by other Horrors and seem to have a supporting role in the hive. -->
+  <Terrorworm.description>An alien (or at least unknown) worm. It is large enough to pose a threat to a human, however they do not seem incredibly fast or ferocious They are often accompanied by other Horrors and seem to have a supporting role in the hive.</Terrorworm.description>
+  <!-- EN: insect meat -->
+  <Terrorworm.race.meatLabel>insect meat</Terrorworm.race.meatLabel>
+  <!-- EN: terrorworm -->
+  <Terrorworm.verbs.Verb_MeleeAttackDamage.label>terrorworm</Terrorworm.verbs.Verb_MeleeAttackDamage.label>
+  <!-- EN: visceral -->
+  <Visceral.label>visceral</Visceral.label>
+  <!-- EN: An alien (or at least unknown) creature of rigor and veracity. About the size of a human and much more dangerous. Armed with rending raptorial legs and a maw capable of tearing into even the toughest hide. -->
+  <Visceral.description>An alien (or at least unknown) creature of rigor and veracity. About the size of a human and much more dangerous. Armed with rending raptorial legs and a maw capable of tearing into even the toughest hide.</Visceral.description>
+  <!-- EN: insect meat -->
+  <Visceral.race.meatLabel>insect meat</Visceral.race.meatLabel>
+</LanguageData>

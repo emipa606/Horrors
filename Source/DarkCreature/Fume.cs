@@ -7,11 +7,11 @@ namespace Horrors;
 public class Fume : Thing
 {
     private int counter;
-    public int destroyTick;
+    private int destroyTick;
 
     public float graphicRotation;
 
-    public float graphicRotationSpeed;
+    private float graphicRotationSpeed;
 
     private float num = 0.05f;
 
@@ -40,7 +40,7 @@ public class Fume : Thing
         graphicRotationSpeed = Rand.Range(-def.gas.rotationSpeed, def.gas.rotationSpeed) / 60f;
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         counter += 1;
 

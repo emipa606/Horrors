@@ -18,17 +18,9 @@ public class JobGiver_WebArea : JobGiver_Wander
 
     protected override Job TryGiveJob(Pawn pawn)
     {
-        if (pawn.Position.GetPlant(pawn.Map) != null)
-        {
-            if (pawn.Position.GetPlant(pawn.Map).def.defName == "HorrorWeb")
-            {
-                return null;
-            }
-        }
-        else
+        if (pawn.Position.GetPlant(pawn.Map) == null)
         {
             GenSpawn.Spawn(ThingDef.Named("HorrorWeb"), pawn.Position, pawn.Map);
-            return null;
         }
 
         return null;

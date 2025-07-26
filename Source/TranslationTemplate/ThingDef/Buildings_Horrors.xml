@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: burrow -->
+  <HorrorBurrow.label>burrow</HorrorBurrow.label>
+  <!-- EN: A burrow containing... Hopefully nothing... Best not get too close to it. -->
+  <HorrorBurrow.description>A burrow containing... Hopefully nothing... Best not get too close to it.</HorrorBurrow.description>
+  <!-- EN: horror bulwark crysalis -->
+  <HorrorCrysalisBulwark.label>horror bulwark crysalis</HorrorCrysalisBulwark.label>
+  <!-- EN: A cacoon that protects a molting Bulwark -->
+  <HorrorCrysalisBulwark.description>A cacoon that protects a molting Bulwark</HorrorCrysalisBulwark.description>
+  <!-- EN: horror harvester crysalis -->
+  <HorrorCrysalisHarvester.label>horror harvester crysalis</HorrorCrysalisHarvester.label>
+  <!-- EN: A cacoon that protects a molting Harvester -->
+  <HorrorCrysalisHarvester.description>A cacoon that protects a molting Harvester</HorrorCrysalisHarvester.description>
+  <!-- EN: horror prowler crysalis -->
+  <HorrorCrysalisProwler.label>horror prowler crysalis</HorrorCrysalisProwler.label>
+  <!-- EN: A cacoon that protects a molting Prowler -->
+  <HorrorCrysalisProwler.description>A cacoon that protects a molting Prowler</HorrorCrysalisProwler.description>
+  <!-- EN: horror visceral crysalis -->
+  <HorrorCrysalisVisceral.label>horror visceral crysalis</HorrorCrysalisVisceral.label>
+  <!-- EN: A cacoon that protects a molting Visceral -->
+  <HorrorCrysalisVisceral.description>A cacoon that protects a molting Visceral</HorrorCrysalisVisceral.description>
+  <!-- EN: horror den -->
+  <HorrorDen.label>horror den</HorrorDen.label>
+  <!-- EN: A large den housing something terrible no-doubt. -->
+  <HorrorDen.description>A large den housing something terrible no-doubt.</HorrorDen.description>
+  <!-- EN: glowing pustule -->
+  <HorrorFirefoamPod.label>glowing pustule</HorrorFirefoamPod.label>
+  <!-- EN: When touched by fire or triggered by hand, this pops and sprays a fire-extinguishing foam in a circular field around itself. -->
+  <HorrorFirefoamPod.description>When touched by fire or triggered by hand, this pops and sprays a fire-extinguishing foam in a circular field around itself.</HorrorFirefoamPod.description>
+  <!-- EN: Trigger {0_label} -->
+  <HorrorFirefoamPod.comps.CompUsable.useLabel>Trigger {0_label}</HorrorFirefoamPod.comps.CompUsable.useLabel>
+  <!-- EN: horror hive -->
+  <HorrorHive.label>horror hive</HorrorHive.label>
+  <!-- EN: A horrid nest full of god knows... -->
+  <HorrorHive.description>A horrid nest full of god knows...</HorrorHive.description>
+  <!-- EN: mite nest -->
+  <MaggotNest.label>mite nest</MaggotNest.label>
+  <!-- EN: A bugmidden and mite nest, primary food source for Horrors. -->
+  <MaggotNest.description>A bugmidden and mite nest, primary food source for Horrors.</MaggotNest.description>
+  <!-- EN: sinkhole -->
+  <SinkHole.label>sinkhole</SinkHole.label>
+  <!-- EN: A sinkhole into a vast cave network... It worries you to think what may be down there, you can hear movement far beneath the earth when listening closely... You might want to collapse the hole with explosives to ensure it stays down there. -->
+  <SinkHole.description>A sinkhole into a vast cave network... It worries you to think what may be down there, you can hear movement far beneath the earth when listening closely... You might want to collapse the hole with explosives to ensure it stays down there.</SinkHole.description>
+</LanguageData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: fused head and torso -->
+  <CephaloThorax.label>fused head and torso</CephaloThorax.label>
+  <!-- EN: left raptorial leg -->
+  <LeftRaptorialLeg.label>left raptorial leg</LeftRaptorialLeg.label>
+  <!-- EN: spitter nacelle -->
+  <Nacelle.label>spitter nacelle</Nacelle.label>
+  <!-- EN: right raptorial leg -->
+  <RightRaptorialLeg.label>right raptorial leg</RightRaptorialLeg.label>
+  <!-- EN: serpentine hind body -->
+  <SerpentineHindBody.label>serpentine hind body</SerpentineHindBody.label>
+  <!-- EN: serpentine mid body -->
+  <SerpentineMidBody.label>serpentine mid body</SerpentineMidBody.label>
+</LanguageData>

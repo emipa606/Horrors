@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: BroodLord -->
+  <BroodLord.label>BroodLord</BroodLord.label>
+  <!-- EN: Bulwark -->
+  <Bulwark.label>Bulwark</Bulwark.label>
+  <!-- EN: harvester -->
+  <Harvester.label>harvester</Harvester.label>
+  <!-- EN: Prowler -->
+  <Prowler.label>Prowler</Prowler.label>
+  <!-- EN: Terrorworm -->
+  <Terrorworm.label>Terrorworm</Terrorworm.label>
+  <!-- EN: Visceral -->
+  <Visceral.label>Visceral</Visceral.label>
+</LanguageData>

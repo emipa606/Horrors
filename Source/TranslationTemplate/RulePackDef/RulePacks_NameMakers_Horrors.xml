@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN:
+    <li>name->[exoticname]</li>
+    <li>exoticname->[badassadjective]</li>
+    <li>exoticname->[badassadjective]</li>
+    <li>exoticname->[concept]</li>
+    <li>exoticname->[concept]</li>
+    <li>exoticname->[color]</li>
+  -->
+  <NamerAnimalHorrors.rulePack.rulesStrings>
+    <li>name->[exoticname]</li>
+    <li>exoticname->[badassadjective]</li>
+    <li>exoticname->[badassadjective]</li>
+    <li>exoticname->[concept]</li>
+    <li>exoticname->[concept]</li>
+    <li>exoticname->[color]</li>
+  </NamerAnimalHorrors.rulePack.rulesStrings>
+</LanguageData>

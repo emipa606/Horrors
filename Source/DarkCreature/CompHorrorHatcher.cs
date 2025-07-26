@@ -7,9 +7,9 @@ namespace Horrors;
 public class CompHorrorHatcher : ThingComp
 {
     private float gestateProgress;
-    public Faction hatcheeFaction;
+    private Faction hatcheeFaction;
 
-    public CompProperties_HorrorHatcher Props => (CompProperties_HorrorHatcher)props;
+    private CompProperties_HorrorHatcher Props => (CompProperties_HorrorHatcher)props;
 
     public override string CompInspectStringExtra()
     {
@@ -37,7 +37,7 @@ public class CompHorrorHatcher : ThingComp
         }
     }
 
-    public void Hatch()
+    private void Hatch()
     {
         var request = new PawnGenerationRequest(Props.hatcherPawn, hatcheeFaction, PawnGenerationContext.NonPlayer,
             -1, false, true, false, false, true, 1f, false, true, true, false);

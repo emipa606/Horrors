@@ -2,11 +2,12 @@
   "Continued": true,
   "CanAdd": "1",
   "CanRemove": "2",
-  "PreviewVersion": "1.5",
+  "PreviewVersion": "1.6",
   "Patches": false,
   "Defs": true,
   "Assemblies": true,
   "LinesOfCode": 51959,
   "LinesOfXML": 109808,
-  "CodeBaseSize": 82
+  "CodeBaseSize": 82,
+  "LastXmlCleaning": "2025-07-26T19:26:48.9907538+02:00"
 }
