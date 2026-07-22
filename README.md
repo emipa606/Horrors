@@ -1,6 +1,6 @@
-# [Horrors (Continued)]()
+# [Horrors (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3535224844)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of Viceroys mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=822995067
@@ -13,9 +13,9 @@ Mod-breakdown video: DementedZombie
 
 ~~Not compatible with [Rimsenal - Federation Faction Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=736172213) as it also has a defName called Harvester~~ Seems that mod changed its defname for its harvesters in 1.3 so should no longer be an issue.
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 Adds a swarm of Unknown Horrors to the Rimworlds, they have hives of their own that will need to be assaulted and eradicated to ensure your safety. They infest and attack your colony, carving out a large hive and building it up over several tiers. With an overarching AI controlling the behaviour of the hive as they too try and survive. Making use of their every wit.
 
@@ -104,16 +104,18 @@ Furthermore I'd like to say that it is important to get feedback from as many of
 Thank everyone for downloading my mod and for giving me a chance to entertain you!
 
 
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
 -  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
+[![Image](https://img.shields.io/github/v/release/emipa606/Horrors?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3535224844) | tags: horror creatures

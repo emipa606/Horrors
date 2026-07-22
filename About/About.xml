@@ -2,7 +2,7 @@
 <ModMetaData>
   <name>Horrors (Continued)</name>
   <packageId>Mlie.Horrors</packageId>
-  <author>Mlie</author>
+  <author>Viceroy</author>
   <url>https://github.com/emipa606/Horrors</url>
   <supportedVersions>
     <li>1.6</li>
@@ -18,7 +18,7 @@
   <loadAfter>
     <li>brrainz.harmony</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/buuPQel.png[/img]
+  <description>[img]https://img.litet.net/logos/Info.png[/img]
 Update of Viceroys mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=822995067
 
@@ -30,20 +30,20 @@ Mod-breakdown video: DementedZombie
 
 [strike]Not compatible with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=736172213]Rimsenal - Federation Faction Pack[/url] as it also has a defName called Harvester[/strike] Seems that mod changed its defname for its harvesters in 1.3 so should no longer be an issue.
 
-[img]https://i.imgur.com/pufA0kM.png[/img]
+[img]https://img.litet.net/logos/Notice.png[/img]
 
 [table]
 	[tr]
-		[td][url=https://discord.gg/h5TY6DA][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
-		[td][url=https://github.com/emipa606/Horrors][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+		[td][url=https://discord.gg/h5TY6DA][img]https://img.litet.net/logos/Discord.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/Horrors][img]https://img.litet.net/logos/Github.png[/img][/url][/td]
     [/tr]
     [tr]
-        [td][img]https://i.imgur.com/XLUGyo4.png[/img][/td]
-        [td][img]https://i.imgur.com/Be8E2qJ.png[/img][/td]
+        [td][img]https://img.litet.net/logos/UnsafeToAdd.png[/img][/td]
+        [td][img]https://img.litet.net/logos/RemoveMayWork.png[/img][/td]
     [/tr]
 [/table]
 	
-[img]https://i.imgur.com/Z4GOv8H.png[/img]
+[img]https://img.litet.net/logos/OriginalDescription.png[/img]
 
 Adds a swarm of Unknown Horrors to the Rimworlds, they have hives of their own that will need to be assaulted and eradicated to ensure your safety. They infest and attack your colony, carving out a large hive and building it up over several tiers. With an overarching AI controlling the behaviour of the hive as they too try and survive. Making use of their every wit.
 
@@ -120,15 +120,17 @@ Furthermore I'd like to say that it is important to get feedback from as many of
 Thank everyone for downloading my mod and for giving me a chance to entertain you!
 
 
-[img]https://i.imgur.com/PwoNOj4.png[/img]
+[img]https://img.litet.net/logos/ReportingIssues.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
-[*] Post your error-log using the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Log Uploader[/url] or the standalone [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader[/url] and command Ctrl+F12
+[*] Always post your log using the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Log Uploader[/url]
 [*] For best support, please use the Discord-channel for error-reporting.
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
-[/list]</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.6.0</modVersion>
+[/list] 
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3535224844][img]https://img.shields.io/github/v/release/emipa606/Horrors?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags: horror creatures</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.1</modVersion>
 </ModMetaData>
