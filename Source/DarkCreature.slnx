@@ -6,4 +6,65 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="DarkCreature/Horrors.csproj" />
+  <Folder Name="/XML/1.7/Defs/ThinkTreeDefs/">
+    <File Path="../1.7/Defs/ThinkTreeDefs/Hive.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/RulePackDefs/">
+    <File Path="../1.7/Defs/RulePackDefs/RulePacks_NameMakers_Hives.xml" />
+    <File Path="../1.7/Defs/RulePackDefs/RulePacks_NameMakers_Horrors.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/Bodies/">
+    <File Path="../1.7/Defs/Bodies/Bodies_Animal_Horrors.xml" />
+    <File Path="../1.7/Defs/Bodies/BodyPartGroupsHorrors.xml" />
+    <File Path="../1.7/Defs/Bodies/BodyParts_Horrors.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/SoundDefs/">
+    <File Path="../1.7/Defs/SoundDefs/Horrors_SFX.xml" />
+    <File Path="../1.7/Defs/SoundDefs/Horrors_Sustainers_Ambiences.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/PawnGroupKindDefs/">
+    <File Path="../1.7/Defs/PawnGroupKindDefs/HorrorPawnGroupKinds.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingDefs_Misc/">
+    <File Path="../1.7/Defs/ThingDefs_Misc/Apparel_Horrors.xml" />
+    <File Path="../1.7/Defs/ThingDefs_Misc/Gas_Horror.xml" />
+    <File Path="../1.7/Defs/ThingDefs_Misc/Weapons_Horrors.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingDefs_Races/">
+    <File Path="../1.7/Defs/ThingDefs_Races/Races_Animal_Horrors.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/TraderKindDefs/">
+    <File Path="../1.7/Defs/TraderKindDefs/TraderKinds_FactionBase_Horrors.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/FactionDefs/">
+    <File Path="../1.7/Defs/FactionDefs/Factions_Horrors.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/PawnKindDefs_Humanlikes/">
+    <File Path="../1.7/Defs/PawnKindDefs_Humanlikes/PawnKinds_Infested.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/BiomeDefs/">
+    <File Path="../1.7/Defs/BiomeDefs/Biomes_Arid_Horrors.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/TerrainDefs/">
+    <File Path="../1.7/Defs/TerrainDefs/Terrain_Natural.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/MapGeneration/">
+    <File Path="../1.7/Defs/MapGeneration/HorrorsHiveMapGenerator.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/Storyteller/">
+    <File Path="../1.7/Defs/Storyteller/Incidents_Map_Threats.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingDefs_Plants/">
+    <File Path="../1.7/Defs/ThingDefs_Plants/Horrors_Bases.xml" />
+    <File Path="../1.7/Defs/ThingDefs_Plants/Webs_Horrors.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingDefs_Buildings/">
+    <File Path="../1.7/Defs/ThingDefs_Buildings/Buildings_Horrors.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/FilthDefs/">
+    <File Path="../1.7/Defs/FilthDefs/Filth_Horrors.xml" />
+  </Folder>
 </Solution>

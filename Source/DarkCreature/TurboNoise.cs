@@ -52,12 +52,12 @@ public class TurboNoise
         return fn / maxSum / 255.0D;
     }
 
-    private double fade(double t)
+    private static double fade(double t)
     {
         return t * t * t * ((t * ((t * 6) - 15)) + 10);
     }
 
-    private double lerp(double t, double a, double b)
+    private static double lerp(double t, double a, double b)
     {
         return a + (t * (b - a));
     }

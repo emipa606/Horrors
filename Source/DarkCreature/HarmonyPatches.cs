@@ -5,7 +5,7 @@ using Verse;
 namespace Horrors;
 
 [StaticConstructorOnStartup]
-internal class HarmonyPatches
+internal static class HarmonyPatches
 {
     static HarmonyPatches()
     {

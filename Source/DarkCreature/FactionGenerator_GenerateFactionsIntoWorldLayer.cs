@@ -7,7 +7,7 @@ namespace Horrors;
 [HarmonyPatch(typeof(FactionGenerator), nameof(FactionGenerator.GenerateFactionsIntoWorldLayer))]
 public class FactionGenerator_GenerateFactionsIntoWorldLayer
 {
-    private static void Postfix()
+    public static void Postfix()
     {
         var settlements = Find.WorldObjects.SettlementBases;
         foreach (var settlement in settlements)

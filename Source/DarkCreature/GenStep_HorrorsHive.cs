@@ -11,13 +11,13 @@ public class GenStep_HorrorsHive : GenStep_Scatterer
 
     public override int SeedPart => 414596103;
 
-    protected override bool CanScatterAt(IntVec3 c, Map map)
+    protected override bool CanScatterAt(IntVec3 loc, Map map)
     {
-        return base.CanScatterAt(c, map) && c.Standable(map) && !c.Roofed(map) &&
-               map.reachability.CanReachMapEdge(c, TraverseParms.For(TraverseMode.PassDoors));
+        return base.CanScatterAt(loc, map) && loc.Standable(map) && !loc.Roofed(map) &&
+               map.reachability.CanReachMapEdge(loc, TraverseParms.For(TraverseMode.PassDoors));
     }
 
-    protected override void ScatterAt(IntVec3 c, Map map, GenStepParams parms, int stackCount = 1)
+    protected override void ScatterAt(IntVec3 loc, Map map, GenStepParams parms, int count = 1)
     {
         var noiseArray = new double[map.Size.x, map.Size.z];
 
@@ -35,11 +35,11 @@ public class GenStep_HorrorsHive : GenStep_Scatterer
         {
             for (var n = 0; n < map.Size.z; n++)
             {
-                var loc = new IntVec3(i, 0, n);
+                var vec3 = new IntVec3(i, 0, n);
 
-                if (CoverUtility.TotalSurroundingCoverScore(loc, map) > 0.2)
+                if (CoverUtility.TotalSurroundingCoverScore(vec3, map) > 0.2)
                 {
-                    GenSpawn.Spawn(ThingDef.Named("HorrorWeb"), loc, map);
+                    GenSpawn.Spawn(ThingDef.Named("HorrorWeb"), vec3, map);
                 }
 
                 if (!(noiseArray[i, n] > 0.5))
@@ -47,14 +47,14 @@ public class GenStep_HorrorsHive : GenStep_Scatterer
                     continue;
                 }
 
-                if (loc.GetEdifice(map) != null)
+                if (vec3.GetEdifice(map) != null)
                 {
-                    loc.GetEdifice(map).Destroy(DestroyMode.KillFinalize);
+                    vec3.GetEdifice(map).Destroy(DestroyMode.KillFinalize);
                 }
 
-                if (map.fogGrid.IsFogged(loc))
+                if (map.fogGrid.IsFogged(vec3))
                 {
-                    map.fogGrid.Unfog(loc);
+                    map.fogGrid.Unfog(vec3);
                 }
             }
         }
@@ -73,9 +73,6 @@ public class GenStep_HorrorsHive : GenStep_Scatterer
         rect = rect.ExpandedBy(4);
 
         rect.ClipInsideMap(map);
-        var resolveParams = default(ResolveParams);
-        resolveParams.rect = rect;
-        resolveParams.faction = faction;
         BaseGen.globalSettings.map = map;
 
 
@@ -110,7 +107,7 @@ public class GenStep_HorrorsHive : GenStep_Scatterer
         }
     }
 
-    private TurboNoise GeneratePerlinNoiseForCaves(Map map)
+    private static TurboNoise GeneratePerlinNoiseForCaves(Map map)
     {
         var noiseToOutput = new TurboNoise();
         noiseToOutput.addLayer(map.GetHashCode(), 2.0, 0.1);

@@ -155,13 +155,10 @@ public class HorrorDen : ThingWithComps
 
     public override bool PreventPlayerSellingThingsNearby(out string reason)
     {
-        if (spawnedPawns.Count > 0)
+        if (spawnedPawns.Count > 0 && spawnedPawns.Any(p => !p.Downed))
         {
-            if (spawnedPawns.Any(p => !p.Downed))
-            {
-                reason = def.label;
-                return true;
-            }
+            reason = def.label;
+            return true;
         }
 
         reason = null;
@@ -215,12 +212,9 @@ public class HorrorDen : ThingWithComps
             return;
         }
 
-        if (SpawnedPawnsPoints < 500f)
+        if (SpawnedPawnsPoints < 500f && TrySpawnPawn(out var pawn))
         {
-            if (TrySpawnPawn(out var pawn))
-            {
-                pawn.caller?.DoCall();
-            }
+            pawn.caller?.DoCall();
         }
 
         CalculateNextPawnSpawnTick();
@@ -287,11 +281,7 @@ public class HorrorDen : ThingWithComps
         PawnUtility.TrySpawnHatchedOrBornPawn(pawn, this);
 
         spawnedPawns.Add(pawn);
-        var lord = Lord;
-        if (lord == null)
-        {
-            lord = CreateNewLord();
-        }
+        var lord = Lord ?? CreateNewLord();
 
         lord.AddPawn(pawn);
         return true;

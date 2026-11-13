@@ -104,26 +104,16 @@ public class CompSpawnerHorrorHives : ThingComp
             }
 
             var thingList = c2.GetThingList(parent.Map);
-            foreach (var thing in thingList)
-            {
-                if (thing is HorrorHive)
-                {
-                    return false;
-                }
-            }
-        }
 
-        var thingList2 = c.GetThingList(parent.Map);
-        foreach (var thing in thingList2)
-        {
-            if (thing.def.category is ThingCategory.Item or ThingCategory.Building &&
-                GenSpawn.SpawningWipes(parent.def, thing.def))
+            if (thingList.Any(thing => thing is HorrorHive))
             {
                 return false;
             }
         }
 
-        return true;
+        var thingList2 = c.GetThingList(parent.Map);
+        return !thingList2.Any(thing => thing.def.category is ThingCategory.Item or ThingCategory.Building &&
+                                        GenSpawn.SpawningWipes(parent.def, thing.def));
     }
 
     private bool TrySpawnChildHive(bool ignoreRoofedRequirement, out HorrorHive newHive)

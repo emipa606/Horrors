@@ -32,7 +32,7 @@ public class IncidentWorker_HorrorInfestation : IncidentWorker
         return true;
     }
 
-    private HorrorHive SpawnHiveCluster(Map map)
+    private static HorrorHive SpawnHiveCluster(Map map)
     {
         if (!InfestationCellFinder.TryFindCell(out var loc, map))
         {
