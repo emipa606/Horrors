@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Horrors (Continued)</name>
+  <name>[1.6] Horrors (Continued)</name>
   <packageId>Mlie.Horrors</packageId>
   <author>Viceroy</author>
   <url>https://github.com/emipa606/Horrors</url>
@@ -22,8 +22,9 @@
 Update of Viceroys mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=822995067
 
-[b]The release of RimWorld 1.6 added improved support for [url=https://github.com/emipa606/AssetBuilder/blob/main/README.md]Asset Bundles[/url][/b].
-To avoid doubling the size of the mod, it was re-released using only Asset Bundles, you can find the previous version of this mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2036315072]here[/url].
+[b]The release of RimWorld 1.7 added a system where assets like textures and sounds can be cached to improve performance[/b].
+To avoid doubling the size of the mod, it was re-released with only this cache included, you can find the new version of this mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3839223635]here[/url].
+This version will not receive any further updates.
 
 Chinese translation: Kevin JCK
 Mod-breakdown video: DementedZombie
@@ -35,7 +36,7 @@ Mod-breakdown video: DementedZombie
 [table]
 	[tr]
 		[td][url=https://discord.gg/h5TY6DA][img]https://img.litet.net/logos/Discord.png[/img][/url][/td]
-		[td][url=https://github.com/emipa606/Horrors][img]https://img.litet.net/logos/Github.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/Horrors/tree/assetbundles][img]https://img.litet.net/logos/Github.png[/img][/url][/td]
     [/tr]
     [tr]
         [td][img]https://img.litet.net/logos/UnsafeToAdd.png[/img][/td]
@@ -131,6 +132,6 @@ Thank everyone for downloading my mod and for giving me a chance to entertain yo
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
 [/list] 
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3535224844][img]https://img.shields.io/github/v/release/emipa606/Horrors?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags: horror creatures</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.6.1</modVersion>
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3535224844][img]https://img.shields.io/github/v/release/emipa606/Horrors?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | horror creatures</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.2</modVersion>
 </ModMetaData>

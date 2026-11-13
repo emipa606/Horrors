@@ -1,5 +1,8 @@
 # Changelog for Horrors
 
+1.6.2 - Last update of the AssetBundle version of the mod
+
+
 1.6.1 - Fixed wrong author name
 
 
